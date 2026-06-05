@@ -1,0 +1,53 @@
+# =========================
+# Experiment outputs (ignore only runtime generated results)
+# =========================
+results/
+checkpoints/
+
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =========================
+# Logs / temporary files
+# =========================
+*.log
+tempCodeRunnerFile.py
+
+# =========================
+# IDE / editor settings
+# =========================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# =========================
+# Type checkers / linters
+# =========================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# =========================
+# OS / system files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
