@@ -99,11 +99,6 @@ data/
 └── 68Ah LFP/
 ```
 
-If the dataset is released through an external repository or data archive, please download it from:
-
-```text
-[DATASET LINK TO BE ADDED]
-```
 
 After downloading, make sure the folder structure matches the expected format above.
 
