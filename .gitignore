@@ -3,6 +3,7 @@
 # =========================
 results/
 checkpoints/
+data/
 
 # =========================
 # Python cache
