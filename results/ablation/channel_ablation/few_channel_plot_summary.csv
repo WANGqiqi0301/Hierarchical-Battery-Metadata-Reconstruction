@@ -1,0 +1,9 @@
+﻿case,case_label,classification_accuracy_pct,soc_median_ape_pct,soh_median_ape_pct,soc_metric_type,soh_metric_type,source,n_test
+ch12,"Ch1+Ch2
+Raw+ΔU",86.953125,13.696244710122263,5.235552807432252,MAPE fallback,MAPE fallback,auto,1280
+ch1_only,"Ch1
+Raw",86.953125,11.163541080786402,5.257450873801641,MAPE fallback,MAPE fallback,auto,1280
+ch13,"Ch1+Ch3
+Raw+OCV",88.984375,12.860133870852772,5.3501358298199335,MAPE fallback,MAPE fallback,auto,1280
+full,"Full
+Raw+ΔU+OCV",92.3,4.8,2.4,manual,manual,manual,-1

@@ -1,0 +1,26 @@
+================ TABNET UNFAIR RESULTS ================
+Base input           : 41U + pulse width
+Material hint target : acc = 0.916206
+SOC hint target      : RMSE = 8.058002 (raw scale)
+-------------------------------------------------------
+Baseline material acc      : 0.696875
+Train unfair material acc  : 0.916210
+Test  unfair material acc  : 0.916406
+-------------------------------------------------------
+Train pseudo SOC hint RMSE : 8.058002
+Train pseudo SOC hint MAE  : 6.441510
+Train pseudo SOC hint MAPE : 27.028051
+Test  pseudo SOC hint RMSE : 8.058002
+Test  pseudo SOC hint MAE  : 6.539828
+Test  pseudo SOC hint MAPE : 23.131156
+-------------------------------------------------------
+SOC test RMSE              : 8.330064
+SOC test MAE               : 4.067834
+SOC test MAPE              : 12.039572
+SOC test MedAPE            : 6.030425
+SOH test RMSE              : 0.067115
+SOH test MAE               : 0.048742
+SOH test MAPE              : 6.309219
+SOH test MedAPE            : 3.849839
+n_test                     : 1280
+=======================================================

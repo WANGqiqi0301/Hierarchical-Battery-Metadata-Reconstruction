@@ -1,9 +1,9 @@
 # =========================
 # Experiment outputs (ignore only runtime generated results)
 # =========================
-results/
-checkpoints/
-data/
+# results/
+# checkpoints/
+# data/
 
 # =========================
 # Python cache

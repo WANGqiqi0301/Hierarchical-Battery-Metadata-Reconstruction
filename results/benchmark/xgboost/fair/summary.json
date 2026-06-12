@@ -1,0 +1,39 @@
+{
+  "model": "xgboost",
+  "setting": "fair",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.60546875,
+    "soc_rmse": 12.867769111309753,
+    "soc_mae": 8.673031015722156,
+    "soc_mape": 23.749279151635463,
+    "soc_median_ape": 17.727641474337574,
+    "soh_rmse": 0.09498058596488683,
+    "soh_mae": 0.07388733166635382,
+    "soh_mape": 9.340895088860217,
+    "soh_median_ape": 6.695347577291222,
+    "n_test": 1280
+  },
+  "n_train": 76131,
+  "n_test": 1280,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "xgb_params": {
+      "n_estimators": 500,
+      "max_depth": 10,
+      "learning_rate": 0.05,
+      "tree_method": "hist",
+      "random_state": 42
+    },
+    "save_format": "pickle_sklearn_wrapper"
+  }
+}

@@ -1,0 +1,2 @@
+﻿final_stage,n_train,n_test,test_cls_acc,test_soc_rmse,test_soc_mae,test_soc_mape,test_soh_rmse,test_soh_mae,test_soh_mape,test_soc_rmse_raw,test_soc_mae_raw,test_soc_mape_raw,test_soh_rmse_raw,test_soh_mae_raw,test_soh_mape_raw
+finetune,30295,512,0.927734375,0.343601683841534,0.17498313578835223,73.97704167818512,0.4970582322278423,0.3309584462658677,413.89690032123286,7.6457529603924845,3.893688202455773,10.12485110667926,0.05295435455560296,0.03525882835475788,4.404672037880774

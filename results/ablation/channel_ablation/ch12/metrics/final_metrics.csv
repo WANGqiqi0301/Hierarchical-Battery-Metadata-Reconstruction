@@ -1,0 +1,2 @@
+﻿channel_mode,input_channels,final_stage,test_cls_acc,test_soc_rmse,test_soc_mae,test_soc_mape,test_soh_rmse,test_soh_mae,test_soh_mape,test_soc_rmse_raw,test_soc_mae_raw,test_soc_mape_raw,test_soh_rmse_raw,test_soh_mae_raw,test_soh_mape_raw,n_test
+ch12,2,finetune,0.86953125,0.41608810120654427,0.23563996122375103,142.47675654077946,0.5787646066414922,0.3900563816278918,359.39199231350256,9.258713945009532,5.24341597357769,13.696244710122265,0.061652608745197866,0.04155055988801408,5.235552807432252,1280

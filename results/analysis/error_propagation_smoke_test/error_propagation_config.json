@@ -1,0 +1,11 @@
+{
+  "num_classes": 4,
+  "normalize_soc": true,
+  "zscore_normalize": false,
+  "soc_norm": null,
+  "soh_norm": null,
+  "n_mc_soc": 8,
+  "n_mc_soh": 8,
+  "repeats": 2,
+  "base_seed": 2026
+}

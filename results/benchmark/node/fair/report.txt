@@ -1,0 +1,8 @@
+
+================= NODE RESULTS (41U + PT) =================
+Input Features: 42 (Voltage 1-41 & Pulse Width)
+Classification Accuracy: 0.7617
+------------------------------
+SOC - RMSE: 21.623, MAPE: 39.38%, MedAPE: 35.14%
+SOH - RMSE: 0.077, MAPE: 7.14%, MedAPE: 5.10%
+================================================================

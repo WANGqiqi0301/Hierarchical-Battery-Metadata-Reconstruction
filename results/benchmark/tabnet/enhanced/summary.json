@@ -1,0 +1,47 @@
+{
+  "setting": {
+    "name": "TabNet unfair comparison",
+    "base_features": "41U + pulse_width",
+    "soc_extra_input": "material hint with target acc=0.916205533596838",
+    "soh_extra_input": "material hint with target acc=0.916205533596838 + pseudo SOC hint with target RMSE=8.058001553530262",
+    "note": "This setting intentionally injects GT-derived hints and is unfair by design."
+  },
+  "baseline_classifier": {
+    "test_accuracy": 0.696875
+  },
+  "unfair_material_hint": {
+    "target_accuracy": 0.916205533596838,
+    "train_accuracy": 0.9162102166003336,
+    "test_accuracy": 0.91640625
+  },
+  "unfair_soc_hint_train": {
+    "target_rmse": 8.058001553530262,
+    "target_mae_reference": 4.1047552187068455,
+    "target_mape_reference": 10.32768494970053,
+    "rmse": 8.058001542254784,
+    "mae": 6.44150972366333,
+    "mape": 27.028051018714905,
+    "med_ape": 14.889711141586304
+  },
+  "unfair_soc_hint_test": {
+    "target_rmse": 8.058001553530262,
+    "target_mae_reference": 4.1047552187068455,
+    "target_mape_reference": 10.32768494970053,
+    "rmse": 8.058001542254784,
+    "mae": 6.539827823638916,
+    "mape": 23.131155967712402,
+    "med_ape": 14.88700807094574
+  },
+  "final_test_metrics": {
+    "material_acc_baseline": 0.696875,
+    "soc_rmse": 8.330064157740342,
+    "soc_mae": 4.06783390045166,
+    "soc_mape": 12.03957200050354,
+    "soc_median_ape": 6.0304246842861176,
+    "soh_rmse": 0.06711491251071447,
+    "soh_mae": 0.04874172806739807,
+    "soh_mape": 6.30921944975853,
+    "soh_median_ape": 3.8498394191265106,
+    "n_test": 1280
+  }
+}

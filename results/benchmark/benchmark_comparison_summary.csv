@@ -1,0 +1,9 @@
+model,setting,input_feature_dim,n_train,n_test,cls_acc,soc_medape_raw,soh_medape_raw
+xgboost,fair,42,75733,1280,0.605,17.72,6.69
+xgboost,enhanced,44,75733,1280,0.605,13.91,4.95
+tabnet,fair,42,75733,1280,0.7344,10.61,4.18
+tabnet,enhanced,44,75733,1280,0.7344,6.03,3.85
+ft_transformer,fair,42,75733,1280,0.7398,16.74,5.12
+ft_transformer,enhanced,44,75733,1280,0.7398,10.23,3.34
+node,fair,42,75733,1280,0.7617,35.14,5.10
+node,enhanced,44,75733,1280,0.7617,26.09,4.08

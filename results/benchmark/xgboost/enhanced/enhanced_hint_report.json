@@ -1,0 +1,26 @@
+{
+  "material_hint": {
+    "target_accuracy": 0.923,
+    "train_accuracy": 0.9230011427670726,
+    "test_accuracy": 0.92265625
+  },
+  "soc_hint_train": {
+    "target_rmse": 7.75,
+    "rmse": 7.750000000009051,
+    "mae": 6.19547499696214,
+    "mape": 26.071605443234525,
+    "median_ape": 14.300733293805804
+  },
+  "soc_hint_test": {
+    "target_rmse": 7.75,
+    "rmse": 7.7499999962137895,
+    "mae": 6.290748885273933,
+    "mape": 22.29898730685517,
+    "median_ape": 14.305804468340305
+  },
+  "feature_dims": {
+    "base": 42,
+    "soc_input": 50,
+    "soh_input": 51
+  }
+}

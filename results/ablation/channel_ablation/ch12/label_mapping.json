@@ -1,0 +1,15 @@
+{
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "split_name": "testIDs_seed42_frac0.2",
+  "channel_mode": "ch12",
+  "input_channels": 2
+}

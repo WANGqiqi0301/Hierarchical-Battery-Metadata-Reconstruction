@@ -1,0 +1,4 @@
+﻿Method,Classification accuracy,SOC MedAPE (%),SOH MedAPE (%)
+Positive only,0.86640625,6.247715003899073,2.9985201769995733
+Negative only,0.86640625,6.245572808549359,2.7711037894979635
+Full pulse,0.923,4.8,2.43

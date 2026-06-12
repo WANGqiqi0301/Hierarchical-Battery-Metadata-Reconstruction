@@ -1,0 +1,7 @@
+============== TABNET RESULTS (41U + PT) ==============
+Input Features: 42 (Voltage 1-41 & Pulse Width)
+Classification Accuracy: 0.7344
+------------------------------
+SOC - RMSE: 9.726, MAPE: 18.72%, MedAPE: 10.61%
+SOH - RMSE: 0.065, MAPE: 6.22%, MedAPE: 4.18%
+=======================================================

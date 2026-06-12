@@ -1,0 +1,8 @@
+
+============== FT-TRANSFORMER RESULTS (41U + PT) ==============
+Input Features: 42 (Voltage 1-41 & Pulse Width)
+Classification Accuracy: 0.7398
+------------------------------
+SOC - RMSE: 12.137, MAPE: 20.94%, MedAPE: 16.74%
+SOH - RMSE: 0.073, MAPE: 7.06%, MedAPE: 5.12%
+================================================================

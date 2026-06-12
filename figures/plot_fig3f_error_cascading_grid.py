@@ -6,34 +6,33 @@ Figure 3f:
 Cascading-grid KDE plots of SOC absolute error vs SOH absolute error
 for each material-capacity group.
 
-This script is the organized version of:
+IMPORTANT:
+This version is intentionally written to reproduce the old script:
     zzz6_plot_nc_figures_CASCADING_GRID_V2.py
 
-It keeps the original visual settings:
-- seaborn whitegrid style
-- KDE contour levels = 6
-- KDE linewidth = 2.5
-- global 1%-99% quantile axis limits
-- diagonal reference line
-- Pearson r annotation
-- material title and sample number
-- main 1x8 grid
-- single-panel versions
-- clean single-panel versions
-- summary CSV
+It keeps the old plotting/data logic exactly:
+1) Read old i10-style CSV:
+       soc_true, soc_pred, soc_sigma, soh_true, soh_pred, soh_sigma, label
+2) If true_label does not exist, use label as true_label
+3) Convert true_label to int
+4) Remove LMO_24Ah outliers using true_label == 3
+5) Use sorted(df["true_label"].unique()) for material order
+6) Use global 1%-99% quantile axis limits
+7) Use seaborn whitegrid style, KDE levels=6, linewidth=2.5
+8) Save main grid, single panels, clean single panels, and summary CSV
 
 Default input:
-    results/proposed_framework/further_analysis/tables/test_predictions_per_sample.csv
+    results/proposed_framework/further_analysis/tables/test_predictions_with_uncertainty.csv
 
 Default output:
-    results/figures/main/fig3f
+    draw_figures/figure3_main/cascading_grid_lmo24_filtered
 """
 
 from __future__ import annotations
 
 import argparse
 import os
-from typing import Any, Dict, Tuple
+from typing import Dict
 
 import numpy as np
 import pandas as pd
@@ -45,9 +44,15 @@ import seaborn as sns
 # Default configuration
 # =============================================================================
 DEFAULT_INPUT_CSV = (
-    r"results/proposed_framework/further_analysis/tables/test_predictions_per_sample.csv"
+    r"results/proposed_framework/further_analysis/tables/test_predictions_with_uncertainty.csv"
 )
-DEFAULT_OUTPUT_DIR = r"results/figures/main/fig3f"
+
+# Use the old output folder by default to match the old script.
+# If you prefer the new organized output folder, change this to:
+# r"results/figures/main/fig3f"
+DEFAULT_OUTPUT_DIR = (
+    r"E:\OneDrive\battery\second life battery\code\results\figures\main\fig3f"
+)
 
 MATERIAL_NAME_MAP: Dict[int, str] = {
     0: "LFP_35Ah",
@@ -60,25 +65,14 @@ MATERIAL_NAME_MAP: Dict[int, str] = {
     7: "NMC_21Ah",
 }
 
-MATERIAL_ORDER = [
-    "LFP_35Ah",
-    "LFP_68Ah",
-    "LMO_10Ah",
-    "LMO_24Ah",
-    "LMO_25Ah",
-    "LMO_26Ah",
-    "NMC_15Ah",
-    "NMC_21Ah",
-]
-
 MAX_MATERIALS = 8
 MIN_SAMPLES_PER_PANEL = 30
 KDE_LEVELS = 6
 LINE_WIDTH = 2.5
 DPI = 600
 
-# Kept consistent with the old script: although the comment said top-8,
-# the old code used head(9). Keep 9 for reproducing the old figure.
+# The old script comment said top-8, but the actual code used head(9).
+# Keep 9 to reproduce the old figure.
 LMO24_OUTLIER_REMOVE_N = 9
 
 
@@ -138,121 +132,72 @@ def parse_args() -> argparse.Namespace:
 # Global style
 # =============================================================================
 def set_plot_style() -> None:
-    """Set global seaborn style exactly as in the original script."""
+    """
+    Set global seaborn style exactly as in the old script.
+    """
     sns.set(style="whitegrid", font_scale=1.15)
 
 
 # =============================================================================
 # Data loading and preprocessing
 # =============================================================================
-def read_csv_robust(path: str) -> pd.DataFrame:
-    """Read CSV with encoding fallback."""
+def load_data(path: str) -> pd.DataFrame:
+    """
+    Load CSV exactly like the old script.
+
+    The old script used pd.read_csv(path) directly.
+    Here we keep that behavior to avoid hidden differences.
+    """
     if not os.path.exists(path):
-        raise FileNotFoundError(f"Input CSV not found: {path}")
+        raise FileNotFoundError(f"找不到 CSV 文件: {path}")
 
-    encodings = ["utf-8-sig", "utf-8", "cp1252", "gbk"]
-
-    last_error = None
-    for enc in encodings:
-        try:
-            df = pd.read_csv(path, encoding=enc)
-            print(f"[DATA] Loaded: {path}")
-            print(f"[DATA] Shape: {df.shape}")
-            print(f"[DATA] Columns: {df.columns.tolist()}")
-            return df
-        except UnicodeDecodeError as exc:
-            last_error = exc
-
-    raise UnicodeDecodeError(
-        "csv",
-        b"",
-        0,
-        1,
-        f"Failed to read CSV with supported encodings. Last error: {last_error}",
-    )
-
-
-def normalize_material_label(value: Any) -> str:
-    """
-    Convert material label to material name.
-
-    Supports both old integer labels:
-        0, 1, ..., 7
-
-    and new string labels:
-        LFP_35Ah, LMO_24Ah, etc.
-    """
-    if pd.isna(value):
-        return "Unknown"
-
-    # Old integer-like labels.
-    try:
-        if isinstance(value, str):
-            value_strip = value.strip()
-            if value_strip.isdigit():
-                return MATERIAL_NAME_MAP.get(int(value_strip), f"Material {value_strip}")
-
-        if isinstance(value, (int, np.integer)):
-            return MATERIAL_NAME_MAP.get(int(value), f"Material {value}")
-
-        if isinstance(value, float) and float(value).is_integer():
-            return MATERIAL_NAME_MAP.get(int(value), f"Material {int(value)}")
-    except Exception:
-        pass
-
-    # New string labels.
-    return str(value)
-
-
-def material_sort_key(material_name: str) -> int:
-    """Sort material names according to the original 8-class order."""
-    if material_name in MATERIAL_ORDER:
-        return MATERIAL_ORDER.index(material_name)
-    return 999
+    df = pd.read_csv(path)
+    # print(" Loaded:", df.shape)
+    # print("Columns:", df.columns.tolist())
+    return df
 
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Prepare required columns.
+    Preprocess data exactly like the old script.
 
-    Required after preprocessing:
-        material_name
+    Required columns after preprocessing:
+        true_label
         soc_abs_err
         soh_abs_err
     """
     df = df.copy()
 
-    # Label column compatibility.
+    # 统一 label 列
     if "true_label" not in df.columns:
         if "label" in df.columns:
             df["true_label"] = df["label"]
         else:
-            raise ValueError("CSV must contain either 'true_label' or 'label' column.")
+            raise ValueError("CSV 中未找到 true_label 或 label 列。")
 
-    df["material_name"] = df["true_label"].apply(normalize_material_label)
-
-    # SOC absolute error.
+    # 计算 SOC 绝对误差
     if "soc_abs_err" not in df.columns:
         if "soc_pred" in df.columns and "soc_true" in df.columns:
             df["soc_abs_err"] = np.abs(df["soc_pred"] - df["soc_true"])
         else:
-            raise ValueError(
-                "CSV does not contain 'soc_abs_err', and it cannot be computed "
-                "because 'soc_pred'/'soc_true' are missing."
-            )
+            raise ValueError("CSV 中缺少 soc_abs_err，且无法由 soc_pred/soc_true 计算。")
 
-    # SOH absolute error.
+    # 计算 SOH 绝对误差
     if "soh_abs_err" not in df.columns:
         if "soh_pred" in df.columns and "soh_true" in df.columns:
             df["soh_abs_err"] = np.abs(df["soh_pred"] - df["soh_true"])
         else:
-            raise ValueError(
-                "CSV does not contain 'soh_abs_err', and it cannot be computed "
-                "because 'soh_pred'/'soh_true' are missing."
-            )
+            raise ValueError("CSV 中缺少 soh_abs_err，且无法由 soh_pred/soh_true 计算。")
 
+    # 清理非法值
     df = df.replace([np.inf, -np.inf], np.nan)
-    df = df.dropna(subset=["material_name", "soc_abs_err", "soh_abs_err"]).copy()
+    df = df.dropna(subset=["true_label", "soc_abs_err", "soh_abs_err"]).copy()
+
+    # 尝试把 label 转为 int：这是旧代码里的关键步骤
+    try:
+        df["true_label"] = df["true_label"].astype(int)
+    except Exception:
+        pass
 
     return df
 
@@ -260,8 +205,18 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 # =============================================================================
 # Utility functions
 # =============================================================================
+def label_to_name(label) -> str:
+    """
+    Convert integer label to material-capacity name.
+    This is the old script's label mapping behavior.
+    """
+    return MATERIAL_NAME_MAP.get(label, f"Material {label}")
+
+
 def compute_corr(x: np.ndarray, y: np.ndarray) -> float:
-    """Compute Pearson correlation coefficient."""
+    """
+    Compute Pearson correlation coefficient.
+    """
     if len(x) < 3:
         return np.nan
 
@@ -276,18 +231,18 @@ def compute_corr(x: np.ndarray, y: np.ndarray) -> float:
 
 def draw_diagonal_line(
     ax,
-    xlim: Tuple[float, float],
-    ylim: Tuple[float, float],
-    color: str = "gray",
-    linestyle: str = "--",
-    linewidth: float = 1.0,
-    alpha: float = 0.8,
+    xlim,
+    ylim,
+    color="gray",
+    linestyle="--",
+    linewidth=1.0,
+    alpha=0.8,
 ) -> None:
     """
-    Draw a visual diagonal reference line across the current display box.
+    Draw the visual diagonal reference line across the current display box.
 
-    This follows the original code: it is not the mathematical y=x line,
-    because SOC error and SOH error have different scales.
+    This is not mathematically y = x, because SOC error and SOH error
+    have different scales.
     """
     x0, x1 = xlim
     y0, y1 = ylim
@@ -303,98 +258,25 @@ def draw_diagonal_line(
     )
 
 
-def safe_filename(text: str) -> str:
-    """Make safe filename stem."""
-    text = str(text)
-    for ch in ["/", "\\", ":", "*", "?", '"', "<", ">", "|", " "]:
-        text = text.replace(ch, "_")
-    return text
-
-
-# =============================================================================
-# LMO_24Ah outlier filtering
-# =============================================================================
-def filter_lmo24_high_soc_error_outliers(
-    df: pd.DataFrame,
-    remove_n: int = LMO24_OUTLIER_REMOVE_N,
-) -> pd.DataFrame:
-    """
-    Remove LMO_24Ah samples with the largest SOC absolute errors.
-
-    Kept consistent with the original script, which used head(9).
-    """
-    df = df.copy()
-
-    target_material = "LMO_24Ah"
-    sub = df[df["material_name"] == target_material].copy()
-
-    if sub.empty:
-        print("[FILTER] No LMO_24Ah samples found. Skipping outlier removal.")
-        return df
-
-    r_before = compute_corr(
-        sub["soc_abs_err"].values,
-        sub["soh_abs_err"].values,
-    )
-
-    remove_idx = sub.sort_values("soc_abs_err", ascending=False).head(remove_n).index
-    removed = df.loc[remove_idx].copy()
-
-    print(f"\n========== Remove LMO_24Ah top-{remove_n} SOC-error outliers ==========")
-
-    columns_to_show = [
-        c for c in [
-            "soc_true",
-            "soc_pred",
-            "soc_abs_err",
-            "soh_true",
-            "soh_pred",
-            "soh_abs_err",
-        ]
-        if c in removed.columns
-    ]
-
-    if columns_to_show:
-        print("Removed samples:")
-        print(removed[columns_to_show].to_string(index=False))
-    else:
-        print("Removed sample indices:")
-        print(remove_idx.tolist())
-
-    df = df.drop(index=remove_idx).copy()
-
-    sub_after = df[df["material_name"] == target_material].copy()
-    r_after = compute_corr(
-        sub_after["soc_abs_err"].values,
-        sub_after["soh_abs_err"].values,
-    )
-
-    print("\nLMO_24Ah filtering summary:")
-    print(f"n: {len(sub)} -> {len(sub_after)}")
-    print(f"r: {r_before:.4f} -> {r_after:.4f}")
-    print("=============================================================\n")
-
-    return df
-
-
 # =============================================================================
 # Single-panel plotting
 # =============================================================================
 def save_single_panel(
     sub: pd.DataFrame,
-    material_name: str,
-    xlim: Tuple[float, float],
-    ylim: Tuple[float, float],
-    out_png: str,
-    clean_png: str,
+    label,
+    xlim,
+    ylim,
+    out_png,
+    clean_png,
     dpi: int = DPI,
 ) -> None:
-    """Save standard and clean versions of a single material panel."""
+    """
+    Save standard and clean versions of a single material panel.
+    This follows the old script's single-panel logic.
+    """
+    mat_name = label_to_name(label)
     n = len(sub)
-    r = compute_corr(
-        sub["soc_abs_err"].values,
-        sub["soh_abs_err"].values,
-    )
+    r = compute_corr(sub["soc_abs_err"].values, sub["soh_abs_err"].values)
 
     # ---------- Standard panel ----------
     fig, ax = plt.subplots(figsize=(4.2, 4.0))
@@ -411,7 +293,7 @@ def save_single_panel(
     ax.set_ylim(ylim)
     draw_diagonal_line(ax, xlim, ylim)
 
-    ax.set_title(f"{material_name} (n={n})")
+    ax.set_title(f"{mat_name} (n={n})")
     ax.set_xlabel("SOC Absolute Error")
     ax.set_ylabel("SOH Absolute Error")
 
@@ -473,7 +355,12 @@ def plot_cascading_grid(
     save_root: str,
     dpi: int = DPI,
 ) -> None:
-    """Plot the Figure 3f cascading grid and save panel versions."""
+    """
+    Plot the Figure 3f cascading grid and save panel versions.
+
+    This function intentionally follows the old script:
+        materials = sorted(df["true_label"].unique())[:MAX_MATERIALS]
+    """
     os.makedirs(save_root, exist_ok=True)
 
     single_dir = os.path.join(save_root, "single_panels")
@@ -482,14 +369,10 @@ def plot_cascading_grid(
     os.makedirs(single_dir, exist_ok=True)
     os.makedirs(clean_dir, exist_ok=True)
 
-    # Preserve original material order.
-    available_materials = sorted(
-        df["material_name"].unique().tolist(),
-        key=material_sort_key,
-    )
-    materials = available_materials[:MAX_MATERIALS]
+    # Old material order logic
+    materials = sorted(df["true_label"].unique())[:MAX_MATERIALS]
 
-    # Global 1%-99% quantile limits, as in the old script.
+    # Global 1%-99% quantile limits, exactly as in the old script
     x_min, x_max = df["soc_abs_err"].quantile([0.01, 0.99])
     y_min, y_max = df["soh_abs_err"].quantile([0.01, 0.99])
 
@@ -499,22 +382,28 @@ def plot_cascading_grid(
     xlim = (max(0, x_min - x_pad), x_max + x_pad)
     ylim = (max(0, y_min - y_pad), y_max + y_pad)
 
+    # print("[AXIS] xlim =", xlim)
+    # print("[AXIS] ylim =", ylim)
+    # print("[MATERIALS]", materials)
+
     fig, axes = plt.subplots(1, 8, figsize=(20, 5), sharex=True, sharey=True)
     axes = axes.flatten()
 
     summary_rows = []
 
-    for i, material_name in enumerate(materials):
+    for i, label in enumerate(materials):
         ax = axes[i]
-        sub = df[df["material_name"] == material_name].copy()
+        sub = df[df["true_label"] == label].copy()
         n = len(sub)
+        mat_name = label_to_name(label)
 
         if n < MIN_SAMPLES_PER_PANEL:
-            ax.set_title(f"{material_name} (n={n}, skipped)")
+            ax.set_title(f"{mat_name} (n={n}, skipped)")
             ax.axis("off")
 
             summary_rows.append({
-                "material_name": material_name,
+                "label": label,
+                "material_name": mat_name,
                 "n": n,
                 "pearson_r": np.nan,
                 "status": "skipped_too_few_samples",
@@ -533,14 +422,11 @@ def plot_cascading_grid(
         ax.set_ylim(ylim)
         draw_diagonal_line(ax, xlim, ylim)
 
-        r = compute_corr(
-            sub["soc_abs_err"].values,
-            sub["soh_abs_err"].values,
-        )
-
+        r = compute_corr(sub["soc_abs_err"].values, sub["soh_abs_err"].values)
         r_text = "r = NA" if np.isnan(r) else f"r = {r:.2f}"
 
-        ax.set_title(f"{material_name} (n={n})", fontsize=11)
+        ax.set_title(f"{mat_name} (n={n})", fontsize=11)
+
         ax.text(
             0.97,
             0.95,
@@ -557,13 +443,19 @@ def plot_cascading_grid(
             ),
         )
 
-        stem = f"{i + 1:02d}_{safe_filename(material_name)}"
+        # Old filename logic
+        stem = (
+            f"{i + 1:02d}_"
+            f"{str(label).replace('/', '_')}_"
+            f"{mat_name.replace(' ', '_').replace('/', '_')}"
+        )
+
         out_png = os.path.join(single_dir, f"{stem}.png")
         clean_png = os.path.join(clean_dir, f"{stem}_clean.png")
 
         save_single_panel(
             sub=sub,
-            material_name=material_name,
+            label=label,
             xlim=xlim,
             ylim=ylim,
             out_png=out_png,
@@ -572,12 +464,14 @@ def plot_cascading_grid(
         )
 
         summary_rows.append({
-            "material_name": material_name,
+            "label": label,
+            "material_name": mat_name,
             "n": n,
             "pearson_r": r,
             "status": "saved",
         })
 
+    # 删除多余子图
     for j in range(len(materials), len(axes)):
         fig.delaxes(axes[j])
 
@@ -593,14 +487,71 @@ def plot_cascading_grid(
     summary_path = os.path.join(save_root, "cascading_grid_summary.csv")
     summary_df.to_csv(summary_path, index=False, encoding="utf-8-sig")
 
-    print("[OK] Cascading grid main figure saved:")
+    print(" Cascading grid main figure saved")
     print(f"  {main_png}")
-    print("[OK] Single panel versions saved:")
+    print(" Single panel versions saved")
     print(f"  {single_dir}")
-    print("[OK] Clean single panel versions saved:")
+    print(" Clean single panel versions saved")
     print(f"  {clean_dir}")
-    print("[OK] Summary CSV saved:")
+    print(" Summary CSV saved")
     print(f"  {summary_path}")
+
+
+# =============================================================================
+# LMO_24Ah outlier filtering
+# =============================================================================
+def filter_lmo24_top_soc_error_outliers(
+    df: pd.DataFrame,
+    remove_n: int = LMO24_OUTLIER_REMOVE_N,
+) -> pd.DataFrame:
+    """
+    Remove LMO_24Ah samples with the largest SOC absolute errors.
+
+    This intentionally follows the old script:
+        lmo24_label = 3
+        remove_idx = sub.sort_values("soc_abs_err", ascending=False).head(9).index
+    """
+    df = df.copy()
+    lmo24_label = 3
+
+    sub = df[df["true_label"] == lmo24_label].copy()
+
+    if sub.empty:
+        print("[FILTER] No label=3 LMO_24Ah samples found. Skipping outlier removal.")
+        return df
+
+    r_before = compute_corr(sub["soc_abs_err"].values, sub["soh_abs_err"].values)
+
+    # The old script comment said top-8, but actual code used head(9)
+    remove_idx = sub.sort_values("soc_abs_err", ascending=False).head(remove_n).index
+
+    removed = df.loc[remove_idx].copy()
+
+    # print(f"\n========== Remove LMO_24Ah top-{remove_n} SOC-error outliers ==========")
+    # print("Removed samples:")
+    # print(removed[[
+    #     "soc_true",
+    #     "soc_pred",
+    #     "soc_abs_err",
+    #     "soh_true",
+    #     "soh_pred",
+    #     "soh_abs_err",
+    # ]].to_string(index=False))
+
+    df = df.drop(index=remove_idx).copy()
+
+    sub_after = df[df["true_label"] == lmo24_label].copy()
+    r_after = compute_corr(
+        sub_after["soc_abs_err"].values,
+        sub_after["soh_abs_err"].values,
+    )
+
+    # print("\nLMO_24Ah filtering summary:")
+    # print(f"n: {len(sub)} -> {len(sub_after)}")
+    # print(f"r: {r_before:.4f} -> {r_after:.4f}")
+    # print("=============================================================\n")
+
+    return df
 
 
 # =============================================================================
@@ -610,13 +561,13 @@ def main() -> None:
     args = parse_args()
     set_plot_style()
 
-    df = read_csv_robust(args.input_csv)
+    df = load_data(args.input_csv)
     df = preprocess(df)
 
     if args.keep_lmo24_outliers:
         print("[FILTER] Keeping LMO_24Ah outliers.")
     elif args.remove_lmo24_outliers:
-        df = filter_lmo24_high_soc_error_outliers(
+        df = filter_lmo24_top_soc_error_outliers(
             df,
             remove_n=args.lmo24_remove_n,
         )
@@ -627,7 +578,7 @@ def main() -> None:
         dpi=args.dpi,
     )
 
-    print("[DONE] Figure 3f generation complete.")
+    print(" ALL DONE")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,6 @@
+order,description,best_epoch,best_score,cls_acc,soc_rmse_raw,soc_mae_raw,soc_mape_raw,soc_medape_raw,soh_rmse_raw,soh_mae_raw,soh_mape_raw,soh_medape_raw,n_train,n_test,num_classes,device,elapsed_sec,mat_acc_pct,soc_medape_pct,soh_medape_pct,mat_acc_change_pp_vs_proposed,soc_medape_change_pp_vs_proposed,soh_medape_change_pp_vs_proposed
+M_SOC_SOH,"Material -> SOC -> SOH, proposed physical order",,,0.821875,,,,7.827843293182954,,,,3.467344841870762,,,,,,82.1875,7.827843293182954,3.467344841870762,0.0,0.0,0.0
+M_SOH_SOC,"Material -> SOH -> SOC",,,0.75546875,,,,9.14793948534812,,,,4.919275198015989,,,,,,75.546875,9.14793948534812,4.919275198015989,-6.640625,1.3200961921651655,1.451930356145227
+SOC_M_SOH,"SOC -> Material -> SOH",,,0.77890625,,,,9.506084799754982,,,,4.276390682534044,,,,,,77.890625,9.506084799754982,4.276390682534044,-4.296875,1.6782415065720284,0.8090458406632816
+SOH_M_SOC,"SOH -> Material -> SOC",,,0.7484375,,,,10.737947336039888,,,,4.357728199069219,,,,,,74.84375,10.737947336039888,4.357728199069219,-7.34375,2.910104042856934,0.8903833571984569
+PARALLEL,"Material, SOC and SOH predicted in parallel",,,0.784375,,,,8.144711673044844,,,,4.35517148042116,,,,,,78.4375,8.144711673044844,4.35517148042116,-3.75,0.3168683798618903,0.887826638550398
