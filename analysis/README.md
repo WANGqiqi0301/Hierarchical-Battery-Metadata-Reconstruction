@@ -2,15 +2,17 @@
 
 This folder contains post-training analysis scripts for the hierarchical battery passport reconstruction framework.
 
-The scripts in this folder are **not used for training the main model**. Instead, they are used after training to reload trained checkpoints, perform standardized inference, reduce stochastic variation from conditional-flow sampling, and generate the detailed prediction tables and analysis results required by the manuscript.
+The scripts in this folder are **not used to train the main model**. Instead, they are used after training to reload trained checkpoints, run standardized inference, reduce stochastic variation from conditional-flow sampling, and generate detailed prediction tables and diagnostic results required by the manuscript figures and supplementary analyses.
 
-## Why do we need `run_further_analysis_proposed.py`?
+## Purpose of `run_further_analysis_proposed.py`
 
-The main training script focuses on model optimization and reports the final training/validation/test metrics. However, these outputs are not sufficient for manuscript-level analysis for two main reasons.
+The main training script focuses on model optimization and reports final aggregate metrics, such as material-capacity classification accuracy, SOC error and SOH error. However, these outputs are not sufficient for manuscript-level analysis.
 
-First, the proposed framework uses conditional-flow estimators for SOC and SOH reconstruction. Unlike a purely deterministic regression head, conditional-flow-based prediction involves sampling. Therefore, SOC and SOH predictions may contain stochastic variation when only a small number of Monte Carlo samples is used. A separate further-analysis script allows the trained checkpoint to be reloaded and evaluated in a controlled way, with repeated or Monte Carlo sampling used to reduce randomness and obtain more stable prediction results.
+A separate further-analysis script is needed for two main reasons.
 
-Second, many results required for the manuscript are not produced by the main training script. The training code typically reports aggregate metrics, but the figures and supplementary analyses require detailed post-hoc outputs, such as per-sample SOC/SOH predictions, predicted material labels, train/test scatter data, group-wise errors, and downstream diagnostic tables. These outputs are better generated after training from the fixed final checkpoint, rather than being mixed into the training loop.
+First, SOC and SOH reconstruction in the proposed framework is based on conditional-flow estimators. Unlike deterministic regression heads, conditional-flow inference involves Monte Carlo sampling. Therefore, SOC and SOH predictions may show stochastic variation if only a small number of samples is used. The further-analysis script reloads the fixed trained checkpoint and performs controlled inference so that the prediction results are more stable and consistent with the final evaluation protocol.
+
+Second, many manuscript analyses require outputs that are not produced by the main training script. The training code mainly reports aggregate metrics, whereas the figures and supplementary analyses require per-sample predictions, predicted material labels, train/test scatter data and other diagnostic tables. These outputs are generated after training from the saved checkpoint, rather than being mixed into the training loop.
 
 In short:
 
@@ -22,7 +24,7 @@ analysis/run_further_analysis_proposed.py:
     reloads the trained checkpoint and generates manuscript-level prediction tables
 ```
 
-This separation keeps training, evaluation, and figure-oriented analysis independent and reproducible.
+This separation keeps model training, post-hoc analysis and figure-oriented result generation independent and reproducible.
 
 ## Files
 
@@ -62,13 +64,13 @@ train_predictions_for_scatter.csv
 
 `train_predictions_for_scatter.csv` contains train-set SOC/SOH true and predicted values, mainly for generating train/test scatter comparisons.
 
-This script is especially important because SOC and SOH predictions are produced through conditional-flow estimators. The number of Monte Carlo samples used during inference controls the stability of the resulting estimates. For final manuscript results, the sampling setting should be kept consistent with the reported evaluation protocol.
+This script is especially important because SOC and SOH predictions are produced through conditional-flow estimators. The Monte Carlo sampling setting used during inference affects the stability of the resulting estimates, so it should be kept consistent with the reported evaluation protocol.
 
 ### `error_propagation_analysis.py`
 
 This script supports the error-propagation analysis of the hierarchical reconstruction pipeline.
 
-The proposed framework follows the order:
+The proposed framework follows the reconstruction order:
 
 ```text
 Material classification → SOC estimation → SOH estimation
@@ -76,20 +78,19 @@ Material classification → SOC estimation → SOH estimation
 
 Because SOC estimation is conditioned on material information, and SOH estimation is further conditioned on both material and SOC information, upstream prediction errors may influence downstream reconstruction results. This script is used to quantify and visualize how such errors propagate across the diagnostic stages.
 
-It is mainly used to support the error-propagation analysis in the manuscript, for example by examining how material-classification errors affect SOC estimation and how SOC errors further influence SOH estimation.
+It is mainly used to support the cascading-error or error-propagation analysis in the manuscript, for example by examining how material-classification errors affect SOC estimation and how SOC errors further influence SOH estimation.
 
-Use this script when reproducing the cascading-error or error-propagation results.
-
+Use this script when reproducing the error-propagation results.
 
 ### `train_calibration_baseline.py`
 
 This script trains or fits calibration baselines for uncertainty analysis.
 
-The proposed framework uses conditional-flow estimators to output predictive distributions for SOC and SOH, rather than only point estimates. To evaluate whether these uncertainty estimates are reliable, the model needs to be compared with simpler uncertainty-calibration baselines.
+The proposed framework uses conditional-flow estimators to output predictive distributions for SOC and SOH, rather than only point estimates. To evaluate whether these uncertainty estimates are reliable, they are compared with simpler uncertainty-calibration baselines, such as Gaussian or temperature-scaled uncertainty estimates.
 
-This script is used to generate calibration-related baseline results, such as Gaussian or temperature-scaled uncertainty estimates, which can then be compared with the conditional-flow uncertainty outputs.
+This script is used to generate calibration-related baseline results for the manuscript uncertainty analysis.
 
-Use this script when reproducing the uncertainty calibration analysis.
+Use this script when reproducing the uncertainty calibration comparison.
 
 ### `__init__.py`
 
@@ -97,7 +98,7 @@ This file marks `analysis/` as a Python package. It allows scripts or utilities 
 
 ### `__pycache__/`
 
-This is an automatically generated Python cache folder. It is not source code and does not need to be modified manually.
+This is an automatically generated Python cache folder. It does not contain source code and does not need to be edited manually. It should not be committed to the repository.
 
 ## Recommended usage
 
