@@ -1,0 +1,32 @@
+{
+  "checkpoint": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/checkpoints/finetune/best.pt",
+  "n_test": 1280,
+  "split_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/splits/testIDs_seed42_frac0.2.txt",
+  "n_mc": 256,
+  "temperature_min": 0.3,
+  "temperature_max": 3.0,
+  "temperature_steps": 300,
+  "num_confidence_points": 100,
+  "core_low": 0.1,
+  "core_high": 0.9,
+  "metrics": [
+    {
+      "model": "Conditional flow",
+      "target": "SOC",
+      "best_calibration_temperature_T": 1.9705685618729099,
+      "mean_calibration_deviation_10_90_pct": 4.50401475694444,
+      "max_calibration_deviation_10_90_pct": 9.053030303030296,
+      "mean_calibration_deviation_all_pct": 4.1693339646464604,
+      "max_calibration_deviation_all_pct": 9.053030303030296
+    },
+    {
+      "model": "Conditional flow",
+      "target": "SOH",
+      "best_calibration_temperature_T": 2.9729096989966557,
+      "mean_calibration_deviation_10_90_pct": 14.309698547979794,
+      "max_calibration_deviation_10_90_pct": 20.683396464646464,
+      "mean_calibration_deviation_all_pct": 12.356849747474744,
+      "max_calibration_deviation_all_pct": 20.683396464646464
+    }
+  ]
+}

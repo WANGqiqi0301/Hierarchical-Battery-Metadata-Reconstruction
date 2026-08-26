@@ -1,0 +1,46 @@
+[
+  {
+    "module": "c_rate_sensitivity",
+    "status": "OK",
+    "n_rows": 1,
+    "n_cols": 45,
+    "expected_summary": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/c_rate/c_rate_sensitivity_summary.csv",
+    "expected_summary_exists": true,
+    "log_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/logs/c_rate_sensitivity.log",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "module": "pulse_width_sensitivity",
+    "status": "OK",
+    "n_rows": 2,
+    "n_cols": 56,
+    "expected_summary": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/pulse_width/pulse_width_sensitivity_summary.csv",
+    "expected_summary_exists": true,
+    "log_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/logs/pulse_width_sensitivity.log",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "module": "input_quality_sensitivity",
+    "status": "OK",
+    "n_rows": 6,
+    "n_cols": 16,
+    "expected_summary": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/input_quality/input_quality_sensitivity_summary.csv",
+    "expected_summary_exists": true,
+    "log_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/logs/input_quality_sensitivity.log",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "module": "pulse_polarity_sensitivity",
+    "status": "OK",
+    "n_rows": 2,
+    "n_cols": 36,
+    "expected_summary": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/pulse_polarity/pulse_polarity_sensitivity_summary.csv",
+    "expected_summary_exists": true,
+    "log_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/logs/pulse_polarity_sensitivity.log",
+    "error_type": "",
+    "error_message": ""
+  }
+]

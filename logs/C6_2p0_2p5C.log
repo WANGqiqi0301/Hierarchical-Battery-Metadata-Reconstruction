@@ -1,0 +1,297 @@
+
+==========================================================================================
+[RUN] C-rate configuration: C6_2p0_2p5C
+[RUN] C-rate combo: [4, 5] -> 2.0C,2.5C
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/c_rate/C6_2p0_2p5C
+==========================================================================================
+[INFO] Device: cpu
+[CACHE] Train tag: raw_train_c292c3d99a | hit=True
+[CACHE] Test  tag: raw_test_4fc0cd64ff | hit=True
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[DATA] Final TRAIN samples = 68163 | unique IDs = 461
+[DATA] Final VAL   samples = 510 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from original TRAIN IDs)
+[DATA] Final TEST  samples = 1280 | unique IDs = 128 (same TEST IDs as the original split)
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[RESUME-stage1_soc] start_epoch=200, best_score=0.900932, best_epoch=185
+[stage1_soc] Loaded BEST checkpoint from epoch=185 | score=0.9009322032011889
+[RESUME-stage2_soh] start_epoch=6, best_score=-0.483641, best_epoch=3
+[stage2_soh] epoch 006 | VAL cls=0.9922, SOC MedAPE(raw)=6.101%, SOH MedAPE(raw)=3.211% | TEST cls=0.9000, SOC MedAPE(raw)=6.096%, SOH MedAPE(raw)=2.918% | val_score=-0.514394
+[stage2_soh] epoch 007 | VAL cls=0.9922, SOC MedAPE(raw)=6.221%, SOH MedAPE(raw)=3.125% | TEST cls=0.9000, SOC MedAPE(raw)=6.390%, SOH MedAPE(raw)=2.720% | val_score=-0.518475
+[stage2_soh] epoch 008 | VAL cls=0.9922, SOC MedAPE(raw)=6.922%, SOH MedAPE(raw)=3.464% | TEST cls=0.9000, SOC MedAPE(raw)=6.000%, SOH MedAPE(raw)=3.013% | val_score=-0.523590
+[stage2_soh] epoch 009 | VAL cls=0.9922, SOC MedAPE(raw)=6.751%, SOH MedAPE(raw)=2.928% | TEST cls=0.9000, SOC MedAPE(raw)=6.007%, SOH MedAPE(raw)=2.921% | val_score=-0.499440
+[stage2_soh] epoch 010 | VAL cls=0.9922, SOC MedAPE(raw)=6.420%, SOH MedAPE(raw)=2.811% | TEST cls=0.9000, SOC MedAPE(raw)=5.966%, SOH MedAPE(raw)=2.858% | val_score=-0.504167
+[stage2_soh] epoch 011 | VAL cls=0.9922, SOC MedAPE(raw)=6.781%, SOH MedAPE(raw)=3.393% | TEST cls=0.9000, SOC MedAPE(raw)=6.095%, SOH MedAPE(raw)=2.833% | val_score=-0.511124
+[stage2_soh] epoch 012 | VAL cls=0.9922, SOC MedAPE(raw)=6.431%, SOH MedAPE(raw)=3.638% | TEST cls=0.9000, SOC MedAPE(raw)=5.993%, SOH MedAPE(raw)=2.956% | val_score=-0.534124
+[stage2_soh] epoch 013 | VAL cls=0.9922, SOC MedAPE(raw)=6.558%, SOH MedAPE(raw)=3.128% | TEST cls=0.9000, SOC MedAPE(raw)=6.116%, SOH MedAPE(raw)=2.811% | val_score=-0.514675
+[stage2_soh] epoch 014 | VAL cls=0.9922, SOC MedAPE(raw)=6.523%, SOH MedAPE(raw)=3.469% | TEST cls=0.9000, SOC MedAPE(raw)=6.053%, SOH MedAPE(raw)=3.014% | val_score=-0.537378
+[stage2_soh] epoch 015 | VAL cls=0.9922, SOC MedAPE(raw)=6.453%, SOH MedAPE(raw)=3.099% | TEST cls=0.9000, SOC MedAPE(raw)=6.110%, SOH MedAPE(raw)=3.082% | val_score=-0.499785
+[stage2_soh] epoch 016 | VAL cls=0.9922, SOC MedAPE(raw)=6.637%, SOH MedAPE(raw)=3.188% | TEST cls=0.9000, SOC MedAPE(raw)=5.959%, SOH MedAPE(raw)=2.872% | val_score=-0.509319
+[stage2_soh] epoch 017 | VAL cls=0.9922, SOC MedAPE(raw)=6.441%, SOH MedAPE(raw)=3.297% | TEST cls=0.9000, SOC MedAPE(raw)=6.179%, SOH MedAPE(raw)=2.906% | val_score=-0.533646
+[stage2_soh] epoch 018 | VAL cls=0.9922, SOC MedAPE(raw)=6.066%, SOH MedAPE(raw)=3.413% | TEST cls=0.9000, SOC MedAPE(raw)=6.091%, SOH MedAPE(raw)=2.897% | val_score=-0.527635
+[stage2_soh] epoch 019 | VAL cls=0.9922, SOC MedAPE(raw)=6.490%, SOH MedAPE(raw)=3.127% | TEST cls=0.9000, SOC MedAPE(raw)=6.116%, SOH MedAPE(raw)=2.800% | val_score=-0.521403
+[stage2_soh] epoch 020 | VAL cls=0.9922, SOC MedAPE(raw)=6.541%, SOH MedAPE(raw)=3.307% | TEST cls=0.9000, SOC MedAPE(raw)=5.952%, SOH MedAPE(raw)=2.896% | val_score=-0.530423
+[stage2_soh] epoch 021 | VAL cls=0.9922, SOC MedAPE(raw)=6.407%, SOH MedAPE(raw)=3.107% | TEST cls=0.9000, SOC MedAPE(raw)=6.027%, SOH MedAPE(raw)=2.825% | val_score=-0.501757
+[stage2_soh] epoch 022 | VAL cls=0.9922, SOC MedAPE(raw)=6.653%, SOH MedAPE(raw)=2.881% | TEST cls=0.9000, SOC MedAPE(raw)=5.887%, SOH MedAPE(raw)=2.784% | val_score=-0.481330
+[stage2_soh] epoch 023 | VAL cls=0.9922, SOC MedAPE(raw)=6.933%, SOH MedAPE(raw)=3.269% | TEST cls=0.9000, SOC MedAPE(raw)=6.298%, SOH MedAPE(raw)=2.949% | val_score=-0.510987
+[stage2_soh] epoch 024 | VAL cls=0.9922, SOC MedAPE(raw)=6.869%, SOH MedAPE(raw)=3.037% | TEST cls=0.9000, SOC MedAPE(raw)=6.011%, SOH MedAPE(raw)=2.704% | val_score=-0.505464
+[stage2_soh] epoch 025 | VAL cls=0.9922, SOC MedAPE(raw)=6.790%, SOH MedAPE(raw)=3.826% | TEST cls=0.9000, SOC MedAPE(raw)=6.041%, SOH MedAPE(raw)=3.227% | val_score=-0.568036
+[stage2_soh] epoch 026 | VAL cls=0.9922, SOC MedAPE(raw)=6.885%, SOH MedAPE(raw)=3.144% | TEST cls=0.9000, SOC MedAPE(raw)=6.098%, SOH MedAPE(raw)=2.934% | val_score=-0.521381
+[stage2_soh] epoch 027 | VAL cls=0.9922, SOC MedAPE(raw)=6.395%, SOH MedAPE(raw)=3.146% | TEST cls=0.9000, SOC MedAPE(raw)=6.100%, SOH MedAPE(raw)=2.805% | val_score=-0.509213
+[stage2_soh] epoch 028 | VAL cls=0.9922, SOC MedAPE(raw)=6.238%, SOH MedAPE(raw)=2.798% | TEST cls=0.9000, SOC MedAPE(raw)=5.942%, SOH MedAPE(raw)=2.721% | val_score=-0.470674
+[stage2_soh] epoch 029 | VAL cls=0.9922, SOC MedAPE(raw)=6.793%, SOH MedAPE(raw)=3.433% | TEST cls=0.9000, SOC MedAPE(raw)=6.009%, SOH MedAPE(raw)=2.763% | val_score=-0.531361
+[stage2_soh] epoch 030 | VAL cls=0.9922, SOC MedAPE(raw)=6.329%, SOH MedAPE(raw)=2.756% | TEST cls=0.9000, SOC MedAPE(raw)=6.101%, SOH MedAPE(raw)=2.731% | val_score=-0.480199
+[stage2_soh] epoch 031 | VAL cls=0.9922, SOC MedAPE(raw)=6.504%, SOH MedAPE(raw)=3.479% | TEST cls=0.9000, SOC MedAPE(raw)=6.084%, SOH MedAPE(raw)=3.030% | val_score=-0.519915
+[stage2_soh] epoch 032 | VAL cls=0.9922, SOC MedAPE(raw)=6.369%, SOH MedAPE(raw)=2.760% | TEST cls=0.9000, SOC MedAPE(raw)=5.988%, SOH MedAPE(raw)=3.009% | val_score=-0.490630
+[stage2_soh] epoch 033 | VAL cls=0.9922, SOC MedAPE(raw)=6.133%, SOH MedAPE(raw)=3.503% | TEST cls=0.9000, SOC MedAPE(raw)=6.163%, SOH MedAPE(raw)=3.065% | val_score=-0.542160
+[stage2_soh] epoch 034 | VAL cls=0.9922, SOC MedAPE(raw)=6.863%, SOH MedAPE(raw)=3.180% | TEST cls=0.9000, SOC MedAPE(raw)=6.057%, SOH MedAPE(raw)=3.019% | val_score=-0.539244
+[stage2_soh] epoch 035 | VAL cls=0.9922, SOC MedAPE(raw)=6.889%, SOH MedAPE(raw)=2.913% | TEST cls=0.9000, SOC MedAPE(raw)=6.036%, SOH MedAPE(raw)=2.863% | val_score=-0.522618
+[stage2_soh] epoch 036 | VAL cls=0.9922, SOC MedAPE(raw)=7.151%, SOH MedAPE(raw)=3.715% | TEST cls=0.9000, SOC MedAPE(raw)=6.134%, SOH MedAPE(raw)=3.190% | val_score=-0.533405
+[stage2_soh] epoch 037 | VAL cls=0.9922, SOC MedAPE(raw)=6.524%, SOH MedAPE(raw)=3.397% | TEST cls=0.9000, SOC MedAPE(raw)=5.927%, SOH MedAPE(raw)=3.074% | val_score=-0.514662
+[stage2_soh] epoch 038 | VAL cls=0.9922, SOC MedAPE(raw)=6.581%, SOH MedAPE(raw)=3.315% | TEST cls=0.9000, SOC MedAPE(raw)=5.964%, SOH MedAPE(raw)=2.909% | val_score=-0.526795
+[stage2_soh] epoch 039 | VAL cls=0.9922, SOC MedAPE(raw)=6.321%, SOH MedAPE(raw)=3.293% | TEST cls=0.9000, SOC MedAPE(raw)=6.073%, SOH MedAPE(raw)=2.894% | val_score=-0.493427
+[stage2_soh] epoch 040 | VAL cls=0.9922, SOC MedAPE(raw)=6.431%, SOH MedAPE(raw)=3.127% | TEST cls=0.9000, SOC MedAPE(raw)=5.989%, SOH MedAPE(raw)=2.963% | val_score=-0.480311
+[stage2_soh] epoch 041 | VAL cls=0.9922, SOC MedAPE(raw)=6.801%, SOH MedAPE(raw)=3.329% | TEST cls=0.9000, SOC MedAPE(raw)=6.263%, SOH MedAPE(raw)=2.987% | val_score=-0.515597
+[stage2_soh] epoch 042 | VAL cls=0.9922, SOC MedAPE(raw)=6.558%, SOH MedAPE(raw)=3.400% | TEST cls=0.9000, SOC MedAPE(raw)=6.007%, SOH MedAPE(raw)=2.902% | val_score=-0.543977
+[stage2_soh] epoch 043 | VAL cls=0.9922, SOC MedAPE(raw)=6.323%, SOH MedAPE(raw)=3.571% | TEST cls=0.9000, SOC MedAPE(raw)=5.966%, SOH MedAPE(raw)=2.887% | val_score=-0.521998
+[stage2_soh] epoch 044 | VAL cls=0.9922, SOC MedAPE(raw)=6.931%, SOH MedAPE(raw)=3.604% | TEST cls=0.9000, SOC MedAPE(raw)=5.951%, SOH MedAPE(raw)=2.926% | val_score=-0.523702
+[stage2_soh] epoch 045 | VAL cls=0.9922, SOC MedAPE(raw)=6.750%, SOH MedAPE(raw)=3.382% | TEST cls=0.9000, SOC MedAPE(raw)=6.051%, SOH MedAPE(raw)=3.024% | val_score=-0.546802
+[stage2_soh] epoch 046 | VAL cls=0.9922, SOC MedAPE(raw)=6.666%, SOH MedAPE(raw)=3.893% | TEST cls=0.9000, SOC MedAPE(raw)=6.024%, SOH MedAPE(raw)=2.979% | val_score=-0.555300
+[stage2_soh] epoch 047 | VAL cls=0.9922, SOC MedAPE(raw)=6.893%, SOH MedAPE(raw)=3.411% | TEST cls=0.9000, SOC MedAPE(raw)=5.986%, SOH MedAPE(raw)=2.839% | val_score=-0.512951
+[stage2_soh] epoch 048 | VAL cls=0.9922, SOC MedAPE(raw)=6.560%, SOH MedAPE(raw)=3.085% | TEST cls=0.9000, SOC MedAPE(raw)=5.968%, SOH MedAPE(raw)=2.870% | val_score=-0.523183
+[stage2_soh] epoch 049 | VAL cls=0.9922, SOC MedAPE(raw)=6.250%, SOH MedAPE(raw)=3.069% | TEST cls=0.9000, SOC MedAPE(raw)=6.058%, SOH MedAPE(raw)=3.034% | val_score=-0.520162
+[stage2_soh] epoch 050 | VAL cls=0.9922, SOC MedAPE(raw)=6.927%, SOH MedAPE(raw)=3.106% | TEST cls=0.9000, SOC MedAPE(raw)=5.988%, SOH MedAPE(raw)=2.912% | val_score=-0.496864
+[stage2_soh] epoch 051 | VAL cls=0.9922, SOC MedAPE(raw)=6.529%, SOH MedAPE(raw)=3.085% | TEST cls=0.9000, SOC MedAPE(raw)=5.835%, SOH MedAPE(raw)=2.844% | val_score=-0.530968
+[stage2_soh] epoch 052 | VAL cls=0.9922, SOC MedAPE(raw)=6.588%, SOH MedAPE(raw)=3.767% | TEST cls=0.9000, SOC MedAPE(raw)=5.992%, SOH MedAPE(raw)=2.963% | val_score=-0.550684
+[stage2_soh] epoch 053 | VAL cls=0.9922, SOC MedAPE(raw)=6.333%, SOH MedAPE(raw)=3.624% | TEST cls=0.9000, SOC MedAPE(raw)=6.127%, SOH MedAPE(raw)=3.002% | val_score=-0.545759
+[stage2_soh] epoch 054 | VAL cls=0.9922, SOC MedAPE(raw)=6.524%, SOH MedAPE(raw)=3.491% | TEST cls=0.9000, SOC MedAPE(raw)=5.882%, SOH MedAPE(raw)=2.833% | val_score=-0.512579
+[stage2_soh] epoch 055 | VAL cls=0.9922, SOC MedAPE(raw)=6.239%, SOH MedAPE(raw)=2.894% | TEST cls=0.9000, SOC MedAPE(raw)=6.216%, SOH MedAPE(raw)=2.851% | val_score=-0.496548
+[stage2_soh] epoch 056 | VAL cls=0.9922, SOC MedAPE(raw)=6.297%, SOH MedAPE(raw)=3.165% | TEST cls=0.9000, SOC MedAPE(raw)=6.117%, SOH MedAPE(raw)=2.999% | val_score=-0.512840
+[stage2_soh] epoch 057 | VAL cls=0.9922, SOC MedAPE(raw)=6.445%, SOH MedAPE(raw)=3.796% | TEST cls=0.9000, SOC MedAPE(raw)=6.102%, SOH MedAPE(raw)=3.017% | val_score=-0.550979
+[stage2_soh] epoch 058 | VAL cls=0.9922, SOC MedAPE(raw)=6.614%, SOH MedAPE(raw)=3.236% | TEST cls=0.9000, SOC MedAPE(raw)=6.097%, SOH MedAPE(raw)=2.884% | val_score=-0.523867
+[stage2_soh] epoch 059 | VAL cls=0.9922, SOC MedAPE(raw)=6.530%, SOH MedAPE(raw)=3.402% | TEST cls=0.9000, SOC MedAPE(raw)=5.997%, SOH MedAPE(raw)=2.905% | val_score=-0.525906
+[stage2_soh] epoch 060 | VAL cls=0.9922, SOC MedAPE(raw)=6.329%, SOH MedAPE(raw)=3.017% | TEST cls=0.9000, SOC MedAPE(raw)=6.146%, SOH MedAPE(raw)=2.943% | val_score=-0.492176
+[stage2_soh] epoch 061 | VAL cls=0.9922, SOC MedAPE(raw)=6.465%, SOH MedAPE(raw)=3.334% | TEST cls=0.9000, SOC MedAPE(raw)=5.968%, SOH MedAPE(raw)=2.813% | val_score=-0.502892
+[stage2_soh] epoch 062 | VAL cls=0.9922, SOC MedAPE(raw)=6.524%, SOH MedAPE(raw)=3.368% | TEST cls=0.9000, SOC MedAPE(raw)=6.095%, SOH MedAPE(raw)=2.784% | val_score=-0.535429
+[stage2_soh] epoch 063 | VAL cls=0.9922, SOC MedAPE(raw)=6.676%, SOH MedAPE(raw)=3.184% | TEST cls=0.9000, SOC MedAPE(raw)=6.064%, SOH MedAPE(raw)=2.879% | val_score=-0.503894
+[stage2_soh] epoch 064 | VAL cls=0.9922, SOC MedAPE(raw)=6.404%, SOH MedAPE(raw)=3.091% | TEST cls=0.9000, SOC MedAPE(raw)=5.750%, SOH MedAPE(raw)=2.625% | val_score=-0.500135
+[stage2_soh] epoch 065 | VAL cls=0.9922, SOC MedAPE(raw)=6.215%, SOH MedAPE(raw)=3.190% | TEST cls=0.9000, SOC MedAPE(raw)=5.999%, SOH MedAPE(raw)=3.045% | val_score=-0.523274
+[stage2_soh] epoch 066 | VAL cls=0.9922, SOC MedAPE(raw)=6.687%, SOH MedAPE(raw)=3.604% | TEST cls=0.9000, SOC MedAPE(raw)=6.104%, SOH MedAPE(raw)=2.856% | val_score=-0.524300
+[stage2_soh] epoch 067 | VAL cls=0.9922, SOC MedAPE(raw)=6.639%, SOH MedAPE(raw)=3.147% | TEST cls=0.9000, SOC MedAPE(raw)=6.131%, SOH MedAPE(raw)=2.942% | val_score=-0.518120
+[stage2_soh] epoch 068 | VAL cls=0.9922, SOC MedAPE(raw)=6.497%, SOH MedAPE(raw)=3.556% | TEST cls=0.9000, SOC MedAPE(raw)=6.112%, SOH MedAPE(raw)=3.060% | val_score=-0.535769
+[stage2_soh] epoch 069 | VAL cls=0.9922, SOC MedAPE(raw)=6.884%, SOH MedAPE(raw)=3.059% | TEST cls=0.9000, SOC MedAPE(raw)=6.140%, SOH MedAPE(raw)=2.828% | val_score=-0.507791
+[stage2_soh] epoch 070 | VAL cls=0.9922, SOC MedAPE(raw)=6.497%, SOH MedAPE(raw)=3.775% | TEST cls=0.9000, SOC MedAPE(raw)=6.123%, SOH MedAPE(raw)=3.215% | val_score=-0.547487
+[stage2_soh] epoch 071 | VAL cls=0.9922, SOC MedAPE(raw)=6.985%, SOH MedAPE(raw)=3.478% | TEST cls=0.9000, SOC MedAPE(raw)=6.119%, SOH MedAPE(raw)=2.989% | val_score=-0.516396
+[stage2_soh] epoch 072 | VAL cls=0.9922, SOC MedAPE(raw)=6.689%, SOH MedAPE(raw)=3.679% | TEST cls=0.9000, SOC MedAPE(raw)=6.179%, SOH MedAPE(raw)=2.833% | val_score=-0.519917
+[stage2_soh] epoch 073 | VAL cls=0.9922, SOC MedAPE(raw)=6.399%, SOH MedAPE(raw)=3.426% | TEST cls=0.9000, SOC MedAPE(raw)=5.954%, SOH MedAPE(raw)=3.028% | val_score=-0.496869
+[stage2_soh] epoch 074 | VAL cls=0.9922, SOC MedAPE(raw)=6.428%, SOH MedAPE(raw)=3.763% | TEST cls=0.9000, SOC MedAPE(raw)=6.093%, SOH MedAPE(raw)=3.119% | val_score=-0.551574
+[stage2_soh] epoch 075 | VAL cls=0.9922, SOC MedAPE(raw)=6.353%, SOH MedAPE(raw)=3.489% | TEST cls=0.9000, SOC MedAPE(raw)=6.110%, SOH MedAPE(raw)=2.781% | val_score=-0.538301
+[stage2_soh] epoch 076 | VAL cls=0.9922, SOC MedAPE(raw)=6.558%, SOH MedAPE(raw)=3.058% | TEST cls=0.9000, SOC MedAPE(raw)=5.997%, SOH MedAPE(raw)=2.853% | val_score=-0.509508
+[stage2_soh] epoch 077 | VAL cls=0.9922, SOC MedAPE(raw)=6.915%, SOH MedAPE(raw)=3.363% | TEST cls=0.9000, SOC MedAPE(raw)=6.049%, SOH MedAPE(raw)=2.845% | val_score=-0.496186
+[stage2_soh] epoch 078 | VAL cls=0.9922, SOC MedAPE(raw)=6.381%, SOH MedAPE(raw)=3.559% | TEST cls=0.9000, SOC MedAPE(raw)=6.196%, SOH MedAPE(raw)=2.750% | val_score=-0.531452
+[stage2_soh] epoch 079 | VAL cls=0.9922, SOC MedAPE(raw)=6.468%, SOH MedAPE(raw)=3.294% | TEST cls=0.9000, SOC MedAPE(raw)=6.020%, SOH MedAPE(raw)=2.803% | val_score=-0.514852
+[stage2_soh] epoch 080 | VAL cls=0.9922, SOC MedAPE(raw)=6.429%, SOH MedAPE(raw)=3.523% | TEST cls=0.9000, SOC MedAPE(raw)=5.940%, SOH MedAPE(raw)=2.811% | val_score=-0.512306
+[stage2_soh] epoch 081 | VAL cls=0.9922, SOC MedAPE(raw)=6.461%, SOH MedAPE(raw)=3.070% | TEST cls=0.9000, SOC MedAPE(raw)=6.059%, SOH MedAPE(raw)=3.165% | val_score=-0.497779
+[stage2_soh] epoch 082 | VAL cls=0.9922, SOC MedAPE(raw)=6.590%, SOH MedAPE(raw)=3.673% | TEST cls=0.9000, SOC MedAPE(raw)=6.039%, SOH MedAPE(raw)=2.899% | val_score=-0.533060
+[stage2_soh] epoch 083 | VAL cls=0.9922, SOC MedAPE(raw)=6.575%, SOH MedAPE(raw)=3.337% | TEST cls=0.9000, SOC MedAPE(raw)=6.072%, SOH MedAPE(raw)=2.963% | val_score=-0.521159
+[stage2_soh] epoch 084 | VAL cls=0.9922, SOC MedAPE(raw)=6.242%, SOH MedAPE(raw)=3.243% | TEST cls=0.9000, SOC MedAPE(raw)=6.168%, SOH MedAPE(raw)=2.878% | val_score=-0.524193
+[stage2_soh] epoch 085 | VAL cls=0.9922, SOC MedAPE(raw)=6.598%, SOH MedAPE(raw)=3.583% | TEST cls=0.9000, SOC MedAPE(raw)=5.988%, SOH MedAPE(raw)=2.757% | val_score=-0.542746
+[stage2_soh] epoch 086 | VAL cls=0.9922, SOC MedAPE(raw)=6.549%, SOH MedAPE(raw)=3.804% | TEST cls=0.9000, SOC MedAPE(raw)=5.900%, SOH MedAPE(raw)=3.202% | val_score=-0.550074
+[stage2_soh] epoch 087 | VAL cls=0.9922, SOC MedAPE(raw)=6.233%, SOH MedAPE(raw)=3.153% | TEST cls=0.9000, SOC MedAPE(raw)=5.970%, SOH MedAPE(raw)=2.795% | val_score=-0.517326
+[stage2_soh] epoch 088 | VAL cls=0.9922, SOC MedAPE(raw)=6.316%, SOH MedAPE(raw)=3.272% | TEST cls=0.9000, SOC MedAPE(raw)=5.907%, SOH MedAPE(raw)=3.070% | val_score=-0.509869
+[stage2_soh] epoch 089 | VAL cls=0.9922, SOC MedAPE(raw)=6.424%, SOH MedAPE(raw)=3.376% | TEST cls=0.9000, SOC MedAPE(raw)=5.915%, SOH MedAPE(raw)=2.967% | val_score=-0.526080
+[stage2_soh] epoch 090 | VAL cls=0.9922, SOC MedAPE(raw)=6.179%, SOH MedAPE(raw)=3.103% | TEST cls=0.9000, SOC MedAPE(raw)=6.075%, SOH MedAPE(raw)=2.814% | val_score=-0.495439
+[stage2_soh] epoch 091 | VAL cls=0.9922, SOC MedAPE(raw)=6.090%, SOH MedAPE(raw)=3.487% | TEST cls=0.9000, SOC MedAPE(raw)=5.973%, SOH MedAPE(raw)=2.848% | val_score=-0.520223
+[stage2_soh] epoch 092 | VAL cls=0.9922, SOC MedAPE(raw)=6.175%, SOH MedAPE(raw)=3.142% | TEST cls=0.9000, SOC MedAPE(raw)=5.890%, SOH MedAPE(raw)=2.813% | val_score=-0.500119
+[stage2_soh] epoch 093 | VAL cls=0.9922, SOC MedAPE(raw)=6.522%, SOH MedAPE(raw)=3.187% | TEST cls=0.9000, SOC MedAPE(raw)=5.956%, SOH MedAPE(raw)=2.978% | val_score=-0.512743
+[stage2_soh] epoch 094 | VAL cls=0.9922, SOC MedAPE(raw)=6.828%, SOH MedAPE(raw)=3.153% | TEST cls=0.9000, SOC MedAPE(raw)=6.263%, SOH MedAPE(raw)=2.860% | val_score=-0.517243
+[stage2_soh] epoch 095 | VAL cls=0.9922, SOC MedAPE(raw)=6.742%, SOH MedAPE(raw)=3.472% | TEST cls=0.9000, SOC MedAPE(raw)=6.008%, SOH MedAPE(raw)=2.764% | val_score=-0.543505
+[stage2_soh] epoch 096 | VAL cls=0.9922, SOC MedAPE(raw)=6.634%, SOH MedAPE(raw)=3.034% | TEST cls=0.9000, SOC MedAPE(raw)=6.135%, SOH MedAPE(raw)=2.798% | val_score=-0.491327
+[stage2_soh] epoch 097 | VAL cls=0.9922, SOC MedAPE(raw)=6.721%, SOH MedAPE(raw)=3.082% | TEST cls=0.9000, SOC MedAPE(raw)=5.936%, SOH MedAPE(raw)=2.917% | val_score=-0.485983
+[stage2_soh] epoch 098 | VAL cls=0.9922, SOC MedAPE(raw)=6.267%, SOH MedAPE(raw)=2.961% | TEST cls=0.9000, SOC MedAPE(raw)=6.022%, SOH MedAPE(raw)=2.849% | val_score=-0.501667
+[stage2_soh] epoch 099 | VAL cls=0.9922, SOC MedAPE(raw)=6.459%, SOH MedAPE(raw)=3.525% | TEST cls=0.9000, SOC MedAPE(raw)=5.911%, SOH MedAPE(raw)=2.901% | val_score=-0.545712
+[stage2_soh] epoch 100 | VAL cls=0.9922, SOC MedAPE(raw)=6.409%, SOH MedAPE(raw)=3.486% | TEST cls=0.9000, SOC MedAPE(raw)=6.240%, SOH MedAPE(raw)=3.077% | val_score=-0.537467
+[stage2_soh] epoch 101 | VAL cls=0.9922, SOC MedAPE(raw)=6.760%, SOH MedAPE(raw)=3.614% | TEST cls=0.9000, SOC MedAPE(raw)=6.293%, SOH MedAPE(raw)=2.996% | val_score=-0.524981
+[stage2_soh] epoch 102 | VAL cls=0.9922, SOC MedAPE(raw)=6.138%, SOH MedAPE(raw)=2.873% | TEST cls=0.9000, SOC MedAPE(raw)=6.024%, SOH MedAPE(raw)=2.865% | val_score=-0.511759
+[stage2_soh] epoch 103 | VAL cls=0.9922, SOC MedAPE(raw)=6.597%, SOH MedAPE(raw)=3.126% | TEST cls=0.9000, SOC MedAPE(raw)=5.896%, SOH MedAPE(raw)=2.824% | val_score=-0.504607
+[stage2_soh] epoch 104 | VAL cls=0.9922, SOC MedAPE(raw)=6.330%, SOH MedAPE(raw)=3.186% | TEST cls=0.9000, SOC MedAPE(raw)=6.196%, SOH MedAPE(raw)=2.849% | val_score=-0.503009
+[stage2_soh] epoch 105 | VAL cls=0.9922, SOC MedAPE(raw)=6.888%, SOH MedAPE(raw)=3.529% | TEST cls=0.9000, SOC MedAPE(raw)=5.982%, SOH MedAPE(raw)=3.071% | val_score=-0.542102
+[stage2_soh] epoch 106 | VAL cls=0.9922, SOC MedAPE(raw)=6.736%, SOH MedAPE(raw)=3.500% | TEST cls=0.9000, SOC MedAPE(raw)=6.200%, SOH MedAPE(raw)=2.944% | val_score=-0.520926
+[stage2_soh] epoch 107 | VAL cls=0.9922, SOC MedAPE(raw)=6.522%, SOH MedAPE(raw)=3.273% | TEST cls=0.9000, SOC MedAPE(raw)=6.010%, SOH MedAPE(raw)=2.868% | val_score=-0.510675
+[stage2_soh] epoch 108 | VAL cls=0.9922, SOC MedAPE(raw)=6.329%, SOH MedAPE(raw)=3.424% | TEST cls=0.9000, SOC MedAPE(raw)=6.126%, SOH MedAPE(raw)=2.955% | val_score=-0.522623
+[stage2_soh] epoch 109 | VAL cls=0.9922, SOC MedAPE(raw)=6.511%, SOH MedAPE(raw)=3.589% | TEST cls=0.9000, SOC MedAPE(raw)=6.007%, SOH MedAPE(raw)=2.945% | val_score=-0.544892
+[stage2_soh] epoch 110 | VAL cls=0.9922, SOC MedAPE(raw)=6.646%, SOH MedAPE(raw)=3.409% | TEST cls=0.9000, SOC MedAPE(raw)=5.946%, SOH MedAPE(raw)=2.852% | val_score=-0.524922
+[stage2_soh] epoch 111 | VAL cls=0.9922, SOC MedAPE(raw)=6.853%, SOH MedAPE(raw)=3.241% | TEST cls=0.9000, SOC MedAPE(raw)=6.025%, SOH MedAPE(raw)=2.995% | val_score=-0.538519
+[stage2_soh] epoch 112 | VAL cls=0.9922, SOC MedAPE(raw)=6.365%, SOH MedAPE(raw)=3.449% | TEST cls=0.9000, SOC MedAPE(raw)=6.286%, SOH MedAPE(raw)=2.907% | val_score=-0.527956
+[stage2_soh] epoch 113 | VAL cls=0.9922, SOC MedAPE(raw)=6.445%, SOH MedAPE(raw)=2.798% | TEST cls=0.9000, SOC MedAPE(raw)=6.099%, SOH MedAPE(raw)=2.850% | val_score=-0.511622
+[stage2_soh] epoch 114 | VAL cls=0.9922, SOC MedAPE(raw)=6.394%, SOH MedAPE(raw)=3.111% | TEST cls=0.9000, SOC MedAPE(raw)=5.949%, SOH MedAPE(raw)=2.859% | val_score=-0.517625
+[stage2_soh] epoch 115 | VAL cls=0.9922, SOC MedAPE(raw)=6.552%, SOH MedAPE(raw)=3.743% | TEST cls=0.9000, SOC MedAPE(raw)=5.964%, SOH MedAPE(raw)=2.937% | val_score=-0.540085
+[stage2_soh] epoch 116 | VAL cls=0.9922, SOC MedAPE(raw)=6.113%, SOH MedAPE(raw)=3.387% | TEST cls=0.9000, SOC MedAPE(raw)=5.936%, SOH MedAPE(raw)=3.037% | val_score=-0.523610
+[stage2_soh] epoch 117 | VAL cls=0.9922, SOC MedAPE(raw)=6.528%, SOH MedAPE(raw)=3.365% | TEST cls=0.9000, SOC MedAPE(raw)=5.959%, SOH MedAPE(raw)=2.946% | val_score=-0.505511
+[stage2_soh] epoch 118 | VAL cls=0.9922, SOC MedAPE(raw)=6.647%, SOH MedAPE(raw)=3.150% | TEST cls=0.9000, SOC MedAPE(raw)=5.942%, SOH MedAPE(raw)=2.894% | val_score=-0.491243
+[stage2_soh] epoch 119 | VAL cls=0.9922, SOC MedAPE(raw)=6.503%, SOH MedAPE(raw)=3.127% | TEST cls=0.9000, SOC MedAPE(raw)=5.941%, SOH MedAPE(raw)=2.891% | val_score=-0.509362
+[stage2_soh] epoch 120 | VAL cls=0.9922, SOC MedAPE(raw)=6.438%, SOH MedAPE(raw)=3.262% | TEST cls=0.9000, SOC MedAPE(raw)=6.090%, SOH MedAPE(raw)=2.871% | val_score=-0.515876
+[stage2_soh] epoch 121 | VAL cls=0.9922, SOC MedAPE(raw)=6.534%, SOH MedAPE(raw)=3.628% | TEST cls=0.9000, SOC MedAPE(raw)=6.041%, SOH MedAPE(raw)=2.693% | val_score=-0.535646
+[stage2_soh] epoch 122 | VAL cls=0.9922, SOC MedAPE(raw)=6.463%, SOH MedAPE(raw)=3.301% | TEST cls=0.9000, SOC MedAPE(raw)=5.962%, SOH MedAPE(raw)=2.892% | val_score=-0.500209
+[stage2_soh] epoch 123 | VAL cls=0.9922, SOC MedAPE(raw)=6.104%, SOH MedAPE(raw)=3.331% | TEST cls=0.9000, SOC MedAPE(raw)=5.998%, SOH MedAPE(raw)=2.923% | val_score=-0.525955
+[stage2_soh] epoch 124 | VAL cls=0.9922, SOC MedAPE(raw)=6.508%, SOH MedAPE(raw)=3.224% | TEST cls=0.9000, SOC MedAPE(raw)=5.986%, SOH MedAPE(raw)=2.907% | val_score=-0.501350
+[stage2_soh] epoch 125 | VAL cls=0.9922, SOC MedAPE(raw)=6.047%, SOH MedAPE(raw)=3.326% | TEST cls=0.9000, SOC MedAPE(raw)=6.098%, SOH MedAPE(raw)=2.859% | val_score=-0.535287
+[stage2_soh] epoch 126 | VAL cls=0.9922, SOC MedAPE(raw)=6.574%, SOH MedAPE(raw)=3.300% | TEST cls=0.9000, SOC MedAPE(raw)=6.127%, SOH MedAPE(raw)=2.769% | val_score=-0.530681
+[stage2_soh] epoch 127 | VAL cls=0.9922, SOC MedAPE(raw)=6.374%, SOH MedAPE(raw)=3.285% | TEST cls=0.9000, SOC MedAPE(raw)=6.058%, SOH MedAPE(raw)=2.807% | val_score=-0.539599
+[stage2_soh] epoch 128 | VAL cls=0.9922, SOC MedAPE(raw)=6.836%, SOH MedAPE(raw)=3.623% | TEST cls=0.9000, SOC MedAPE(raw)=5.876%, SOH MedAPE(raw)=2.806% | val_score=-0.530045
+[stage2_soh] epoch 129 | VAL cls=0.9922, SOC MedAPE(raw)=6.361%, SOH MedAPE(raw)=3.467% | TEST cls=0.9000, SOC MedAPE(raw)=5.878%, SOH MedAPE(raw)=3.160% | val_score=-0.517123
+[stage2_soh] epoch 130 | VAL cls=0.9922, SOC MedAPE(raw)=6.507%, SOH MedAPE(raw)=3.555% | TEST cls=0.9000, SOC MedAPE(raw)=6.115%, SOH MedAPE(raw)=3.085% | val_score=-0.529078
+[stage2_soh] epoch 131 | VAL cls=0.9922, SOC MedAPE(raw)=6.300%, SOH MedAPE(raw)=3.062% | TEST cls=0.9000, SOC MedAPE(raw)=5.977%, SOH MedAPE(raw)=2.826% | val_score=-0.505983
+[stage2_soh] epoch 132 | VAL cls=0.9922, SOC MedAPE(raw)=6.319%, SOH MedAPE(raw)=3.634% | TEST cls=0.9000, SOC MedAPE(raw)=5.952%, SOH MedAPE(raw)=3.034% | val_score=-0.521687
+[stage2_soh] epoch 133 | VAL cls=0.9922, SOC MedAPE(raw)=6.922%, SOH MedAPE(raw)=2.953% | TEST cls=0.9000, SOC MedAPE(raw)=6.019%, SOH MedAPE(raw)=2.892% | val_score=-0.499923
+[stage2_soh] epoch 134 | VAL cls=0.9922, SOC MedAPE(raw)=6.688%, SOH MedAPE(raw)=3.053% | TEST cls=0.9000, SOC MedAPE(raw)=6.047%, SOH MedAPE(raw)=2.890% | val_score=-0.520794
+[stage2_soh] epoch 135 | VAL cls=0.9922, SOC MedAPE(raw)=6.435%, SOH MedAPE(raw)=3.515% | TEST cls=0.9000, SOC MedAPE(raw)=5.978%, SOH MedAPE(raw)=2.989% | val_score=-0.529029
+[stage2_soh] epoch 136 | VAL cls=0.9922, SOC MedAPE(raw)=6.351%, SOH MedAPE(raw)=3.410% | TEST cls=0.9000, SOC MedAPE(raw)=6.174%, SOH MedAPE(raw)=2.798% | val_score=-0.505796
+[stage2_soh] epoch 137 | VAL cls=0.9922, SOC MedAPE(raw)=6.870%, SOH MedAPE(raw)=3.239% | TEST cls=0.9000, SOC MedAPE(raw)=6.100%, SOH MedAPE(raw)=2.967% | val_score=-0.518265
+[stage2_soh] epoch 138 | VAL cls=0.9922, SOC MedAPE(raw)=6.337%, SOH MedAPE(raw)=3.271% | TEST cls=0.9000, SOC MedAPE(raw)=6.015%, SOH MedAPE(raw)=2.867% | val_score=-0.492276
+[stage2_soh] epoch 139 | VAL cls=0.9922, SOC MedAPE(raw)=6.229%, SOH MedAPE(raw)=3.344% | TEST cls=0.9000, SOC MedAPE(raw)=6.149%, SOH MedAPE(raw)=2.872% | val_score=-0.504515
+[stage2_soh] epoch 140 | VAL cls=0.9922, SOC MedAPE(raw)=6.228%, SOH MedAPE(raw)=3.314% | TEST cls=0.9000, SOC MedAPE(raw)=5.980%, SOH MedAPE(raw)=2.799% | val_score=-0.513063
+[stage2_soh] epoch 141 | VAL cls=0.9922, SOC MedAPE(raw)=6.629%, SOH MedAPE(raw)=3.189% | TEST cls=0.9000, SOC MedAPE(raw)=6.064%, SOH MedAPE(raw)=2.918% | val_score=-0.488385
+[stage2_soh] epoch 142 | VAL cls=0.9922, SOC MedAPE(raw)=6.783%, SOH MedAPE(raw)=3.358% | TEST cls=0.9000, SOC MedAPE(raw)=6.092%, SOH MedAPE(raw)=2.880% | val_score=-0.515777
+[stage2_soh] epoch 143 | VAL cls=0.9922, SOC MedAPE(raw)=6.399%, SOH MedAPE(raw)=3.082% | TEST cls=0.9000, SOC MedAPE(raw)=6.061%, SOH MedAPE(raw)=2.941% | val_score=-0.493037
+[stage2_soh] epoch 144 | VAL cls=0.9922, SOC MedAPE(raw)=6.855%, SOH MedAPE(raw)=3.349% | TEST cls=0.9000, SOC MedAPE(raw)=5.887%, SOH MedAPE(raw)=2.877% | val_score=-0.503801
+[stage2_soh] epoch 145 | VAL cls=0.9922, SOC MedAPE(raw)=6.527%, SOH MedAPE(raw)=3.003% | TEST cls=0.9000, SOC MedAPE(raw)=6.078%, SOH MedAPE(raw)=2.932% | val_score=-0.515259
+[stage2_soh] epoch 146 | VAL cls=0.9922, SOC MedAPE(raw)=7.018%, SOH MedAPE(raw)=3.356% | TEST cls=0.9000, SOC MedAPE(raw)=6.034%, SOH MedAPE(raw)=2.872% | val_score=-0.526242
+[stage2_soh] epoch 147 | VAL cls=0.9922, SOC MedAPE(raw)=6.613%, SOH MedAPE(raw)=3.494% | TEST cls=0.9000, SOC MedAPE(raw)=6.063%, SOH MedAPE(raw)=2.862% | val_score=-0.504680
+[stage2_soh] epoch 148 | VAL cls=0.9922, SOC MedAPE(raw)=6.556%, SOH MedAPE(raw)=3.017% | TEST cls=0.9000, SOC MedAPE(raw)=5.979%, SOH MedAPE(raw)=2.823% | val_score=-0.496351
+[stage2_soh] epoch 149 | VAL cls=0.9922, SOC MedAPE(raw)=6.518%, SOH MedAPE(raw)=2.981% | TEST cls=0.9000, SOC MedAPE(raw)=6.131%, SOH MedAPE(raw)=2.942% | val_score=-0.508599
+[stage2_soh] epoch 150 | VAL cls=0.9922, SOC MedAPE(raw)=6.379%, SOH MedAPE(raw)=3.258% | TEST cls=0.9000, SOC MedAPE(raw)=5.983%, SOH MedAPE(raw)=2.819% | val_score=-0.521903
+[stage2_soh] epoch 151 | VAL cls=0.9922, SOC MedAPE(raw)=6.684%, SOH MedAPE(raw)=3.129% | TEST cls=0.9000, SOC MedAPE(raw)=5.854%, SOH MedAPE(raw)=2.758% | val_score=-0.493236
+[stage2_soh] epoch 152 | VAL cls=0.9922, SOC MedAPE(raw)=6.794%, SOH MedAPE(raw)=3.466% | TEST cls=0.9000, SOC MedAPE(raw)=6.042%, SOH MedAPE(raw)=2.955% | val_score=-0.528977
+[stage2_soh] epoch 153 | VAL cls=0.9922, SOC MedAPE(raw)=6.332%, SOH MedAPE(raw)=3.604% | TEST cls=0.9000, SOC MedAPE(raw)=5.992%, SOH MedAPE(raw)=3.146% | val_score=-0.544271
+[stage2_soh] epoch 154 | VAL cls=0.9922, SOC MedAPE(raw)=6.462%, SOH MedAPE(raw)=2.897% | TEST cls=0.9000, SOC MedAPE(raw)=5.881%, SOH MedAPE(raw)=2.827% | val_score=-0.489069
+[stage2_soh] epoch 155 | VAL cls=0.9922, SOC MedAPE(raw)=6.045%, SOH MedAPE(raw)=3.055% | TEST cls=0.9000, SOC MedAPE(raw)=5.942%, SOH MedAPE(raw)=3.010% | val_score=-0.496143
+[stage2_soh] epoch 156 | VAL cls=0.9922, SOC MedAPE(raw)=6.528%, SOH MedAPE(raw)=3.146% | TEST cls=0.9000, SOC MedAPE(raw)=5.901%, SOH MedAPE(raw)=2.794% | val_score=-0.505983
+[stage2_soh] epoch 157 | VAL cls=0.9922, SOC MedAPE(raw)=6.795%, SOH MedAPE(raw)=3.181% | TEST cls=0.9000, SOC MedAPE(raw)=6.037%, SOH MedAPE(raw)=2.849% | val_score=-0.489831
+[stage2_soh] epoch 158 | VAL cls=0.9922, SOC MedAPE(raw)=7.116%, SOH MedAPE(raw)=3.764% | TEST cls=0.9000, SOC MedAPE(raw)=6.077%, SOH MedAPE(raw)=3.010% | val_score=-0.533767
+[stage2_soh] epoch 159 | VAL cls=0.9922, SOC MedAPE(raw)=6.595%, SOH MedAPE(raw)=3.399% | TEST cls=0.9000, SOC MedAPE(raw)=6.179%, SOH MedAPE(raw)=3.081% | val_score=-0.533440
+[stage2_soh] epoch 160 | VAL cls=0.9922, SOC MedAPE(raw)=6.575%, SOH MedAPE(raw)=3.277% | TEST cls=0.9000, SOC MedAPE(raw)=6.074%, SOH MedAPE(raw)=2.891% | val_score=-0.518426
+[stage2_soh] epoch 161 | VAL cls=0.9922, SOC MedAPE(raw)=6.247%, SOH MedAPE(raw)=3.026% | TEST cls=0.9000, SOC MedAPE(raw)=6.197%, SOH MedAPE(raw)=2.768% | val_score=-0.507051
+[stage2_soh] epoch 162 | VAL cls=0.9922, SOC MedAPE(raw)=6.667%, SOH MedAPE(raw)=3.210% | TEST cls=0.9000, SOC MedAPE(raw)=6.128%, SOH MedAPE(raw)=3.063% | val_score=-0.516740
+[stage2_soh] epoch 163 | VAL cls=0.9922, SOC MedAPE(raw)=6.487%, SOH MedAPE(raw)=2.815% | TEST cls=0.9000, SOC MedAPE(raw)=5.989%, SOH MedAPE(raw)=2.827% | val_score=-0.495061
+[stage2_soh] epoch 164 | VAL cls=0.9922, SOC MedAPE(raw)=6.923%, SOH MedAPE(raw)=3.192% | TEST cls=0.9000, SOC MedAPE(raw)=5.933%, SOH MedAPE(raw)=2.997% | val_score=-0.504422
+[stage2_soh] epoch 165 | VAL cls=0.9922, SOC MedAPE(raw)=6.526%, SOH MedAPE(raw)=3.238% | TEST cls=0.9000, SOC MedAPE(raw)=5.951%, SOH MedAPE(raw)=2.952% | val_score=-0.539328
+[stage2_soh] epoch 166 | VAL cls=0.9922, SOC MedAPE(raw)=6.167%, SOH MedAPE(raw)=3.431% | TEST cls=0.9000, SOC MedAPE(raw)=6.319%, SOH MedAPE(raw)=2.970% | val_score=-0.524923
+[stage2_soh] epoch 167 | VAL cls=0.9922, SOC MedAPE(raw)=6.701%, SOH MedAPE(raw)=3.183% | TEST cls=0.9000, SOC MedAPE(raw)=6.111%, SOH MedAPE(raw)=2.999% | val_score=-0.502180
+[stage2_soh] epoch 168 | VAL cls=0.9922, SOC MedAPE(raw)=6.661%, SOH MedAPE(raw)=3.516% | TEST cls=0.9000, SOC MedAPE(raw)=5.914%, SOH MedAPE(raw)=3.000% | val_score=-0.523765
+[stage2_soh] epoch 169 | VAL cls=0.9922, SOC MedAPE(raw)=6.317%, SOH MedAPE(raw)=3.406% | TEST cls=0.9000, SOC MedAPE(raw)=5.968%, SOH MedAPE(raw)=2.899% | val_score=-0.496396
+[stage2_soh] epoch 170 | VAL cls=0.9922, SOC MedAPE(raw)=6.817%, SOH MedAPE(raw)=3.593% | TEST cls=0.9000, SOC MedAPE(raw)=6.117%, SOH MedAPE(raw)=2.977% | val_score=-0.505720
+[stage2_soh] epoch 171 | VAL cls=0.9922, SOC MedAPE(raw)=6.248%, SOH MedAPE(raw)=3.389% | TEST cls=0.9000, SOC MedAPE(raw)=6.168%, SOH MedAPE(raw)=2.829% | val_score=-0.511192
+[stage2_soh] epoch 172 | VAL cls=0.9922, SOC MedAPE(raw)=6.147%, SOH MedAPE(raw)=3.331% | TEST cls=0.9000, SOC MedAPE(raw)=5.896%, SOH MedAPE(raw)=2.928% | val_score=-0.529972
+[stage2_soh] epoch 173 | VAL cls=0.9922, SOC MedAPE(raw)=6.323%, SOH MedAPE(raw)=3.556% | TEST cls=0.9000, SOC MedAPE(raw)=5.961%, SOH MedAPE(raw)=2.918% | val_score=-0.503043
+[stage2_soh] epoch 174 | VAL cls=0.9922, SOC MedAPE(raw)=6.513%, SOH MedAPE(raw)=3.302% | TEST cls=0.9000, SOC MedAPE(raw)=5.963%, SOH MedAPE(raw)=2.847% | val_score=-0.509050
+[stage2_soh] epoch 175 | VAL cls=0.9922, SOC MedAPE(raw)=6.831%, SOH MedAPE(raw)=3.092% | TEST cls=0.9000, SOC MedAPE(raw)=6.061%, SOH MedAPE(raw)=2.957% | val_score=-0.494823
+[stage2_soh] epoch 176 | VAL cls=0.9922, SOC MedAPE(raw)=6.707%, SOH MedAPE(raw)=3.458% | TEST cls=0.9000, SOC MedAPE(raw)=6.016%, SOH MedAPE(raw)=3.119% | val_score=-0.519304
+[stage2_soh] epoch 177 | VAL cls=0.9922, SOC MedAPE(raw)=6.740%, SOH MedAPE(raw)=3.370% | TEST cls=0.9000, SOC MedAPE(raw)=6.035%, SOH MedAPE(raw)=2.952% | val_score=-0.521796
+[stage2_soh] epoch 178 | VAL cls=0.9922, SOC MedAPE(raw)=6.491%, SOH MedAPE(raw)=3.426% | TEST cls=0.9000, SOC MedAPE(raw)=6.096%, SOH MedAPE(raw)=3.000% | val_score=-0.520349
+[stage2_soh] epoch 179 | VAL cls=0.9922, SOC MedAPE(raw)=6.359%, SOH MedAPE(raw)=3.482% | TEST cls=0.9000, SOC MedAPE(raw)=6.152%, SOH MedAPE(raw)=2.863% | val_score=-0.515150
+[stage2_soh] epoch 180 | VAL cls=0.9922, SOC MedAPE(raw)=6.312%, SOH MedAPE(raw)=3.343% | TEST cls=0.9000, SOC MedAPE(raw)=5.942%, SOH MedAPE(raw)=2.964% | val_score=-0.527971
+[stage2_soh] epoch 181 | VAL cls=0.9922, SOC MedAPE(raw)=6.468%, SOH MedAPE(raw)=3.501% | TEST cls=0.9000, SOC MedAPE(raw)=6.070%, SOH MedAPE(raw)=2.985% | val_score=-0.521738
+[stage2_soh] epoch 182 | VAL cls=0.9922, SOC MedAPE(raw)=6.382%, SOH MedAPE(raw)=3.374% | TEST cls=0.9000, SOC MedAPE(raw)=6.119%, SOH MedAPE(raw)=3.119% | val_score=-0.529457
+[stage2_soh] epoch 183 | VAL cls=0.9922, SOC MedAPE(raw)=6.315%, SOH MedAPE(raw)=3.389% | TEST cls=0.9000, SOC MedAPE(raw)=6.175%, SOH MedAPE(raw)=2.996% | val_score=-0.519269
+[stage2_soh] epoch 184 | VAL cls=0.9922, SOC MedAPE(raw)=6.441%, SOH MedAPE(raw)=3.192% | TEST cls=0.9000, SOC MedAPE(raw)=6.088%, SOH MedAPE(raw)=2.868% | val_score=-0.514504
+[stage2_soh] epoch 185 | VAL cls=0.9922, SOC MedAPE(raw)=6.752%, SOH MedAPE(raw)=3.023% | TEST cls=0.9000, SOC MedAPE(raw)=6.275%, SOH MedAPE(raw)=2.856% | val_score=-0.508189
+[stage2_soh] epoch 186 | VAL cls=0.9922, SOC MedAPE(raw)=6.121%, SOH MedAPE(raw)=3.367% | TEST cls=0.9000, SOC MedAPE(raw)=6.146%, SOH MedAPE(raw)=3.039% | val_score=-0.535087
+[stage2_soh] epoch 187 | VAL cls=0.9922, SOC MedAPE(raw)=6.677%, SOH MedAPE(raw)=3.288% | TEST cls=0.9000, SOC MedAPE(raw)=6.081%, SOH MedAPE(raw)=2.851% | val_score=-0.500496
+[stage2_soh] epoch 188 | VAL cls=0.9922, SOC MedAPE(raw)=6.737%, SOH MedAPE(raw)=3.769% | TEST cls=0.9000, SOC MedAPE(raw)=6.126%, SOH MedAPE(raw)=3.247% | val_score=-0.546425
+[stage2_soh] epoch 189 | VAL cls=0.9922, SOC MedAPE(raw)=6.525%, SOH MedAPE(raw)=3.698% | TEST cls=0.9000, SOC MedAPE(raw)=5.967%, SOH MedAPE(raw)=3.025% | val_score=-0.514883
+[stage2_soh] epoch 190 | VAL cls=0.9922, SOC MedAPE(raw)=6.917%, SOH MedAPE(raw)=3.714% | TEST cls=0.9000, SOC MedAPE(raw)=5.946%, SOH MedAPE(raw)=2.835% | val_score=-0.520736
+[stage2_soh] epoch 191 | VAL cls=0.9922, SOC MedAPE(raw)=6.451%, SOH MedAPE(raw)=3.325% | TEST cls=0.9000, SOC MedAPE(raw)=6.064%, SOH MedAPE(raw)=2.904% | val_score=-0.494138
+[stage2_soh] epoch 192 | VAL cls=0.9922, SOC MedAPE(raw)=6.579%, SOH MedAPE(raw)=3.351% | TEST cls=0.9000, SOC MedAPE(raw)=5.998%, SOH MedAPE(raw)=3.031% | val_score=-0.529164
+[stage2_soh] epoch 193 | VAL cls=0.9922, SOC MedAPE(raw)=6.349%, SOH MedAPE(raw)=3.466% | TEST cls=0.9000, SOC MedAPE(raw)=6.187%, SOH MedAPE(raw)=2.886% | val_score=-0.543220
+[stage2_soh] epoch 194 | VAL cls=0.9922, SOC MedAPE(raw)=6.112%, SOH MedAPE(raw)=3.334% | TEST cls=0.9000, SOC MedAPE(raw)=6.131%, SOH MedAPE(raw)=2.857% | val_score=-0.504057
+[stage2_soh] epoch 195 | VAL cls=0.9922, SOC MedAPE(raw)=6.878%, SOH MedAPE(raw)=3.295% | TEST cls=0.9000, SOC MedAPE(raw)=6.135%, SOH MedAPE(raw)=3.001% | val_score=-0.519722
+[stage2_soh] epoch 196 | VAL cls=0.9922, SOC MedAPE(raw)=6.484%, SOH MedAPE(raw)=3.377% | TEST cls=0.9000, SOC MedAPE(raw)=5.966%, SOH MedAPE(raw)=2.994% | val_score=-0.519611
+[stage2_soh] epoch 197 | VAL cls=0.9922, SOC MedAPE(raw)=6.326%, SOH MedAPE(raw)=3.160% | TEST cls=0.9000, SOC MedAPE(raw)=5.846%, SOH MedAPE(raw)=2.955% | val_score=-0.514574
+[stage2_soh] epoch 198 | VAL cls=0.9922, SOC MedAPE(raw)=6.262%, SOH MedAPE(raw)=3.539% | TEST cls=0.9000, SOC MedAPE(raw)=5.951%, SOH MedAPE(raw)=2.906% | val_score=-0.523800
+[stage2_soh] epoch 199 | VAL cls=0.9922, SOC MedAPE(raw)=6.410%, SOH MedAPE(raw)=3.517% | TEST cls=0.9000, SOC MedAPE(raw)=6.122%, SOH MedAPE(raw)=3.007% | val_score=-0.501640
+[stage2_soh] Loaded BEST checkpoint from epoch=28 | score=-0.47067374071592427
+[finetune] epoch 000 | VAL cls=0.9275, SOC MedAPE(raw)=7.415%, SOH MedAPE(raw)=3.841% | TEST cls=0.8938, SOC MedAPE(raw)=6.277%, SOH MedAPE(raw)=2.849% | val_score=0.828833
+[finetune] epoch 001 | VAL cls=0.9725, SOC MedAPE(raw)=7.254%, SOH MedAPE(raw)=3.351% | TEST cls=0.9023, SOC MedAPE(raw)=6.031%, SOH MedAPE(raw)=3.033% | val_score=0.886038
+[finetune] epoch 002 | VAL cls=0.9667, SOC MedAPE(raw)=6.919%, SOH MedAPE(raw)=3.121% | TEST cls=0.8805, SOC MedAPE(raw)=6.065%, SOH MedAPE(raw)=2.578% | val_score=0.878100
+[finetune] epoch 003 | VAL cls=0.9490, SOC MedAPE(raw)=7.404%, SOH MedAPE(raw)=3.111% | TEST cls=0.8672, SOC MedAPE(raw)=6.649%, SOH MedAPE(raw)=2.747% | val_score=0.857892
+[finetune] epoch 004 | VAL cls=0.8902, SOC MedAPE(raw)=8.708%, SOH MedAPE(raw)=3.662% | TEST cls=0.8313, SOC MedAPE(raw)=6.916%, SOH MedAPE(raw)=2.877% | val_score=0.781922
+[finetune] epoch 005 | VAL cls=0.9765, SOC MedAPE(raw)=9.273%, SOH MedAPE(raw)=2.680% | TEST cls=0.8820, SOC MedAPE(raw)=7.110%, SOH MedAPE(raw)=2.740% | val_score=0.889343
+[finetune] epoch 006 | VAL cls=0.9412, SOC MedAPE(raw)=8.338%, SOH MedAPE(raw)=3.505% | TEST cls=0.8438, SOC MedAPE(raw)=7.126%, SOH MedAPE(raw)=3.378% | val_score=0.845333
+[finetune] epoch 007 | VAL cls=0.9490, SOC MedAPE(raw)=7.714%, SOH MedAPE(raw)=3.453% | TEST cls=0.8727, SOC MedAPE(raw)=6.417%, SOH MedAPE(raw)=2.792% | val_score=0.858047
+[finetune] epoch 008 | VAL cls=0.9569, SOC MedAPE(raw)=7.296%, SOH MedAPE(raw)=3.306% | TEST cls=0.8938, SOC MedAPE(raw)=6.494%, SOH MedAPE(raw)=2.715% | val_score=0.872346
+[finetune] epoch 009 | VAL cls=0.9745, SOC MedAPE(raw)=7.105%, SOH MedAPE(raw)=3.241% | TEST cls=0.9008, SOC MedAPE(raw)=6.229%, SOH MedAPE(raw)=2.717% | val_score=0.888935
+[finetune] epoch 010 | VAL cls=0.9667, SOC MedAPE(raw)=8.415%, SOH MedAPE(raw)=3.466% | TEST cls=0.9102, SOC MedAPE(raw)=6.161%, SOH MedAPE(raw)=2.656% | val_score=0.876161
+[finetune] epoch 011 | VAL cls=0.9412, SOC MedAPE(raw)=8.092%, SOH MedAPE(raw)=3.468% | TEST cls=0.8805, SOC MedAPE(raw)=6.797%, SOH MedAPE(raw)=3.082% | val_score=0.841252
+[finetune] epoch 012 | VAL cls=0.9510, SOC MedAPE(raw)=8.489%, SOH MedAPE(raw)=3.324% | TEST cls=0.8922, SOC MedAPE(raw)=6.758%, SOH MedAPE(raw)=2.764% | val_score=0.858622
+[finetune] epoch 013 | VAL cls=0.9412, SOC MedAPE(raw)=7.280%, SOH MedAPE(raw)=3.230% | TEST cls=0.8938, SOC MedAPE(raw)=6.861%, SOH MedAPE(raw)=2.731% | val_score=0.846898
+[finetune] epoch 014 | VAL cls=0.9647, SOC MedAPE(raw)=7.294%, SOH MedAPE(raw)=2.715% | TEST cls=0.8781, SOC MedAPE(raw)=6.465%, SOH MedAPE(raw)=2.759% | val_score=0.883840
+[finetune] epoch 015 | VAL cls=0.9725, SOC MedAPE(raw)=7.521%, SOH MedAPE(raw)=3.337% | TEST cls=0.8891, SOC MedAPE(raw)=6.481%, SOH MedAPE(raw)=3.016% | val_score=0.886181
+[finetune] epoch 016 | VAL cls=0.9608, SOC MedAPE(raw)=8.168%, SOH MedAPE(raw)=3.715% | TEST cls=0.8844, SOC MedAPE(raw)=6.475%, SOH MedAPE(raw)=2.825% | val_score=0.865688
+[finetune] epoch 017 | VAL cls=0.9725, SOC MedAPE(raw)=6.744%, SOH MedAPE(raw)=3.294% | TEST cls=0.8852, SOC MedAPE(raw)=7.048%, SOH MedAPE(raw)=2.967% | val_score=0.887848
+[finetune] epoch 018 | VAL cls=0.9588, SOC MedAPE(raw)=7.714%, SOH MedAPE(raw)=3.358% | TEST cls=0.8930, SOC MedAPE(raw)=6.479%, SOH MedAPE(raw)=2.764% | val_score=0.870420
+[finetune] epoch 019 | VAL cls=0.9667, SOC MedAPE(raw)=7.540%, SOH MedAPE(raw)=2.677% | TEST cls=0.8797, SOC MedAPE(raw)=5.883%, SOH MedAPE(raw)=2.636% | val_score=0.884173
+[finetune] epoch 020 | VAL cls=0.9373, SOC MedAPE(raw)=7.362%, SOH MedAPE(raw)=3.200% | TEST cls=0.8906, SOC MedAPE(raw)=6.268%, SOH MedAPE(raw)=3.022% | val_score=0.848239
+[finetune] epoch 021 | VAL cls=0.9490, SOC MedAPE(raw)=7.961%, SOH MedAPE(raw)=3.385% | TEST cls=0.8781, SOC MedAPE(raw)=6.194%, SOH MedAPE(raw)=2.878% | val_score=0.868359
+[finetune] epoch 022 | VAL cls=0.9706, SOC MedAPE(raw)=7.687%, SOH MedAPE(raw)=3.009% | TEST cls=0.8969, SOC MedAPE(raw)=6.107%, SOH MedAPE(raw)=2.604% | val_score=0.884856
+[finetune] epoch 023 | VAL cls=0.9608, SOC MedAPE(raw)=7.288%, SOH MedAPE(raw)=2.822% | TEST cls=0.8961, SOC MedAPE(raw)=5.951%, SOH MedAPE(raw)=2.742% | val_score=0.875251
+[finetune] epoch 024 | VAL cls=0.9588, SOC MedAPE(raw)=8.220%, SOH MedAPE(raw)=3.033% | TEST cls=0.8961, SOC MedAPE(raw)=6.271%, SOH MedAPE(raw)=2.786% | val_score=0.874448
+[finetune] epoch 025 | VAL cls=0.9686, SOC MedAPE(raw)=7.968%, SOH MedAPE(raw)=3.652% | TEST cls=0.8789, SOC MedAPE(raw)=6.938%, SOH MedAPE(raw)=3.098% | val_score=0.880157
+[finetune] epoch 026 | VAL cls=0.9314, SOC MedAPE(raw)=6.890%, SOH MedAPE(raw)=3.664% | TEST cls=0.8820, SOC MedAPE(raw)=6.280%, SOH MedAPE(raw)=2.695% | val_score=0.835458
+[finetune] epoch 027 | VAL cls=0.9333, SOC MedAPE(raw)=8.536%, SOH MedAPE(raw)=3.897% | TEST cls=0.8625, SOC MedAPE(raw)=6.970%, SOH MedAPE(raw)=3.126% | val_score=0.836945
+[finetune] epoch 028 | VAL cls=0.9275, SOC MedAPE(raw)=8.829%, SOH MedAPE(raw)=3.371% | TEST cls=0.8500, SOC MedAPE(raw)=6.573%, SOH MedAPE(raw)=2.868% | val_score=0.827526
+[finetune] epoch 029 | VAL cls=0.8902, SOC MedAPE(raw)=9.518%, SOH MedAPE(raw)=3.795% | TEST cls=0.8547, SOC MedAPE(raw)=6.886%, SOH MedAPE(raw)=3.494% | val_score=0.773841
+[finetune] Loaded BEST checkpoint from epoch=5 | score=0.8893431971357266
+[FINAL] Using BEST checkpoint from stage='finetune' | epoch=5 | score=0.8893431971357266
+
+[FINAL METRICS]
+final_stage: finetune
+val_cls_acc: 0.9764705882352941
+val_soc_rmse: 0.3284703818349863
+val_soc_mae: 0.23484240246607976
+val_soc_mape: 144.88564935166517
+val_soc_medape: 27.716314897451536
+val_soh_rmse: 0.5282576838127714
+val_soh_mae: 0.3588019291171804
+val_soh_mape: 116.09590832073314
+val_soh_medape: 40.49465638089434
+val_soc_rmse_raw: 7.309858939627505
+val_soc_mae_raw: 5.226239350653767
+val_soc_mape_raw: 13.48832957313234
+val_soc_medape_raw: 8.980533925370722
+val_soh_rmse_raw: 0.056048814337978016
+val_soh_mae_raw: 0.03806934253004612
+val_soh_mape_raw: 4.98784538202536
+val_soh_medape_raw: 2.6913049176527117
+test_cls_acc: 0.88203125
+test_soc_rmse: 0.4256679448404123
+test_soc_mae: 0.2535759403981501
+test_soc_mape: 129.9116937620973
+test_soc_medape: 23.87218669694435
+test_soh_rmse: 0.613030526808867
+test_soh_mae: 0.39176178839697967
+test_soh_mape: 198.64705000359734
+test_soh_medape: 45.3309393739835
+test_soc_rmse_raw: 9.472916902041161
+test_soc_mae_raw: 5.643140012925319
+test_soc_mape_raw: 14.129437112853958
+test_soc_medape_raw: 7.191795261536974
+test_soh_rmse_raw: 0.06504332115460722
+test_soh_mae_raw: 0.041566425658200123
+test_soh_mape_raw: 5.089771047961737
+test_soh_medape_raw: 2.6768742437691744
+n_train: 68163
+n_val: 510
+n_test: 1280
+num_classes: 8
+device: cpu
+elapsed_sec: 17715.943930864334
+
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/c_rate/C6_2p0_2p5C/C6_2p0_2p5C_summary.csv
+
+[SUMMARY]
+        config c_rate_indices    c_rates  ...  num_classes device   elapsed_sec
+0  C6_2p0_2p5C            4,5  2.0C,2.5C  ...            8    cpu  17715.943931
+
+[1 rows x 45 columns]

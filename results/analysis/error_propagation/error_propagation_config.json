@@ -1,0 +1,67 @@
+{
+  "data_root": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/data",
+  "exp_dir": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework",
+  "checkpoint_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/checkpoints/finetune/best.pt",
+  "pulse_list": [
+    30,
+    50,
+    70,
+    100,
+    300,
+    500,
+    700,
+    1000,
+    3000,
+    5000
+  ],
+  "u_start": 1,
+  "u_end": 41,
+  "drop_first_class": true,
+  "soc_col": "SOC",
+  "soh_col": "SOH",
+  "use_pt_as_feature": true,
+  "normalize_soc": true,
+  "zscore_normalize": true,
+  "batch_size": 512,
+  "seed": 42,
+  "counterfactual": {
+    "n_mc_soc": 500,
+    "n_mc_soh": 500,
+    "repeats": 1,
+    "base_seed": 42,
+    "E3_is_loaded_from_further_analysis": false,
+    "E3_is_sampled_on_site": true,
+    "further_analysis_rng_alignment": "restore torch RNG state captured immediately after model loading",
+    "soc_pairing": {
+      "E0_equals_E2": true,
+      "E1_equals_E3": true
+    }
+  },
+  "data_info": {
+    "num_classes": 8,
+    "classes": [
+      "LFP_35Ah",
+      "LFP_68Ah",
+      "LMO_10Ah",
+      "LMO_24Ah",
+      "LMO_25Ah",
+      "LMO_26Ah",
+      "NMC_15Ah",
+      "NMC_21Ah"
+    ],
+    "soc_norm": [
+      0.4008721740533721,
+      0.22254240698328046
+    ],
+    "soh_norm": [
+      0.8417944633210058,
+      0.10610127605421299
+    ],
+    "pt_norm": [
+      5.815328808808251,
+      1.6457671993101393
+    ],
+    "n_test": 1280,
+    "test_unique_ids": 128
+  }
+}

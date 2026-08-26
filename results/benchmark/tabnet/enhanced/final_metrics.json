@@ -1,0 +1,22 @@
+{
+  "model": "tabnet",
+  "setting": "enhanced",
+  "test_cls_acc": 0.8265625,
+  "test_material_acc": 0.87421875,
+  "test_soc_rmse_raw": 9.849480661141522,
+  "test_soc_mae_raw": 5.903109742818474,
+  "test_soc_medae_raw": 2.9922962554931622,
+  "test_soc_mape_raw": 16.64571044076302,
+  "test_soc_medape_raw": 9.094713700585846,
+  "test_soh_rmse_raw": 6.3250050189063565,
+  "test_soh_mae_raw": 4.802969694709148,
+  "test_soh_medae_raw": 3.7013548400878946,
+  "test_soh_mape_raw": 6.210071208395913,
+  "test_soh_medape_raw": 4.699637622812509,
+  "n_test": 1280,
+  "summary_only": true,
+  "classifier_checkpoint": "results/benchmark/tabnet/enhanced/model_classifier_baseline.zip",
+  "soc_checkpoint": "results/benchmark/tabnet/enhanced/model_soc_enhanced.zip",
+  "soh_checkpoint": "results/benchmark/tabnet/enhanced/model_soh_enhanced.zip",
+  "enhanced_hint_report": "{\"material_hint\": {\"target_accuracy\": 0.91875, \"train_accuracy\": 0.9187453205658668, \"test_accuracy\": 0.91875}, \"soc_hint_train\": {\"target_rmse\": 7.864401414996508, \"rmse\": 7.864401414996834, \"mae\": 6.286870563249805, \"mape\": 26.427368281070013, \"median_ape\": 14.519293648856028}, \"soc_hint_test\": {\"target_rmse\": 7.864401414996508, \"rmse\": 7.8644014159154425, \"mae\": 6.383310354838613, \"mape\": 22.609137045245927, \"median_ape\": 14.521579874709364}, \"feature_dims\": {\"base\": 42, \"soc_input\": 50, \"soh_input\": 51}}"
+}

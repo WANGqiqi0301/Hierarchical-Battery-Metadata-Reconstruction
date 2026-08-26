@@ -1,0 +1,35 @@
+{
+  "model": "tabnet",
+  "setting": "fair",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.8265625,
+    "soc_rmse": 11.642230349916208,
+    "soc_mae": 7.619546109999419,
+    "soc_mape": 20.62477445993226,
+    "soc_median_ape": 12.662886053866382,
+    "soh_rmse": 0.0834072808345363,
+    "soh_mae": 0.06277444375635519,
+    "soh_mape": 7.888909677637295,
+    "soh_median_ape": 5.2195757010461765,
+    "n_test": 1280
+  },
+  "n_train": 76131,
+  "n_test": 1280,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "summary_only": true,
+    "classifier_checkpoint": "results/benchmark/tabnet/fair/model_classifier.zip",
+    "soc_checkpoint": "results/benchmark/tabnet/fair/model_soc.zip",
+    "soh_checkpoint": "results/benchmark/tabnet/fair/model_soh.zip"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "n_mc_soc": 500,
+  "n_mc_soh": 500,
+  "n_train": 7689,
+  "n_val": 58,
+  "n_test": 64,
+  "num_classes": 8,
+  "test_predictions_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/test_predictions_per_sample.csv",
+  "val_predictions_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/val_predictions_per_sample.csv",
+  "train_predictions_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/train_predictions_for_scatter.csv",
+  "summary_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/proposed_method_summary.csv"
+}

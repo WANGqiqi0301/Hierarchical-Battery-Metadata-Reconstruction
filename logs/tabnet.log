@@ -1,0 +1,381 @@
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/abstract_model.py:82: UserWarning: Device used : cpu
+  warnings.warn(f"Device used : {self.device}")
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/callbacks.py:172: UserWarning: Best weights from best epoch are automatically used!
+  warnings.warn(wrn_msg)
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/abstract_model.py:82: UserWarning: Device used : cpu
+  warnings.warn(f"Device used : {self.device}")
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/callbacks.py:172: UserWarning: Best weights from best epoch are automatically used!
+  warnings.warn(wrn_msg)
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/abstract_model.py:82: UserWarning: Device used : cpu
+  warnings.warn(f"Device used : {self.device}")
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/callbacks.py:172: UserWarning: Best weights from best epoch are automatically used!
+  warnings.warn(wrn_msg)
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/abstract_model.py:82: UserWarning: Device used : cpu
+  warnings.warn(f"Device used : {self.device}")
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/callbacks.py:172: UserWarning: Best weights from best epoch are automatically used!
+  warnings.warn(wrn_msg)
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/abstract_model.py:82: UserWarning: Device used : cpu
+  warnings.warn(f"Device used : {self.device}")
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/callbacks.py:172: UserWarning: Best weights from best epoch are automatically used!
+  warnings.warn(wrn_msg)
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/abstract_model.py:82: UserWarning: Device used : cpu
+  warnings.warn(f"Device used : {self.device}")
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pytorch_tabnet/callbacks.py:172: UserWarning: Best weights from best epoch are automatically used!
+  warnings.warn(wrn_msg)
+[CACHE] Loading: results/benchmark/data_cache_42_feats.pkl
+[DATA] Train samples = 76131
+[DATA] Test  samples = 1280
+[DATA] Feature dim   = 42
+[DATA] Classes       = ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[TabNet split] train samples=60851 (410 IDs), val samples=15280 (102 IDs)
+[TabNet fair] Training material classifier.
+epoch 0  | loss: 1.23779 | val_accuracy: 0.45242 |  0:00:07s
+epoch 1  | loss: 0.87074 | val_accuracy: 0.35831 |  0:00:14s
+epoch 2  | loss: 0.71708 | val_accuracy: 0.40399 |  0:00:22s
+epoch 3  | loss: 0.54764 | val_accuracy: 0.69915 |  0:00:29s
+epoch 4  | loss: 0.4468  | val_accuracy: 0.69509 |  0:00:37s
+epoch 5  | loss: 0.37416 | val_accuracy: 0.33927 |  0:00:44s
+epoch 6  | loss: 0.37052 | val_accuracy: 0.34908 |  0:00:52s
+epoch 7  | loss: 0.35784 | val_accuracy: 0.48527 |  0:00:59s
+epoch 8  | loss: 0.32771 | val_accuracy: 0.5731  |  0:01:06s
+epoch 9  | loss: 0.32488 | val_accuracy: 0.61014 |  0:01:14s
+epoch 10 | loss: 0.30909 | val_accuracy: 0.52166 |  0:01:21s
+epoch 11 | loss: 0.29192 | val_accuracy: 0.55124 |  0:01:28s
+epoch 12 | loss: 0.27464 | val_accuracy: 0.78717 |  0:01:36s
+epoch 13 | loss: 0.26929 | val_accuracy: 0.4678  |  0:01:43s
+epoch 14 | loss: 0.25451 | val_accuracy: 0.38285 |  0:01:51s
+epoch 15 | loss: 0.25141 | val_accuracy: 0.59686 |  0:01:58s
+epoch 16 | loss: 0.23096 | val_accuracy: 0.61243 |  0:02:05s
+epoch 17 | loss: 0.2302  | val_accuracy: 0.34961 |  0:02:13s
+epoch 18 | loss: 0.22185 | val_accuracy: 0.58914 |  0:02:20s
+epoch 19 | loss: 0.22067 | val_accuracy: 0.63377 |  0:02:27s
+epoch 20 | loss: 0.20127 | val_accuracy: 0.48292 |  0:02:35s
+epoch 21 | loss: 0.19549 | val_accuracy: 0.52016 |  0:02:42s
+epoch 22 | loss: 0.19588 | val_accuracy: 0.47997 |  0:02:50s
+epoch 23 | loss: 0.19998 | val_accuracy: 0.49935 |  0:02:57s
+epoch 24 | loss: 0.18918 | val_accuracy: 0.65059 |  0:03:05s
+epoch 25 | loss: 0.17916 | val_accuracy: 0.43292 |  0:03:13s
+epoch 26 | loss: 0.18293 | val_accuracy: 0.72991 |  0:03:21s
+epoch 27 | loss: 0.17355 | val_accuracy: 0.62984 |  0:03:29s
+epoch 28 | loss: 0.17497 | val_accuracy: 0.70969 |  0:03:36s
+epoch 29 | loss: 0.17475 | val_accuracy: 0.45399 |  0:03:44s
+epoch 30 | loss: 0.16246 | val_accuracy: 0.57291 |  0:03:52s
+epoch 31 | loss: 0.16702 | val_accuracy: 0.39254 |  0:03:59s
+epoch 32 | loss: 0.16131 | val_accuracy: 0.37356 |  0:04:07s
+
+Early stopping occurred at epoch 32 with best_epoch = 12 and best_val_accuracy = 0.78717
+[TabNet fair] Training SOC regressor.
+epoch 0  | loss: 323.15413| val_rmse: 13.74454| val_mape: 37.99726| val_med_ape: 18.92361|  0:00:07s
+epoch 1  | loss: 108.57697| val_rmse: 12.12103| val_mape: 34.47901| val_med_ape: 18.59188|  0:00:15s
+epoch 2  | loss: 93.34167| val_rmse: 17.54923| val_mape: 34.98237| val_med_ape: 20.98914|  0:00:23s
+epoch 3  | loss: 88.05768| val_rmse: 9.29795 | val_mape: 27.69497| val_med_ape: 15.39849|  0:00:31s
+epoch 4  | loss: 79.59588| val_rmse: 13.88408| val_mape: 51.6516 | val_med_ape: 17.16443|  0:00:38s
+epoch 5  | loss: 63.6422 | val_rmse: 13.49846| val_mape: 27.82545| val_med_ape: 17.87999|  0:00:46s
+epoch 6  | loss: 50.78395| val_rmse: 16.86548| val_mape: 30.1446 | val_med_ape: 21.2704 |  0:00:54s
+epoch 7  | loss: 50.81084| val_rmse: 13.48723| val_mape: 31.18166| val_med_ape: 16.35403|  0:01:02s
+epoch 8  | loss: 44.19477| val_rmse: 10.86956| val_mape: 33.30103| val_med_ape: 16.42827|  0:01:10s
+epoch 9  | loss: 40.52526| val_rmse: 13.39751| val_mape: 46.64758| val_med_ape: 15.08521|  0:01:18s
+epoch 10 | loss: 36.97329| val_rmse: 15.93507| val_mape: 31.85412| val_med_ape: 18.88907|  0:01:26s
+epoch 11 | loss: 36.02119| val_rmse: 15.46866| val_mape: 30.71483| val_med_ape: 16.06411|  0:01:33s
+epoch 12 | loss: 37.00209| val_rmse: 14.66148| val_mape: 34.6868 | val_med_ape: 20.69043|  0:01:41s
+epoch 13 | loss: 35.01555| val_rmse: 10.84317| val_mape: 26.77863| val_med_ape: 11.76522|  0:01:49s
+epoch 14 | loss: 33.91469| val_rmse: 13.08165| val_mape: 33.82356| val_med_ape: 12.9644 |  0:01:57s
+epoch 15 | loss: 33.54987| val_rmse: 15.72538| val_mape: 25.1438 | val_med_ape: 14.1886 |  0:02:09s
+epoch 16 | loss: 32.61982| val_rmse: 13.96402| val_mape: 30.75937| val_med_ape: 13.29933|  0:02:21s
+epoch 17 | loss: 30.21661| val_rmse: 15.02743| val_mape: 22.7658 | val_med_ape: 13.21365|  0:02:29s
+epoch 18 | loss: 29.21224| val_rmse: 18.57312| val_mape: 27.92498| val_med_ape: 17.0492 |  0:02:37s
+epoch 19 | loss: 29.2565 | val_rmse: 9.23085 | val_mape: 21.23114| val_med_ape: 12.68979|  0:02:45s
+epoch 20 | loss: 29.07235| val_rmse: 19.86671| val_mape: 40.46067| val_med_ape: 26.01501|  0:02:52s
+epoch 21 | loss: 27.19374| val_rmse: 11.18524| val_mape: 24.67266| val_med_ape: 13.41157|  0:03:00s
+epoch 22 | loss: 27.24757| val_rmse: 11.7285 | val_mape: 37.40937| val_med_ape: 17.8772 |  0:03:08s
+epoch 23 | loss: 26.20174| val_rmse: 8.29307 | val_mape: 18.99464| val_med_ape: 11.48726|  0:03:16s
+epoch 24 | loss: 27.65176| val_rmse: 14.93542| val_mape: 30.39514| val_med_ape: 16.50697|  0:03:23s
+epoch 25 | loss: 25.02536| val_rmse: 12.54641| val_mape: 35.78418| val_med_ape: 12.30781|  0:03:32s
+epoch 26 | loss: 24.7487 | val_rmse: 17.92479| val_mape: 45.29741| val_med_ape: 30.15901|  0:03:43s
+epoch 27 | loss: 24.94111| val_rmse: 9.34623 | val_mape: 22.73679| val_med_ape: 9.32835 |  0:03:55s
+epoch 28 | loss: 23.93917| val_rmse: 9.63195 | val_mape: 23.03822| val_med_ape: 16.36587|  0:04:04s
+epoch 29 | loss: 25.51748| val_rmse: 10.11653| val_mape: 22.63275| val_med_ape: 9.27092 |  0:04:12s
+epoch 30 | loss: 23.51149| val_rmse: 15.82218| val_mape: 26.99514| val_med_ape: 16.74283|  0:04:19s
+epoch 31 | loss: 22.43025| val_rmse: 10.33639| val_mape: 26.23302| val_med_ape: 13.46958|  0:04:27s
+epoch 32 | loss: 23.33373| val_rmse: 18.49577| val_mape: 50.57558| val_med_ape: 30.04952|  0:04:34s
+epoch 33 | loss: 22.0825 | val_rmse: 17.89042| val_mape: 28.42827| val_med_ape: 20.50344|  0:04:42s
+epoch 34 | loss: 21.56795| val_rmse: 12.36317| val_mape: 26.06329| val_med_ape: 18.77065|  0:04:50s
+epoch 35 | loss: 21.77143| val_rmse: 14.85191| val_mape: 24.82554| val_med_ape: 15.42707|  0:04:57s
+epoch 36 | loss: 22.01443| val_rmse: 14.73449| val_mape: 44.27486| val_med_ape: 22.04842|  0:05:05s
+epoch 37 | loss: 22.07939| val_rmse: 16.70972| val_mape: 28.92703| val_med_ape: 15.18508|  0:05:12s
+epoch 38 | loss: 21.50915| val_rmse: 20.47433| val_mape: 37.28787| val_med_ape: 25.25412|  0:05:20s
+epoch 39 | loss: 23.01755| val_rmse: 16.80081| val_mape: 29.14868| val_med_ape: 19.03588|  0:05:27s
+epoch 40 | loss: 23.49229| val_rmse: 16.97896| val_mape: 28.13195| val_med_ape: 15.13615|  0:05:35s
+epoch 41 | loss: 22.19051| val_rmse: 8.75629 | val_mape: 19.31493| val_med_ape: 12.39961|  0:05:43s
+epoch 42 | loss: 21.35689| val_rmse: 15.30149| val_mape: 32.39063| val_med_ape: 18.99445|  0:05:50s
+epoch 43 | loss: 22.04836| val_rmse: 13.37965| val_mape: 24.87535| val_med_ape: 16.61129|  0:05:58s
+epoch 44 | loss: 22.45279| val_rmse: 19.42131| val_mape: 37.12116| val_med_ape: 12.8884 |  0:06:05s
+epoch 45 | loss: 20.99878| val_rmse: 12.89384| val_mape: 23.14225| val_med_ape: 14.74317|  0:06:13s
+epoch 46 | loss: 20.89854| val_rmse: 21.21449| val_mape: 45.86502| val_med_ape: 24.164  |  0:06:20s
+epoch 47 | loss: 20.70532| val_rmse: 23.63314| val_mape: 67.09197| val_med_ape: 23.25357|  0:06:28s
+epoch 48 | loss: 19.8022 | val_rmse: 17.77972| val_mape: 32.42668| val_med_ape: 20.55734|  0:06:36s
+epoch 49 | loss: 20.15477| val_rmse: 14.64267| val_mape: 22.7627 | val_med_ape: 10.32603|  0:06:43s
+
+Early stopping occurred at epoch 49 with best_epoch = 29 and best_val_med_ape = 9.27092
+[TabNet fair] Training SOH regressor.
+epoch 0  | loss: 0.14048 | val_rmse: 0.10159 | val_mape: 10.35821| val_med_ape: 8.80951 |  0:00:07s
+epoch 1  | loss: 0.01004 | val_rmse: 0.10145 | val_mape: 10.30773| val_med_ape: 9.63996 |  0:00:15s
+epoch 2  | loss: 0.00957 | val_rmse: 0.09946 | val_mape: 10.32022| val_med_ape: 9.51781 |  0:00:22s
+epoch 3  | loss: 0.00951 | val_rmse: 0.09764 | val_mape: 10.03585| val_med_ape: 8.94406 |  0:00:30s
+epoch 4  | loss: 0.00961 | val_rmse: 0.10479 | val_mape: 10.82508| val_med_ape: 9.64792 |  0:00:37s
+epoch 5  | loss: 0.0096  | val_rmse: 0.0972  | val_mape: 9.96701 | val_med_ape: 9.17037 |  0:00:45s
+epoch 6  | loss: 0.00926 | val_rmse: 0.09678 | val_mape: 9.90771 | val_med_ape: 9.27134 |  0:00:52s
+epoch 7  | loss: 0.00913 | val_rmse: 0.09541 | val_mape: 9.62289 | val_med_ape: 8.00893 |  0:01:00s
+epoch 8  | loss: 0.0089  | val_rmse: 0.09694 | val_mape: 9.84842 | val_med_ape: 9.00606 |  0:01:07s
+epoch 9  | loss: 0.00901 | val_rmse: 0.09595 | val_mape: 9.78305 | val_med_ape: 8.72088 |  0:01:15s
+epoch 10 | loss: 0.00927 | val_rmse: 0.09715 | val_mape: 9.99779 | val_med_ape: 9.5997  |  0:01:22s
+epoch 11 | loss: 0.00903 | val_rmse: 0.09461 | val_mape: 9.66867 | val_med_ape: 8.98483 |  0:01:30s
+epoch 12 | loss: 0.00903 | val_rmse: 0.09583 | val_mape: 9.59452 | val_med_ape: 8.57953 |  0:01:37s
+epoch 13 | loss: 0.00898 | val_rmse: 0.09698 | val_mape: 9.88058 | val_med_ape: 7.93532 |  0:01:45s
+epoch 14 | loss: 0.00899 | val_rmse: 0.09625 | val_mape: 9.81235 | val_med_ape: 8.29028 |  0:01:53s
+epoch 15 | loss: 0.00883 | val_rmse: 0.09774 | val_mape: 10.02915| val_med_ape: 8.0144  |  0:02:00s
+epoch 16 | loss: 0.00883 | val_rmse: 0.09911 | val_mape: 9.98714 | val_med_ape: 7.47985 |  0:02:08s
+epoch 17 | loss: 0.0089  | val_rmse: 0.09505 | val_mape: 9.80963 | val_med_ape: 9.50876 |  0:02:17s
+epoch 18 | loss: 0.00874 | val_rmse: 0.09477 | val_mape: 9.64064 | val_med_ape: 8.60247 |  0:02:34s
+epoch 19 | loss: 0.00855 | val_rmse: 0.10416 | val_mape: 10.47987| val_med_ape: 9.14272 |  0:02:51s
+epoch 20 | loss: 0.00822 | val_rmse: 0.1112  | val_mape: 10.15462| val_med_ape: 8.88418 |  0:03:08s
+epoch 21 | loss: 0.00929 | val_rmse: 0.09586 | val_mape: 9.85017 | val_med_ape: 8.76995 |  0:03:25s
+epoch 22 | loss: 0.00904 | val_rmse: 0.09774 | val_mape: 9.99569 | val_med_ape: 8.25714 |  0:03:42s
+epoch 23 | loss: 0.00885 | val_rmse: 0.09547 | val_mape: 9.63457 | val_med_ape: 9.1352  |  0:03:59s
+epoch 24 | loss: 0.00861 | val_rmse: 0.09565 | val_mape: 9.81825 | val_med_ape: 9.35557 |  0:04:16s
+epoch 25 | loss: 0.00825 | val_rmse: 0.09102 | val_mape: 9.11615 | val_med_ape: 8.65523 |  0:04:33s
+epoch 26 | loss: 0.00806 | val_rmse: 0.09263 | val_mape: 9.53883 | val_med_ape: 8.20811 |  0:04:50s
+epoch 27 | loss: 0.00769 | val_rmse: 0.08994 | val_mape: 9.13023 | val_med_ape: 7.73081 |  0:05:07s
+epoch 28 | loss: 0.00774 | val_rmse: 0.09438 | val_mape: 9.51102 | val_med_ape: 8.50018 |  0:05:23s
+epoch 29 | loss: 0.00864 | val_rmse: 0.10142 | val_mape: 10.18089| val_med_ape: 8.70549 |  0:05:40s
+epoch 30 | loss: 0.00867 | val_rmse: 0.09492 | val_mape: 9.58865 | val_med_ape: 7.3946  |  0:05:57s
+epoch 31 | loss: 0.00757 | val_rmse: 0.10624 | val_mape: 9.64047 | val_med_ape: 7.2473  |  0:06:14s
+epoch 32 | loss: 0.00861 | val_rmse: 0.08975 | val_mape: 9.18081 | val_med_ape: 8.43476 |  0:06:31s
+epoch 33 | loss: 0.00783 | val_rmse: 0.0903  | val_mape: 9.15605 | val_med_ape: 7.12906 |  0:06:48s
+epoch 34 | loss: 0.00695 | val_rmse: 0.08319 | val_mape: 8.16224 | val_med_ape: 6.83263 |  0:07:05s
+epoch 35 | loss: 0.00649 | val_rmse: 0.09418 | val_mape: 9.43667 | val_med_ape: 7.73506 |  0:07:22s
+epoch 36 | loss: 0.00645 | val_rmse: 0.07866 | val_mape: 7.81295 | val_med_ape: 6.34827 |  0:07:39s
+epoch 37 | loss: 0.00603 | val_rmse: 0.08364 | val_mape: 8.15223 | val_med_ape: 7.61227 |  0:07:56s
+epoch 38 | loss: 0.006   | val_rmse: 0.07542 | val_mape: 7.3752  | val_med_ape: 5.86103 |  0:08:13s
+epoch 39 | loss: 0.00573 | val_rmse: 0.07228 | val_mape: 7.07776 | val_med_ape: 6.42463 |  0:08:30s
+epoch 40 | loss: 0.00559 | val_rmse: 0.09519 | val_mape: 9.12535 | val_med_ape: 5.63076 |  0:08:46s
+epoch 41 | loss: 0.00556 | val_rmse: 0.09113 | val_mape: 8.64251 | val_med_ape: 6.47674 |  0:09:03s
+epoch 42 | loss: 0.00556 | val_rmse: 0.10953 | val_mape: 10.04295| val_med_ape: 7.3465  |  0:09:20s
+epoch 43 | loss: 0.00547 | val_rmse: 0.08976 | val_mape: 9.08443 | val_med_ape: 8.3949  |  0:09:37s
+epoch 44 | loss: 0.00549 | val_rmse: 0.09055 | val_mape: 8.98355 | val_med_ape: 7.83665 |  0:09:54s
+epoch 45 | loss: 0.00511 | val_rmse: 0.08014 | val_mape: 7.66996 | val_med_ape: 6.40274 |  0:10:11s
+epoch 46 | loss: 0.00482 | val_rmse: 0.10554 | val_mape: 9.82796 | val_med_ape: 6.26989 |  0:10:28s
+epoch 47 | loss: 0.00479 | val_rmse: 0.0909  | val_mape: 8.73734 | val_med_ape: 7.29965 |  0:10:45s
+epoch 48 | loss: 0.00463 | val_rmse: 0.0766  | val_mape: 6.33478 | val_med_ape: 3.87823 |  0:11:02s
+epoch 49 | loss: 0.00469 | val_rmse: 0.06503 | val_mape: 5.88043 | val_med_ape: 4.0098  |  0:11:19s
+epoch 50 | loss: 0.0049  | val_rmse: 0.1106  | val_mape: 10.4169 | val_med_ape: 8.04342 |  0:11:36s
+epoch 51 | loss: 0.00503 | val_rmse: 0.07291 | val_mape: 6.69448 | val_med_ape: 5.78684 |  0:11:53s
+epoch 52 | loss: 0.00568 | val_rmse: 0.09671 | val_mape: 9.56005 | val_med_ape: 7.18819 |  0:12:09s
+epoch 53 | loss: 0.00619 | val_rmse: 0.0697  | val_mape: 6.43875 | val_med_ape: 4.76343 |  0:12:26s
+epoch 54 | loss: 0.00493 | val_rmse: 0.08636 | val_mape: 8.20267 | val_med_ape: 5.81865 |  0:12:43s
+epoch 55 | loss: 0.00472 | val_rmse: 0.07727 | val_mape: 7.07168 | val_med_ape: 5.45827 |  0:13:00s
+epoch 56 | loss: 0.0047  | val_rmse: 0.0734  | val_mape: 6.78805 | val_med_ape: 4.63046 |  0:13:17s
+epoch 57 | loss: 0.00473 | val_rmse: 0.07832 | val_mape: 7.00955 | val_med_ape: 5.04722 |  0:13:34s
+epoch 58 | loss: 0.00461 | val_rmse: 0.08594 | val_mape: 7.99023 | val_med_ape: 5.15371 |  0:13:51s
+epoch 59 | loss: 0.00449 | val_rmse: 0.08002 | val_mape: 7.46875 | val_med_ape: 5.78755 |  0:14:08s
+epoch 60 | loss: 0.00438 | val_rmse: 0.08916 | val_mape: 7.5977  | val_med_ape: 4.67529 |  0:14:24s
+epoch 61 | loss: 0.00434 | val_rmse: 0.08848 | val_mape: 7.82771 | val_med_ape: 5.70731 |  0:14:39s
+epoch 62 | loss: 0.00441 | val_rmse: 0.08155 | val_mape: 7.13675 | val_med_ape: 5.01046 |  0:14:56s
+epoch 63 | loss: 0.00427 | val_rmse: 0.06828 | val_mape: 5.98014 | val_med_ape: 4.27999 |  0:15:11s
+epoch 64 | loss: 0.00412 | val_rmse: 0.07879 | val_mape: 7.21498 | val_med_ape: 4.35267 |  0:15:28s
+epoch 65 | loss: 0.00405 | val_rmse: 0.08234 | val_mape: 7.17577 | val_med_ape: 4.9609  |  0:15:45s
+epoch 66 | loss: 0.00396 | val_rmse: 0.16325 | val_mape: 14.10581| val_med_ape: 7.89074 |  0:16:02s
+epoch 67 | loss: 0.00391 | val_rmse: 0.10417 | val_mape: 10.21037| val_med_ape: 8.12559 |  0:16:19s
+epoch 68 | loss: 0.00393 | val_rmse: 0.14051 | val_mape: 13.96128| val_med_ape: 11.4257 |  0:16:36s
+
+Early stopping occurred at epoch 68 with best_epoch = 48 and best_val_med_ape = 3.87823
+[TabNet fair] Predicting test set.
+Successfully saved model at results/benchmark/tabnet/fair/model_classifier.zip
+[SAVED] results/benchmark/tabnet/fair/model_classifier.zip
+Successfully saved model at results/benchmark/tabnet/fair/model_soc.zip
+[SAVED] results/benchmark/tabnet/fair/model_soc.zip
+Successfully saved model at results/benchmark/tabnet/fair/model_soh.zip
+[SAVED] results/benchmark/tabnet/fair/model_soh.zip
+
+================ TABNET FAIR RESULTS ================
+Input feature dim       : 42
+Material accuracy       : 0.826562
+------------------------------------------------------------
+SOC RMSE                : 11.642230
+SOC MAE                 : 7.619546
+SOC MAPE                : 20.624774
+SOC MedAPE              : 12.662886
+------------------------------------------------------------
+SOH RMSE                : 0.083407
+SOH MAE                 : 0.062774
+SOH MAPE                : 7.888910
+SOH MedAPE              : 5.219576
+n_test                  : 1280
+============================================================
+[SAVED] results/benchmark/tabnet/fair/predictions.csv
+[SAVED] results/benchmark/tabnet/fair/summary.json
+[SAVED] results/benchmark/tabnet/fair/report.txt
+[CACHE] Loading: results/benchmark/data_cache_42_feats.pkl
+[DATA] Train samples = 76131
+[DATA] Test  samples = 1280
+[DATA] Feature dim   = 42
+[DATA] Classes       = ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[TabNet split] train samples=60851 (410 IDs), val samples=15280 (102 IDs)
+[TabNet enhanced] Training baseline material classifier.
+epoch 0  | loss: 1.23779 | val_accuracy: 0.45242 |  0:00:07s
+epoch 1  | loss: 0.87074 | val_accuracy: 0.35831 |  0:00:15s
+epoch 2  | loss: 0.71708 | val_accuracy: 0.40399 |  0:00:22s
+epoch 3  | loss: 0.54764 | val_accuracy: 0.69915 |  0:00:30s
+epoch 4  | loss: 0.4468  | val_accuracy: 0.69509 |  0:00:37s
+epoch 5  | loss: 0.37416 | val_accuracy: 0.33927 |  0:00:45s
+epoch 6  | loss: 0.37052 | val_accuracy: 0.34908 |  0:00:52s
+epoch 7  | loss: 0.35784 | val_accuracy: 0.48527 |  0:01:00s
+epoch 8  | loss: 0.32771 | val_accuracy: 0.5731  |  0:01:07s
+epoch 9  | loss: 0.32488 | val_accuracy: 0.61014 |  0:01:15s
+epoch 10 | loss: 0.30909 | val_accuracy: 0.52166 |  0:01:23s
+epoch 11 | loss: 0.29192 | val_accuracy: 0.55124 |  0:01:30s
+epoch 12 | loss: 0.27464 | val_accuracy: 0.78717 |  0:01:38s
+epoch 13 | loss: 0.26929 | val_accuracy: 0.4678  |  0:01:45s
+epoch 14 | loss: 0.25451 | val_accuracy: 0.38285 |  0:01:53s
+epoch 15 | loss: 0.25141 | val_accuracy: 0.59686 |  0:02:00s
+epoch 16 | loss: 0.23096 | val_accuracy: 0.61243 |  0:02:08s
+epoch 17 | loss: 0.2302  | val_accuracy: 0.34961 |  0:02:15s
+epoch 18 | loss: 0.22185 | val_accuracy: 0.58914 |  0:02:23s
+epoch 19 | loss: 0.22067 | val_accuracy: 0.63377 |  0:02:30s
+epoch 20 | loss: 0.20127 | val_accuracy: 0.48292 |  0:02:38s
+epoch 21 | loss: 0.19549 | val_accuracy: 0.52016 |  0:02:46s
+epoch 22 | loss: 0.19588 | val_accuracy: 0.47997 |  0:02:54s
+epoch 23 | loss: 0.19998 | val_accuracy: 0.49935 |  0:03:02s
+epoch 24 | loss: 0.18918 | val_accuracy: 0.65059 |  0:03:09s
+epoch 25 | loss: 0.17916 | val_accuracy: 0.43292 |  0:03:17s
+epoch 26 | loss: 0.18293 | val_accuracy: 0.72991 |  0:03:24s
+epoch 27 | loss: 0.17355 | val_accuracy: 0.62984 |  0:03:32s
+epoch 28 | loss: 0.17497 | val_accuracy: 0.70969 |  0:03:39s
+epoch 29 | loss: 0.17475 | val_accuracy: 0.45399 |  0:03:52s
+epoch 30 | loss: 0.16246 | val_accuracy: 0.57291 |  0:04:05s
+epoch 31 | loss: 0.16702 | val_accuracy: 0.39254 |  0:04:18s
+epoch 32 | loss: 0.16131 | val_accuracy: 0.37356 |  0:04:31s
+
+Early stopping occurred at epoch 32 with best_epoch = 12 and best_val_accuracy = 0.78717
+[TabNet enhanced] Predicting material on test set.
+[TabNet enhanced] Building controlled upstream inputs.
+[TabNet enhanced] Training SOC regressor with material hint.
+epoch 0  | loss: 256.31215| val_rmse: 10.48719| val_mape: 26.89728| val_med_ape: 15.42266|  0:00:13s
+epoch 1  | loss: 77.79886| val_rmse: 11.89139| val_mape: 24.96266| val_med_ape: 12.71167|  0:00:27s
+epoch 2  | loss: 67.89201| val_rmse: 11.72498| val_mape: 24.40947| val_med_ape: 15.30968|  0:00:41s
+epoch 3  | loss: 58.35617| val_rmse: 7.53596 | val_mape: 21.36148| val_med_ape: 11.71157|  0:00:55s
+epoch 4  | loss: 54.79411| val_rmse: 6.57656 | val_mape: 14.53789| val_med_ape: 8.80701 |  0:01:08s
+epoch 5  | loss: 49.63594| val_rmse: 7.10529 | val_mape: 15.87085| val_med_ape: 10.93718|  0:01:20s
+epoch 6  | loss: 47.5965 | val_rmse: 7.10877 | val_mape: 17.69311| val_med_ape: 10.00014|  0:01:33s
+epoch 7  | loss: 47.76645| val_rmse: 6.76438 | val_mape: 18.19013| val_med_ape: 10.01242|  0:01:46s
+epoch 8  | loss: 46.0021 | val_rmse: 7.51882 | val_mape: 23.78752| val_med_ape: 9.3741  |  0:01:58s
+epoch 9  | loss: 43.25729| val_rmse: 8.52786 | val_mape: 16.36395| val_med_ape: 9.48084 |  0:02:11s
+epoch 10 | loss: 43.50415| val_rmse: 12.53929| val_mape: 23.2309 | val_med_ape: 10.42932|  0:02:23s
+epoch 11 | loss: 39.58548| val_rmse: 9.21064 | val_mape: 21.2241 | val_med_ape: 10.06042|  0:02:36s
+epoch 12 | loss: 37.70997| val_rmse: 9.77014 | val_mape: 16.33088| val_med_ape: 9.19832 |  0:02:48s
+epoch 13 | loss: 34.37594| val_rmse: 7.69979 | val_mape: 17.90849| val_med_ape: 11.16413|  0:03:01s
+epoch 14 | loss: 33.67197| val_rmse: 5.89038 | val_mape: 12.11615| val_med_ape: 5.83134 |  0:03:14s
+epoch 15 | loss: 32.51314| val_rmse: 5.24457 | val_mape: 11.36498| val_med_ape: 5.58431 |  0:03:26s
+epoch 16 | loss: 32.70877| val_rmse: 9.10141 | val_mape: 17.73361| val_med_ape: 10.12267|  0:03:39s
+epoch 17 | loss: 31.08009| val_rmse: 5.36623 | val_mape: 13.13277| val_med_ape: 5.17629 |  0:03:51s
+epoch 18 | loss: 29.74257| val_rmse: 5.75344 | val_mape: 12.93067| val_med_ape: 5.762   |  0:04:04s
+epoch 19 | loss: 29.9109 | val_rmse: 6.47274 | val_mape: 12.65364| val_med_ape: 6.14112 |  0:04:16s
+epoch 20 | loss: 30.22846| val_rmse: 5.7259  | val_mape: 12.90501| val_med_ape: 5.32336 |  0:04:29s
+epoch 21 | loss: 29.20868| val_rmse: 6.3578  | val_mape: 13.33917| val_med_ape: 6.63028 |  0:04:42s
+epoch 22 | loss: 27.78628| val_rmse: 7.96891 | val_mape: 17.00368| val_med_ape: 7.96558 |  0:04:54s
+epoch 23 | loss: 28.19573| val_rmse: 5.22737 | val_mape: 11.80114| val_med_ape: 5.8959  |  0:05:07s
+epoch 24 | loss: 27.26165| val_rmse: 5.9228  | val_mape: 12.80458| val_med_ape: 6.71122 |  0:05:19s
+epoch 25 | loss: 26.81629| val_rmse: 5.88824 | val_mape: 12.66905| val_med_ape: 6.35273 |  0:05:32s
+epoch 26 | loss: 27.28116| val_rmse: 6.91304 | val_mape: 15.65319| val_med_ape: 5.95127 |  0:05:44s
+epoch 27 | loss: 25.89552| val_rmse: 7.66978 | val_mape: 16.03618| val_med_ape: 8.58094 |  0:05:57s
+epoch 28 | loss: 25.5565 | val_rmse: 5.68864 | val_mape: 12.41769| val_med_ape: 6.70344 |  0:06:14s
+epoch 29 | loss: 25.11461| val_rmse: 6.59196 | val_mape: 14.83292| val_med_ape: 9.0142  |  0:06:31s
+epoch 30 | loss: 25.30884| val_rmse: 4.88624 | val_mape: 10.03613| val_med_ape: 4.79074 |  0:06:49s
+epoch 31 | loss: 25.66974| val_rmse: 5.96011 | val_mape: 13.14215| val_med_ape: 6.25695 |  0:07:07s
+epoch 32 | loss: 25.07914| val_rmse: 5.89802 | val_mape: 12.52956| val_med_ape: 7.41886 |  0:07:25s
+epoch 33 | loss: 24.8809 | val_rmse: 5.18491 | val_mape: 10.20907| val_med_ape: 6.20191 |  0:07:42s
+epoch 34 | loss: 24.72781| val_rmse: 5.29646 | val_mape: 10.64152| val_med_ape: 6.79556 |  0:08:00s
+epoch 35 | loss: 23.63932| val_rmse: 4.51999 | val_mape: 9.01513 | val_med_ape: 4.35371 |  0:08:18s
+epoch 36 | loss: 24.39439| val_rmse: 7.04846 | val_mape: 15.87408| val_med_ape: 7.98204 |  0:08:36s
+epoch 37 | loss: 24.8449 | val_rmse: 6.97882 | val_mape: 14.97452| val_med_ape: 8.85823 |  0:08:54s
+epoch 38 | loss: 23.71748| val_rmse: 9.92431 | val_mape: 13.33429| val_med_ape: 7.80674 |  0:09:11s
+epoch 39 | loss: 24.66146| val_rmse: 4.65341 | val_mape: 9.95228 | val_med_ape: 5.03336 |  0:09:29s
+epoch 40 | loss: 23.94969| val_rmse: 7.04998 | val_mape: 13.66578| val_med_ape: 6.53735 |  0:09:47s
+epoch 41 | loss: 24.01496| val_rmse: 5.95657 | val_mape: 11.7718 | val_med_ape: 5.96594 |  0:10:05s
+epoch 42 | loss: 23.81314| val_rmse: 7.37198 | val_mape: 13.96576| val_med_ape: 7.65895 |  0:10:22s
+epoch 43 | loss: 22.40449| val_rmse: 6.0964  | val_mape: 11.71034| val_med_ape: 6.17196 |  0:10:40s
+epoch 44 | loss: 22.53726| val_rmse: 6.88864 | val_mape: 12.72666| val_med_ape: 7.18358 |  0:10:58s
+epoch 45 | loss: 22.91823| val_rmse: 5.74379 | val_mape: 10.3274 | val_med_ape: 5.79077 |  0:11:16s
+epoch 46 | loss: 23.00968| val_rmse: 4.55662 | val_mape: 10.34579| val_med_ape: 5.53308 |  0:11:33s
+epoch 47 | loss: 22.6252 | val_rmse: 4.96729 | val_mape: 9.51286 | val_med_ape: 4.58481 |  0:11:51s
+epoch 48 | loss: 22.32854| val_rmse: 4.55202 | val_mape: 9.34541 | val_med_ape: 5.01852 |  0:12:09s
+epoch 49 | loss: 22.28966| val_rmse: 4.92838 | val_mape: 9.70079 | val_med_ape: 4.41649 |  0:12:27s
+epoch 50 | loss: 21.75357| val_rmse: 5.80035 | val_mape: 10.66048| val_med_ape: 5.07723 |  0:12:45s
+epoch 51 | loss: 21.51225| val_rmse: 6.19504 | val_mape: 12.02021| val_med_ape: 6.05675 |  0:13:02s
+epoch 52 | loss: 21.54349| val_rmse: 5.45934 | val_mape: 11.36477| val_med_ape: 6.14938 |  0:13:20s
+epoch 53 | loss: 21.02343| val_rmse: 5.9338  | val_mape: 12.58586| val_med_ape: 5.3521  |  0:13:38s
+epoch 54 | loss: 21.68445| val_rmse: 7.07354 | val_mape: 11.55322| val_med_ape: 6.51075 |  0:13:56s
+epoch 55 | loss: 20.36982| val_rmse: 7.46636 | val_mape: 13.27296| val_med_ape: 8.19229 |  0:14:13s
+
+Early stopping occurred at epoch 55 with best_epoch = 35 and best_val_med_ape = 4.35371
+[TabNet enhanced] Training SOH regressor with material hint + pseudo SOC hint.
+epoch 0  | loss: 0.12605 | val_rmse: 0.11686 | val_mape: 11.06885| val_med_ape: 10.23721|  0:00:08s
+epoch 1  | loss: 0.00889 | val_rmse: 0.08061 | val_mape: 7.83557 | val_med_ape: 6.01038 |  0:00:16s
+epoch 2  | loss: 0.00806 | val_rmse: 0.07627 | val_mape: 7.16057 | val_med_ape: 5.42525 |  0:00:24s
+epoch 3  | loss: 0.00696 | val_rmse: 0.07898 | val_mape: 7.5188  | val_med_ape: 6.01365 |  0:00:32s
+epoch 4  | loss: 0.00671 | val_rmse: 0.07364 | val_mape: 6.7173  | val_med_ape: 5.38345 |  0:00:40s
+epoch 5  | loss: 0.0069  | val_rmse: 0.07923 | val_mape: 7.78757 | val_med_ape: 6.67143 |  0:00:48s
+epoch 6  | loss: 0.00636 | val_rmse: 0.07108 | val_mape: 6.65096 | val_med_ape: 5.15617 |  0:00:56s
+epoch 7  | loss: 0.00644 | val_rmse: 0.08843 | val_mape: 8.30771 | val_med_ape: 6.88117 |  0:01:04s
+epoch 8  | loss: 0.00642 | val_rmse: 0.06617 | val_mape: 6.03545 | val_med_ape: 4.58318 |  0:01:12s
+epoch 9  | loss: 0.00534 | val_rmse: 0.06684 | val_mape: 6.12781 | val_med_ape: 4.64107 |  0:01:20s
+epoch 10 | loss: 0.00525 | val_rmse: 0.07387 | val_mape: 6.86081 | val_med_ape: 5.98904 |  0:01:28s
+epoch 11 | loss: 0.00514 | val_rmse: 0.06306 | val_mape: 5.46912 | val_med_ape: 3.71648 |  0:01:36s
+epoch 12 | loss: 0.00507 | val_rmse: 0.06989 | val_mape: 6.36723 | val_med_ape: 4.26235 |  0:01:45s
+epoch 13 | loss: 0.00744 | val_rmse: 0.09884 | val_mape: 9.47703 | val_med_ape: 7.45796 |  0:01:56s
+epoch 14 | loss: 0.00661 | val_rmse: 0.07016 | val_mape: 6.70578 | val_med_ape: 5.03161 |  0:02:07s
+epoch 15 | loss: 0.00577 | val_rmse: 0.07211 | val_mape: 6.61613 | val_med_ape: 5.16757 |  0:02:18s
+epoch 16 | loss: 0.00566 | val_rmse: 0.07691 | val_mape: 7.19621 | val_med_ape: 5.66595 |  0:02:29s
+epoch 17 | loss: 0.0055  | val_rmse: 0.07735 | val_mape: 7.15018 | val_med_ape: 6.00159 |  0:02:40s
+epoch 18 | loss: 0.00727 | val_rmse: 0.08652 | val_mape: 8.10368 | val_med_ape: 6.07001 |  0:02:51s
+epoch 19 | loss: 0.00656 | val_rmse: 0.08609 | val_mape: 7.92568 | val_med_ape: 5.68766 |  0:03:02s
+epoch 20 | loss: 0.00684 | val_rmse: 0.07952 | val_mape: 7.50369 | val_med_ape: 6.08512 |  0:03:13s
+epoch 21 | loss: 0.00629 | val_rmse: 0.09212 | val_mape: 8.78509 | val_med_ape: 5.93028 |  0:03:24s
+epoch 22 | loss: 0.00622 | val_rmse: 0.07039 | val_mape: 6.72145 | val_med_ape: 5.6068  |  0:03:36s
+epoch 23 | loss: 0.00553 | val_rmse: 0.07225 | val_mape: 6.92522 | val_med_ape: 5.86223 |  0:03:47s
+epoch 24 | loss: 0.00609 | val_rmse: 0.10173 | val_mape: 9.59236 | val_med_ape: 8.20779 |  0:03:58s
+epoch 25 | loss: 0.00653 | val_rmse: 0.07493 | val_mape: 7.09531 | val_med_ape: 5.28338 |  0:04:09s
+epoch 26 | loss: 0.00682 | val_rmse: 0.07988 | val_mape: 7.55391 | val_med_ape: 6.40039 |  0:04:20s
+epoch 27 | loss: 0.00611 | val_rmse: 0.06895 | val_mape: 6.42218 | val_med_ape: 4.65462 |  0:04:31s
+epoch 28 | loss: 0.00581 | val_rmse: 0.06875 | val_mape: 6.26621 | val_med_ape: 4.52185 |  0:04:42s
+epoch 29 | loss: 0.00567 | val_rmse: 0.06816 | val_mape: 6.44103 | val_med_ape: 4.96681 |  0:04:53s
+epoch 30 | loss: 0.00533 | val_rmse: 0.0652  | val_mape: 6.14641 | val_med_ape: 4.50623 |  0:05:04s
+epoch 31 | loss: 0.00514 | val_rmse: 0.06716 | val_mape: 6.34479 | val_med_ape: 4.2884  |  0:05:15s
+
+Early stopping occurred at epoch 31 with best_epoch = 11 and best_val_med_ape = 3.71648
+[TabNet enhanced] Predicting test set.
+Successfully saved model at results/benchmark/tabnet/enhanced/model_classifier_baseline.zip
+[SAVED] results/benchmark/tabnet/enhanced/model_classifier_baseline.zip
+Successfully saved model at results/benchmark/tabnet/enhanced/model_soc_enhanced.zip
+[SAVED] results/benchmark/tabnet/enhanced/model_soc_enhanced.zip
+Successfully saved model at results/benchmark/tabnet/enhanced/model_soh_enhanced.zip
+[SAVED] results/benchmark/tabnet/enhanced/model_soh_enhanced.zip
+
+================ TABNET ENHANCED RESULTS ================
+Input feature dim       : 42
+Material accuracy       : 0.826562
+------------------------------------------------------------
+SOC RMSE                : 9.849481
+SOC MAE                 : 5.903110
+SOC MAPE                : 16.645710
+SOC MedAPE              : 9.094714
+------------------------------------------------------------
+SOH RMSE                : 0.069275
+SOH MAE                 : 0.047710
+SOH MAPE                : 6.204595
+SOH MedAPE              : 3.922026
+n_test                  : 1280
+============================================================
+[SAVED] results/benchmark/tabnet/enhanced/predictions.csv
+[SAVED] results/benchmark/tabnet/enhanced/summary.json
+[SAVED] results/benchmark/tabnet/enhanced/report.txt

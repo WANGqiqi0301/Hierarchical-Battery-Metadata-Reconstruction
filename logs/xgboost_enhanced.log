@@ -1,0 +1,33 @@
+[CACHE] Loading: results/benchmark/data_cache_42_feats.pkl
+[DATA] Train samples = 76131
+[DATA] Test  samples = 1280
+[DATA] Feature dim   = 42
+[DATA] Classes       = ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[XGBoost enhanced] Training baseline material classifier.
+[XGBoost enhanced] Predicting material on test set.
+[XGBoost enhanced] Building controlled upstream inputs.
+[XGBoost enhanced] Training SOC regressor with material hint.
+[XGBoost enhanced] Training SOH regressor with material hint + pseudo SOC hint.
+[XGBoost enhanced] Predicting test set.
+[SAVED] results/benchmark/xgboost/enhanced/model_classifier_baseline.pkl
+[SAVED] results/benchmark/xgboost/enhanced/model_soc_enhanced.pkl
+[SAVED] results/benchmark/xgboost/enhanced/model_soh_enhanced.pkl
+
+================ XGBOOST ENHANCED RESULTS ================
+Input feature dim       : 42
+Material accuracy       : 0.605469
+------------------------------------------------------------
+SOC RMSE                : 10.215124
+SOC MAE                 : 6.482098
+SOC MAPE                : 17.919191
+SOC MedAPE              : 13.042794
+------------------------------------------------------------
+SOH RMSE                : 0.068119
+SOH MAE                 : 0.051696
+SOH MAPE                : 6.644829
+SOH MedAPE              : 4.866788
+n_test                  : 1280
+============================================================
+[SAVED] results/benchmark/xgboost/enhanced/predictions.csv
+[SAVED] results/benchmark/xgboost/enhanced/summary.json
+[SAVED] results/benchmark/xgboost/enhanced/report.txt

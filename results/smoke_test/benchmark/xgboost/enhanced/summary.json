@@ -1,0 +1,67 @@
+{
+  "model": "xgboost",
+  "setting": "enhanced",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.578125,
+    "soc_rmse": 10.225622426460413,
+    "soc_mae": 7.421381370055675,
+    "soc_mape": 26.681647074509673,
+    "soc_median_ape": 14.304300190976631,
+    "soh_rmse": 0.07640519408634185,
+    "soh_mae": 0.060314890090951936,
+    "soh_mape": 7.796554878662216,
+    "soh_median_ape": 5.665072534992752,
+    "n_test": 128
+  },
+  "n_train": 7613,
+  "n_test": 128,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "xgb_params": {
+      "n_estimators": 20,
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "tree_method": "hist",
+      "random_state": 42
+    },
+    "save_format": "pickle_sklearn_wrapper",
+    "target_material_acc": 0.91875,
+    "target_soc_rmse_raw": 7.864401414996508,
+    "enhanced_hint_report": {
+      "material_hint": {
+        "target_accuracy": 0.91875,
+        "train_accuracy": 0.9186917115460397,
+        "test_accuracy": 0.921875
+      },
+      "soc_hint_train": {
+        "target_rmse": 7.864401414996508,
+        "rmse": 7.864401414727962,
+        "mae": 6.2966394641046515,
+        "mape": 26.440123594965502,
+        "median_ape": 14.582433700561523
+      },
+      "soc_hint_test": {
+        "target_rmse": 7.864401414996508,
+        "rmse": 7.8644013997850015,
+        "mae": 6.485848369076848,
+        "mape": 22.933162355109886,
+        "median_ape": 13.784335153649591
+      },
+      "feature_dims": {
+        "base": 42,
+        "soc_input": 50,
+        "soh_input": 51
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+﻿model,target,best_calibration_temperature_T,mean_calibration_deviation_10_90_pct,max_calibration_deviation_10_90_pct,mean_calibration_deviation_all_pct,max_calibration_deviation_all_pct
+Conditional flow,SOC,1.9705685618729099,4.50401475694444,9.053030303030296,4.1693339646464604,9.053030303030296
+Conditional flow,SOH,2.9729096989966557,14.309698547979794,20.683396464646464,12.356849747474744,20.683396464646464

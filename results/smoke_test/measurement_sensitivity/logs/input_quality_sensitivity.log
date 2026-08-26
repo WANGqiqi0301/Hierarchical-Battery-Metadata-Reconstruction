@@ -1,0 +1,96 @@
+================================================================================
+[SMOKE TEST] input_quality_sensitivity
+[TIME] 2026-07-11 20:44:34
+================================================================================
+
+[CONFIG] Selected input-quality experiments: ['missing_value', 'noise_ch12', 'noise_full']
+[CLEAN] No clean checkpoint found. Running clean proposed-framework training.
+[INFO] Device: cpu
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from original TRAIN IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128 (same TEST IDs as the original split)
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[single] epoch 000 | VAL cls=0.2353, SOC MedAPE(raw)=30.970%, SOH MedAPE(raw)=9.701% | TEST cls=0.2812, SOC MedAPE(raw)=27.703%, SOH MedAPE(raw)=7.340% | val_score=0.038178
+[single] Loaded BEST checkpoint from epoch=0 | score=0.03817816112576222
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.03817816112576222
+
+[FINAL METRICS]
+final_stage: single
+val_cls_acc: 0.23529411764705882
+val_soc_rmse: 0.8590195122739828
+val_soc_mae: 0.6989516305791981
+val_soc_mape: 178.056289463852
+val_soc_medape: 123.89212892251878
+val_soh_rmse: 1.1354502514377902
+val_soh_mae: 0.9043976851538116
+val_soh_mape: 143.40604943908403
+val_soh_medape: 111.96654913177255
+val_soc_rmse_raw: 19.11652683250012
+val_soc_mae_raw: 15.554393596038965
+val_soc_mape_raw: 59.41444753068492
+val_soc_medape_raw: 28.424912921494787
+val_soh_rmse_raw: 0.12049295721928135
+val_soh_mae_raw: 0.09597386714958672
+val_soh_mape_raw: 12.466507295410144
+val_soh_medape_raw: 10.554736888273295
+test_cls_acc: 0.28125
+test_soc_rmse: 0.8926626960754755
+test_soc_mae: 0.7339873187247576
+test_soc_mape: 264.6516171489804
+test_soc_medape: 107.14302068874191
+test_soh_rmse: 0.9312218068658105
+test_soh_mae: 0.7447023617351078
+test_soh_mape: 214.4801671906621
+test_soh_medape: 106.68531058678099
+test_soc_rmse_raw: 19.865218587090723
+test_soc_mae_raw: 16.33407399090766
+test_soc_mape_raw: 66.3154778804145
+test_soc_medape_raw: 28.339009469526438
+test_soh_rmse_raw: 0.09882041876714631
+test_soh_mae_raw: 0.0790271433733197
+test_soh_mape_raw: 10.146331678180506
+test_soh_medape_raw: 8.030993526191157
+n_train: 6817
+n_val: 51
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 32.19778537750244
+[INFO] Evaluation device: cpu
+[INFO] Loaded checkpoint: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/measurement_sensitivity/input_quality/clean_model/checkpoints/single/best.pt
+
+==========================================================================================
+[RUN][missing_value] drop_count=0 | repeat=0
+==========================================================================================
+{'experiment': 'missing_value', 'type': 'drop', 'level': 0, 'noise_mode': 'none', 'drop_count': 0, 'repeat_id': 0, 'cls_acc': 0.28125, 'soc_medape_raw': 22.00797407746252, 'soh_medape_raw': 8.437805020713832, 'soc_mape_raw': 43.13292371777017, 'soh_mape_raw': 10.13526890082919, 'soc_rmse_raw': 14.02349299473973, 'soh_rmse_raw': 0.09736898341193154, 'soc_mae_raw': 11.350100359249982, 'soh_mae_raw': 0.07854706547308882, 'n_test': 128}
+
+==========================================================================================
+[RUN][missing_value] drop_count=1 | repeat=0
+==========================================================================================
+{'experiment': 'missing_value', 'type': 'drop', 'level': 1, 'noise_mode': 'none', 'drop_count': 1, 'repeat_id': 0, 'cls_acc': 0.28125, 'soc_medape_raw': 21.967970916415837, 'soh_medape_raw': 8.531317764639029, 'soc_mape_raw': 43.35086620526102, 'soh_mape_raw': 10.05523702819842, 'soc_rmse_raw': 14.048061934371338, 'soh_rmse_raw': 0.09644460088982809, 'soc_mae_raw': 11.334978806655162, 'soh_mae_raw': 0.07788308644000272, 'n_test': 128}
+
+==========================================================================================
+[RUN][noise_ch12] alpha=0.0
+==========================================================================================
+{'experiment': 'noise_ch12', 'type': 'noise', 'level': 0.0, 'noise_mode': 'ch12_u2_u41', 'drop_count': 0, 'repeat_id': 0, 'cls_acc': 0.28125, 'soc_medape_raw': 21.579618514756124, 'soh_medape_raw': 8.622964243235927, 'soc_mape_raw': 43.198548888371384, 'soh_mape_raw': 10.164222243807277, 'soc_rmse_raw': 13.996639235596504, 'soh_rmse_raw': 0.09760252621146598, 'soc_mae_raw': 11.354703801875612, 'soh_mae_raw': 0.0788177589594883, 'n_test': 128}
+
+==========================================================================================
+[RUN][noise_ch12] alpha=0.003
+==========================================================================================
+{'experiment': 'noise_ch12', 'type': 'noise', 'level': 0.003, 'noise_mode': 'ch12_u2_u41', 'drop_count': 0, 'repeat_id': 0, 'cls_acc': 0.28125, 'soc_medape_raw': 23.1699285603167, 'soh_medape_raw': 8.481010184676714, 'soc_mape_raw': 43.616413348056184, 'soh_mape_raw': 10.070094245494364, 'soc_rmse_raw': 14.096385949356117, 'soh_rmse_raw': 0.09687106147724858, 'soc_mae_raw': 11.451671071796103, 'soh_mae_raw': 0.07792386922458644, 'n_test': 128}
+
+==========================================================================================
+[RUN][noise_full] alpha=0.0
+==========================================================================================
+{'experiment': 'noise_full', 'type': 'noise', 'level': 0.0, 'noise_mode': 'full_u1_u41', 'drop_count': 0, 'repeat_id': 0, 'cls_acc': 0.28125, 'soc_medape_raw': 22.559471753035652, 'soh_medape_raw': 8.071633609533507, 'soc_mape_raw': 43.60638441477782, 'soh_mape_raw': 10.085851466901001, 'soc_rmse_raw': 14.098458056616485, 'soh_rmse_raw': 0.09722095094423042, 'soc_mae_raw': 11.422748850294408, 'soh_mae_raw': 0.07804015192745024, 'n_test': 128}
+
+==========================================================================================
+[RUN][noise_full] alpha=0.003
+==========================================================================================
+{'experiment': 'noise_full', 'type': 'noise', 'level': 0.003, 'noise_mode': 'full_u1_u41', 'drop_count': 0, 'repeat_id': 0, 'cls_acc': 0.28125, 'soc_medape_raw': 23.1333040175372, 'soh_medape_raw': 8.571514219782827, 'soc_mape_raw': 43.351597604287505, 'soh_mape_raw': 10.114945360866678, 'soc_rmse_raw': 14.047492621805283, 'soh_rmse_raw': 0.09737048749828352, 'soc_mae_raw': 11.419568378079646, 'soh_mae_raw': 0.0783755193198016, 'n_test': 128}
+
+[DONE]

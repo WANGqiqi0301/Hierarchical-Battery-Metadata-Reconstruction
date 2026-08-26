@@ -1,0 +1,68 @@
+nohup: ignoring input
+
+==========================================================================================
+[RUN] Hierarchy ablation: soc_to_soh
+[RUN] Meaning: Partial hierarchy: z->M, z->SOC, z+SOC->SOH
+[RUN] Pulse list: [30, 50, 70, 100, 300, 500, 700, 1000, 3000, 5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/ablation/hierarchy_ablation/soc_to_soh
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Structure mode: soc_to_soh
+[INFO] Meaning: Partial hierarchy: z->M, z->SOC, z+SOC->SOH
+[CACHE] Train tag: raw_train_c292c3d99a | hit=True
+[CACHE] Test  tag: raw_test_4fc0cd64ff | hit=True
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[DATA] Final TRAIN samples = 68162 | unique IDs = 461
+[DATA] Final VAL   samples = 510 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 1280 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[RESUME-stage1_soc] start_epoch=200, best_score=0.830146, best_epoch=189
+[soc_to_soh | stage1_soc] Loaded BEST checkpoint from epoch=189 | score=0.8301455025321717
+[RESUME-stage2_soh] start_epoch=200, best_score=-0.407674, best_epoch=89
+[soc_to_soh | stage2_soh] Loaded BEST checkpoint from epoch=89 | score=-0.40767441451426245
+[RESUME-finetune] start_epoch=30, best_score=0.897255, best_epoch=8
+[soc_to_soh | finetune] Loaded BEST checkpoint from epoch=8 | score=0.8972552794978709
+[FINAL] Using BEST checkpoint from stage='finetune' | epoch=8 | score=0.8972552794978709
+[FINAL] Stable test evaluation with n_mc_soc=500, n_mc_soh=500 | scheme=predicted_SOC_to_SOH
+
+[FINAL METRICS]
+struct_mode: soc_to_soh
+description: Partial hierarchy: z->M, z->SOC, z+SOC->SOH
+final_stage: finetune
+test_cls_acc: 0.91328125
+test_soc_rmse: 0.36598983295479814
+test_soc_mae: 0.19149359748298594
+test_soc_mape: 84.94852765827495
+test_soc_medape: 16.353215560632304
+test_soh_rmse: 0.5528473342351314
+test_soh_mae: 0.3745505141873472
+test_soh_mape: 247.0567491625986
+test_soh_medape: 43.149334423020036
+test_soc_rmse_raw: 8.136559935331507
+test_soc_mae_raw: 4.257219717207269
+test_soc_mape_raw: 10.301841057416805
+test_soc_medape_raw: 5.7284859596226925
+test_soh_rmse_raw: 0.05804641993136157
+test_soh_mae_raw: 0.039326076270414574
+test_soh_mape_raw: 4.8739269962535765
+test_soh_medape_raw: 2.7242962671482176
+n_train: 68162
+n_test: 1280
+num_classes: 8
+device: cpu
+elapsed_sec: 24.181467533111572
+
+==========================================================================================
+[RUN] Hierarchy ablation: hierarchical
+[RUN] Source: proposed further-analysis summary; no retraining
+==========================================================================================
+[REFERENCE] Loaded hierarchical row from proposed summary: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/proposed_method_summary.csv
+
+[SUMMARY]
+         config  ... soh_medape_change_pp_vs_hierarchical
+0    soc_to_soh  ...                             1.443257
+1  hierarchical  ...                             0.000000
+
+[2 rows x 34 columns]

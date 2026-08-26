@@ -1,0 +1,22 @@
+{
+  "model": "node",
+  "setting": "fair",
+  "test_cls_acc": 0.78984375,
+  "test_material_acc": 0.87578125,
+  "test_soc_rmse_raw": 21.44954504692678,
+  "test_soc_mae_raw": 16.553466449140906,
+  "test_soc_medae_raw": 12.230257379150387,
+  "test_soc_mape_raw": 40.0777353290397,
+  "test_soc_medape_raw": 35.50021591626259,
+  "test_soh_rmse_raw": 8.496361719283126,
+  "test_soh_mae_raw": 6.829438875134663,
+  "test_soh_medae_raw": 5.647365999539701,
+  "test_soh_mape_raw": 8.67448680750332,
+  "test_soh_medape_raw": 6.642622947669931,
+  "n_test": 1280,
+  "device": "cpu",
+  "summary_only": true,
+  "classifier_checkpoint": "results/benchmark/node/fair/node_clf_final.pt",
+  "soc_checkpoint": "results/benchmark/node/fair/node_soc_final.pt",
+  "soh_checkpoint": "results/benchmark/node/fair/node_soh_final.pt"
+}

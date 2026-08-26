@@ -1,0 +1,50 @@
+[
+  {
+    "name": "channel_ablation",
+    "status": "OK",
+    "rows": 2,
+    "expected_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/channel_ablation/channel_ablation_summary.csv",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "name": "hierarchy_ablation",
+    "status": "OK",
+    "rows": 3,
+    "expected_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_ablation/hierarchy_ablation_summary.csv",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "name": "hierarchy_order_ablation",
+    "status": "OK",
+    "rows": 2,
+    "expected_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_order_ablation/hierarchy_order_ablation_summary.csv",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "name": "input_representation_ablation",
+    "status": "OK",
+    "rows": 1,
+    "expected_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/input_representation_ablation/input_representation_ablation_summary.csv",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "name": "transfer_ablation",
+    "status": "OK",
+    "rows": 1,
+    "expected_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/transfer_ablation/transfer_ablation_summary.csv",
+    "error_type": "",
+    "error_message": ""
+  },
+  {
+    "name": "material_conditioning_ablation",
+    "status": "OK",
+    "rows": 1,
+    "expected_file": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/material_conditioning_ablation/material_conditioning_ablation_summary.csv",
+    "error_type": "",
+    "error_message": ""
+  }
+]

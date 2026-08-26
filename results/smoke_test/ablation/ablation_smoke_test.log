@@ -1,0 +1,439 @@
+================================================================================
+[ABLATION SMOKE TEST LOG]
+================================================================================
+time: 2026-07-11 20:48:04
+project_root: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction
+data_root: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/data
+out_root: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation
+case: all
+
+
+================================================================================
+[RUN] channel_ablation
+================================================================================
+
+==========================================================================================
+[RUN] Channel ablation: ch1_only
+[RUN] Channels: ('ch1',)
+[RUN] Input channels: 1
+[RUN] Pulse list: [5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/channel_ablation/ch1_only
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Channel mode: ch1_only | input_channels=1
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[single] epoch 000 | VAL cls=0.3333 | SOC MedAPE(raw)=24.827% | SOH MedAPE(raw)=10.330% | val_score=0.140213
+[single] Loaded BEST checkpoint from epoch=0 | score=0.1402126013226959
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.1402126013226959
+[FINAL] Stable test evaluation with n_mc_soc=500, n_mc_soh=500
+
+[FINAL METRICS]
+channel_mode: ch1_only
+input_channels: 1
+channels: ch1
+final_stage: single
+final_eval_scheme: predicted_soc_to_soh
+final_eval_n_mc_used: 500
+test_cls_acc: 0.2734375
+test_soc_rmse: 0.6999240123639769
+test_soc_mae: 0.5758883153321221
+test_soc_mape: 306.67273685945634
+test_soc_medape: 73.53740810106193
+test_soh_rmse: 0.9089052444382791
+test_soh_mae: 0.7111652242792843
+test_soh_mape: 174.25996671925878
+test_soh_medape: 107.48986629736224
+test_soc_rmse_raw: 15.560319876841737
+test_soc_mae_raw: 12.802827509285947
+test_soc_mape_raw: 48.12494650891844
+test_soc_medape_raw: 26.646748039178703
+test_soh_rmse_raw: 0.09544767433079816
+test_soh_mae_raw: 0.07468222582910578
+test_soh_mape_raw: 9.646270235258573
+test_soh_medape_raw: 7.524766074633252
+n_train: 6817
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 35.07492160797119
+
+==========================================================================================
+[RUN] Channel ablation: full
+[RUN] Channels: ('ch1', 'ch2', 'ch3')
+[RUN] Input channels: 3
+[RUN] Pulse list: [5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/channel_ablation/full
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Channel mode: full | input_channels=3
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[single] epoch 000 | VAL cls=0.3333 | SOC MedAPE(raw)=25.974% | SOH MedAPE(raw)=8.286% | val_score=0.150642
+[single] Loaded BEST checkpoint from epoch=0 | score=0.1506417240683653
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.1506417240683653
+[FINAL] Stable test evaluation with n_mc_soc=500, n_mc_soh=500
+
+[FINAL METRICS]
+channel_mode: full
+input_channels: 3
+channels: ch1+ch2+ch3
+final_stage: single
+final_eval_scheme: predicted_soc_to_soh
+final_eval_n_mc_used: 500
+test_cls_acc: 0.3046875
+test_soc_rmse: 0.6949275536276052
+test_soc_mae: 0.5664552109519718
+test_soc_mape: 305.18759268381183
+test_soc_medape: 62.30455858873138
+test_soh_rmse: 0.8860546959206063
+test_soh_mae: 0.7277516807280335
+test_soh_mape: 181.9916119302834
+test_soh_medape: 109.63958049475124
+test_soc_rmse_raw: 15.449241395726627
+test_soc_mae_raw: 12.593115999187841
+test_soc_mape_raw: 42.89500405600396
+test_soc_medape_raw: 23.63333827638618
+test_soh_rmse_raw: 0.09304804936819508
+test_soh_mae_raw: 0.07642403412332527
+test_soh_mape_raw: 9.71999760949725
+test_soh_medape_raw: 7.49518206172545
+n_train: 6817
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 32.13341569900513
+
+
+================================================================================
+[RUN] hierarchy_ablation
+================================================================================
+
+==========================================================================================
+[RUN] Hierarchy ablation: independent
+[RUN] Meaning: Independent parallel prediction: z->M, z->SOC, z->SOH
+[RUN] Pulse list: [5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_ablation/independent
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Structure mode: independent
+[INFO] Meaning: Independent parallel prediction: z->M, z->SOC, z->SOH
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[independent | single] epoch 000 | VAL cls=0.3137 | SOC MedAPE(raw)=23.913% | SOH MedAPE(raw)=9.234% | score=0.123665
+[independent | single] Loaded BEST checkpoint from epoch=0 | score=0.12366484471431044
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.12366484471431044
+[FINAL] Stable test evaluation with n_mc_soc=500, n_mc_soh=500 | scheme=original_scheme
+
+[FINAL METRICS]
+struct_mode: independent
+description: Independent parallel prediction: z->M, z->SOC, z->SOH
+final_stage: single
+test_cls_acc: 0.3046875
+test_soc_rmse: 0.7201022596649185
+test_soc_mae: 0.5559394229348982
+test_soc_mape: 358.8094112342105
+test_soc_medape: 55.99407101950666
+test_soh_rmse: 0.8842019125319814
+test_soh_mae: 0.7183553613213007
+test_soh_mape: 160.54635339490665
+test_soh_medape: 110.74644257765102
+test_soc_rmse_raw: 16.008911405365254
+test_soc_mae_raw: 12.359334870933543
+test_soc_mape_raw: 37.39274044470508
+test_soc_medape_raw: 22.28530067593407
+test_soh_rmse_raw: 0.09285348137932592
+test_soh_mae_raw: 0.07543729008138031
+test_soh_mape_raw: 9.48412519153976
+test_soh_medape_raw: 7.798916091850253
+n_train: 6817
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 32.05024266242981
+
+==========================================================================================
+[RUN] Hierarchy ablation: soc_to_soh
+[RUN] Meaning: Partial hierarchy: z->M, z->SOC, z+SOC->SOH
+[RUN] Pulse list: [5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_ablation/soc_to_soh
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Structure mode: soc_to_soh
+[INFO] Meaning: Partial hierarchy: z->M, z->SOC, z+SOC->SOH
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[soc_to_soh | single] epoch 000 | VAL cls=0.3333 | SOC MedAPE(raw)=28.485% | SOH MedAPE(raw)=9.565% | score=0.139877
+[soc_to_soh | single] Loaded BEST checkpoint from epoch=0 | score=0.1398766012457309
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.1398766012457309
+[FINAL] Stable test evaluation with n_mc_soc=500, n_mc_soh=500 | scheme=predicted_SOC_to_SOH
+
+[FINAL METRICS]
+struct_mode: soc_to_soh
+description: Partial hierarchy: z->M, z->SOC, z+SOC->SOH
+final_stage: single
+test_cls_acc: 0.2890625
+test_soc_rmse: 0.8104651053936054
+test_soc_mae: 0.6525676468299935
+test_soc_mape: 407.1927089956699
+test_soc_medape: 69.55942733505982
+test_soh_rmse: 0.8735140880768504
+test_soh_mae: 0.7107398632139734
+test_soh_mape: 207.26633287955985
+test_soh_medape: 103.55243853004765
+test_soc_rmse_raw: 18.017807742227713
+test_soc_mae_raw: 14.50751959724477
+test_soc_mape_raw: 40.080312348810175
+test_soc_medape_raw: 27.556813788660023
+test_soh_rmse_raw: 0.0917311113697563
+test_soh_mae_raw: 0.07463755700946453
+test_soh_mape_raw: 9.309956607786576
+test_soh_medape_raw: 7.9633720584659855
+n_train: 6817
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 31.833547115325928
+
+==========================================================================================
+[RUN] Hierarchy ablation: hierarchical
+[RUN] Source: proposed further-analysis summary; no retraining
+==========================================================================================
+[REFERENCE] Loaded hierarchical TEST row from proposed summary: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/proposed_method_summary.csv
+[REFERENCE] Selected split: test
+[REFERENCE] cls_acc=0.918750 | SOC MedAPE(raw)=4.502518% | SOH MedAPE(raw)=2.615236%
+
+
+================================================================================
+[RUN] hierarchy_order_ablation
+================================================================================
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] TRAIN samples = 6817 | IDs = 461
+[DATA] VAL   samples = 51 | IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] TEST  samples = 128 | IDs = 128
+[DEVICE] cpu
+
+==========================================================================================
+[RUN] Hierarchy order: M_SOC_SOH
+[RUN] Meaning: Material -> SOC -> SOH, proposed physical order
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_order_ablation/M_SOC_SOH
+==========================================================================================
+[M_SOC_SOH] epoch 000 | VAL cls=0.3333 | SOC MedAPE=31.189% | SOH MedAPE=13.191% | val_score=-0.242370
+[FINAL] M_SOC_SOH stable test evaluation with n_mc_soc=500, n_mc_soh=500
+[BEST] M_SOC_SOH
+{'order': 'M_SOC_SOH', 'description': 'Material -> SOC -> SOH, proposed physical order', 'best_epoch': 0, 'best_score': -0.24237023842464345, 'cls_acc': 0.2734375, 'soc_rmse_raw': 15.493078344311341, 'soc_mae_raw': 12.486461783239484, 'soc_mape_raw': 42.020848431267424, 'soc_medape_raw': 23.476107046557836, 'soh_rmse_raw': 0.09278126789999555, 'soh_mae_raw': 0.07345383654748072, 'soh_mape_raw': 9.40550504233552, 'soh_medape_raw': 7.478852422730256, 'n_train': 6817, 'n_test': 128, 'num_classes': 8, 'device': 'cpu', 'elapsed_sec': 4.48302149772644}
+
+==========================================================================================
+[RUN] Hierarchy order: PARALLEL
+[RUN] Meaning: Material, SOC and SOH predicted in parallel
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_order_ablation/PARALLEL
+==========================================================================================
+[PARALLEL] epoch 000 | VAL cls=0.3333 | SOC MedAPE=30.518% | SOH MedAPE=12.521% | val_score=-0.222270
+[FINAL] PARALLEL stable test evaluation with n_mc_soc=500, n_mc_soh=500
+[BEST] PARALLEL
+{'order': 'PARALLEL', 'description': 'Material, SOC and SOH predicted in parallel', 'best_epoch': 0, 'best_score': -0.2222704681903257, 'cls_acc': 0.2734375, 'soc_rmse_raw': 15.955625267795533, 'soc_mae_raw': 12.474465209410408, 'soc_mape_raw': 39.6455977953773, 'soc_medape_raw': 22.06080811905384, 'soh_rmse_raw': 0.09153835517523108, 'soh_mae_raw': 0.0731226021738141, 'soh_mape_raw': 9.278666799425487, 'soh_medape_raw': 7.385205210314025, 'n_train': 6817, 'n_test': 128, 'num_classes': 8, 'device': 'cpu', 'elapsed_sec': 4.470189571380615}
+
+
+================================================================================
+[RUN] input_representation_ablation
+================================================================================
+
+==========================================================================================
+[RUN] Input representation: raw_1d
+[RUN] Pulse list: [5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/input_representation_ablation/raw_1d
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Input representation: raw_1d
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[single] epoch 000 | VAL cls=0.3725 | SOC MedAPE(raw)=17.464% | SOH MedAPE(raw)=8.179% | val_score=0.214371
+[single] Loaded BEST checkpoint from epoch=0 | score=0.2143705404218262
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.2143705404218262
+[FINAL] Stable test evaluation with n_mc_soc=500, n_mc_soh=500 | scheme=predicted_SOC_to_SOH
+
+[FINAL METRICS]
+input_representation: raw_1d
+final_stage: single
+test_cls_acc: 0.3046875
+test_soc_rmse: 0.5782387111572136
+test_soc_mae: 0.44398390164860757
+test_soc_mape: 309.977802542693
+test_soc_medape: 57.91247260989751
+test_soh_rmse: 0.7992122548568391
+test_soh_mae: 0.6361479477604917
+test_soh_mape: 250.57799901110994
+test_soh_medape: 88.7617932608018
+test_soc_rmse_raw: 12.85508019704857
+test_soc_mae_raw: 9.870402226217632
+test_soc_mape_raw: 31.518536624263895
+test_soc_medape_raw: 18.842372634854975
+test_soh_rmse_raw: 0.08392838691331653
+test_soh_mae_raw: 0.06680436988959658
+test_soh_mape_raw: 8.212800648738499
+test_soh_medape_raw: 6.5494331261526675
+n_train: 6817
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 32.23517990112305
+
+
+================================================================================
+[RUN] transfer_ablation
+================================================================================
+
+==========================================================================================
+[RUN] Transfer ablation: hard
+[RUN] Meaning: Use argmax material prediction converted to one-hot downstream context.
+[RUN] Pulse list: [5000]
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/transfer_ablation/hard
+==========================================================================================
+[INFO] Device: cpu
+[INFO] Material transfer mode: hard
+[INFO] Meaning: Use argmax material prediction converted to one-hot downstream context.
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[hard | single] epoch 000 | VAL cls=0.3137 | SOC MedAPE(raw)=25.035% | SOH MedAPE(raw)=9.698% | val_score=0.133705
+[hard | single] Loaded BEST checkpoint from epoch=0 | score=0.13370521150383294
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.13370521150383294
+[FINAL] Stable test evaluation with n_mc_soc=16, n_mc_soh=16
+
+[FINAL METRICS]
+material_condition_mode: hard
+description: Use argmax material prediction converted to one-hot downstream context.
+final_stage: single
+test_cls_acc: 0.3125
+test_soc_rmse: 0.7215590476989746
+test_soc_mae: 0.5953478813171387
+test_soc_mape: 346.3935735145075
+test_soc_medape: 83.18902300455233
+test_soh_rmse: 0.869051992893219
+test_soh_mae: 0.69123774766922
+test_soh_mape: 183.13774797102099
+test_soh_medape: 97.28304182341483
+test_soc_rmse_raw: 16.04129851494254
+test_soc_mae_raw: 13.235442344935564
+test_soc_mape_raw: 49.808483907923815
+test_soc_medape_raw: 26.35468318677906
+test_soh_rmse_raw: 0.09126252995059549
+test_soh_mae_raw: 0.0725895674521595
+test_soh_mape_raw: 9.261785869661662
+test_soh_medape_raw: 8.189763140167575
+n_train: 6817
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 52.32016944885254
+
+
+================================================================================
+[RUN] material_conditioning_ablation
+================================================================================
+
+==========================================================================================
+[RUN] Material conditioning: hard
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/material_conditioning_ablation/material_hard
+==========================================================================================
+[INFO] Device: cpu
+[CACHE] Train tag: raw_train_6bbbddda9f | hit=False
+[CACHE] Test  tag: raw_test_0e19f2b074 | hit=False
+[DATA] Final TRAIN samples = 6817 | unique IDs = 461
+[DATA] Final VAL   samples = 51 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from original TRAIN IDs)
+[DATA] Final TEST  samples = 128 | unique IDs = 128 (same TEST IDs as the original split)
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[single] epoch 000 | VAL cls=0.2353, SOC MedAPE(raw)=31.827%, SOH MedAPE(raw)=9.842% | TEST cls=0.2891, SOC MedAPE(raw)=28.363%, SOH MedAPE(raw)=7.739% | val_score=0.032127
+[single] Loaded BEST checkpoint from epoch=0 | score=0.032127414713607416
+[FINAL] Using BEST checkpoint from stage='single' | epoch=0 | score=0.032127414713607416
+
+[FINAL METRICS]
+final_stage: single
+val_cls_acc: 0.23529411764705882
+val_soc_rmse: 0.8845489585222162
+val_soc_mae: 0.718770777587505
+val_soc_mape: 186.2718998438181
+val_soc_medape: 127.81193431514717
+val_soh_rmse: 1.1606469559129862
+val_soh_mae: 0.9423787171276761
+val_soh_mape: 170.10852495056722
+val_soh_medape: 121.54543242540572
+val_soc_rmse_raw: 19.684656353715898
+val_soc_mae_raw: 15.995446738800084
+val_soc_mape_raw: 60.10816008772102
+val_soc_medape_raw: 30.461591637774855
+val_soh_rmse_raw: 0.12316680878658008
+val_soh_mae_raw: 0.10000438002760667
+val_soh_mape_raw: 13.037932496823109
+val_soh_medape_raw: 10.22002268372552
+test_cls_acc: 0.2890625
+test_soc_rmse: 0.9037653053067158
+test_soc_mae: 0.74375124490507
+test_soc_mape: 279.6715675760546
+test_soc_medape: 111.52019980708437
+test_soh_rmse: 0.9635012929164566
+test_soh_mae: 0.7618698175137979
+test_soh_mape: 224.91068881266514
+test_soh_medape: 115.06789218517008
+test_soc_rmse_raw: 20.112294845833578
+test_soc_mae_raw: 16.55135934257842
+test_soc_mape_raw: 67.15894876433458
+test_soc_medape_raw: 28.3304586462761
+test_soh_rmse_raw: 0.10224588873100936
+test_soh_mae_raw: 0.08084893830628681
+test_soh_mape_raw: 10.467973252159592
+test_soh_medape_raw: 8.002692871273828
+n_train: 6817
+n_val: 51
+n_test: 128
+num_classes: 8
+device: cpu
+elapsed_sec: 31.553691625595093
+[FINAL] hard stable test evaluation from /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/material_conditioning_ablation/material_hard/checkpoints/single/best.pt with n_mc_soc=500, n_mc_soh=500
+
+[SUMMARY]
+          config material_condition_mode  ... soc_medape_pct soh_medape_pct
+0  material_hard                    hard  ...       21.82215       9.176227
+
+[1 rows x 29 columns]
+
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/material_conditioning_ablation/material_conditioning_ablation_summary.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/material_conditioning_ablation/material_conditioning_ablation_summary.json

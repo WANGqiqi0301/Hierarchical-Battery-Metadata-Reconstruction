@@ -1,0 +1,5 @@
+﻿Model,Target,Negative log-likelihood (normalized target space),CRPS (original target scale),Empirical 90% coverage (%),Absolute 90% coverage error (percentage points),Mean 90% prediction-interval width (original target scale)
+Gaussian baseline,SOC,2.9026591777801514,6.286157629371267,75.625,14.375,24.077856349073265
+Conditional flow,SOC,0.8631839752197266,3.1638100733994796,65.9375,24.0625,8.037135141728717
+Gaussian baseline,SOH,2.1896121501922607,0.03263387299739036,71.015625,18.984375,0.10216490642968794
+Conditional flow,SOH,2.783332109451294,0.03492118636638943,45.546875,44.453125,0.05253051814277352

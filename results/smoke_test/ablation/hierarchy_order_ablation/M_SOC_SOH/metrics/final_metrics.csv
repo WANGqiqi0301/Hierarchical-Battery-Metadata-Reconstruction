@@ -1,0 +1,2 @@
+﻿order,description,best_epoch,best_score,cls_acc,soc_rmse_raw,soc_mae_raw,soc_mape_raw,soc_medape_raw,soh_rmse_raw,soh_mae_raw,soh_mape_raw,soh_medape_raw,n_train,n_test,num_classes,device,elapsed_sec
+M_SOC_SOH,"Material -> SOC -> SOH, proposed physical order",0,-0.24237023842464345,0.2734375,15.493078344311341,12.486461783239484,42.020848431267424,23.476107046557836,0.09278126789999555,0.07345383654748072,9.40550504233552,7.478852422730256,6817,128,8,cpu,4.48302149772644

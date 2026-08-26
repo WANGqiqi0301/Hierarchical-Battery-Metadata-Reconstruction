@@ -1,0 +1,32 @@
+{
+  "model": "node",
+  "setting": "fair",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.3359375,
+    "soc_rmse": 44.19695647919863,
+    "soc_mae": 40.16203459532932,
+    "soc_mape": 97.78350588461855,
+    "soc_median_ape": 98.28017880308664,
+    "soh_rmse": 0.26310199928883543,
+    "soh_mae": 0.2151181817328976,
+    "soh_mape": 25.038485144172736,
+    "soh_median_ape": 23.923124902749326,
+    "n_test": 128
+  },
+  "n_train": 7613,
+  "n_test": 128,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "num_epochs": 3
+  }
+}

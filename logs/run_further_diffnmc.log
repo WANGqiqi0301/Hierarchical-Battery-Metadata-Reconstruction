@@ -1,0 +1,44 @@
+/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/torch/cuda/__init__.py:628: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[DEVICE] cpu
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[NORM] Loaded train-only U(41) stats: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/u41_norm_train_only.npz
+[DATA] Train samples: 68163
+[DATA] Val samples: 510
+[DATA] Test samples: 1280
+[DATA] Num classes: 8
+[MODEL] Loaded checkpoint: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/checkpoints/finetune/best.pt
+
+[INFER] TEST | n_mc_soc=16, n_mc_soh=16
+
+[INFER] TEST | n_mc_soc=32, n_mc_soh=32
+
+[INFER] TEST | n_mc_soc=64, n_mc_soh=64
+
+[INFER] TEST | n_mc_soc=64, n_mc_soh=128
+
+[INFER] TEST | n_mc_soc=128, n_mc_soh=128
+
+[INFER] TEST | n_mc_soc=128, n_mc_soh=256
+
+[INFER] TEST | n_mc_soc=256, n_mc_soh=256
+
+[SUMMARY: TEST ONLY]
+split  n_mc_soc  n_mc_soh                 rng_policy    n  cls_acc  soc_mae  soc_rmse  soc_mape  soc_medape  soc_ape_p25  soc_ape_p50  soc_ape_p75  soc_ape_p90  soc_ape_p95  soc_ae_p25  soc_ae_p50  soc_ae_p75  soc_ae_p90  soc_ae_p95  soh_mae  soh_rmse  soh_mape  soh_medape  soh_ape_p25  soh_ape_p50  soh_ape_p75  soh_ape_p90  soh_ape_p95  soh_ae_p25  soh_ae_p50  soh_ae_p75  soh_ae_p90  soh_ae_p95                                                                                                                                                          test_predictions_path
+ test        16        16 restore_pre_test_rng_state 1280  0.91875 3.976638  7.958061  9.542147    5.385770     1.682041     5.385770    11.771039    22.677305    30.631554    0.716626    1.921627    4.962758    9.302880   12.549920 0.040620  0.060992  5.083512    2.734493     1.164586     2.734493     6.730508    14.174038    18.242578    0.009896    0.022631    0.056059    0.113172    0.135427   /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC16_SOH16.csv
+ test        32        32 restore_pre_test_rng_state 1280  0.91875 3.931673  7.953401  9.351732    5.335808     1.611125     5.335808    11.495176    21.866513    30.775855    0.684115    1.885099    4.958897    9.183788   11.908083 0.040611  0.061119  5.073218    2.788573     1.122335     2.788573     6.715827    14.132674    17.968380    0.009800    0.022920    0.055438    0.112886    0.136723   /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC32_SOH32.csv
+ test        64        64 restore_pre_test_rng_state 1280  0.91875 3.901661  7.871267  9.373538    5.178489     1.824813     5.178489    11.278633    22.158104    30.377294    0.782924    1.888271    4.875994    9.110215   12.031056 0.040172  0.060098  5.030378    2.737654     1.166783     2.737654     6.706170    14.216573    18.012244    0.009928    0.022619    0.055873    0.111593    0.136049   /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC64_SOH64.csv
+ test        64       128 restore_pre_test_rng_state 1280  0.91875 3.897622  7.875175  9.287719    5.117019     1.733776     5.117019    11.229595    22.327660    30.436350    0.703918    1.859982    4.909096    9.020138   11.892787 0.040348  0.060337  5.047765    2.737623     1.194300     2.737623     6.684717    14.167809    17.675812    0.010222    0.022477    0.056494    0.113744    0.136282  /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC64_SOH128.csv
+ test       128       128 restore_pre_test_rng_state 1280  0.91875 3.871514  7.868146  9.220510    4.912330     1.786095     4.912330    11.104207    21.801908    31.050459    0.721719    1.854790    4.865619    9.073648   12.014153 0.040515  0.061092  5.069777    2.737196     1.245865     2.737196     6.757615    14.029705    17.907044    0.010805    0.022149    0.057467    0.108087    0.136674 /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC128_SOH128.csv
+ test       128       256 restore_pre_test_rng_state 1280  0.91875 3.848798  7.854351  9.143005    4.742835     1.670167     4.742835    11.085508    22.054560    30.253339    0.715755    1.858181    4.828019    8.917254   12.014153 0.048624  0.070931  6.113464    3.465548     1.416695     3.465548     8.288489    15.473923    19.055433    0.012291    0.027661    0.068107    0.131320    0.151072 /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC128_SOH256.csv
+ test       256       256 restore_pre_test_rng_state 1280  0.91875 6.402261 11.358840 21.157696    6.618756     2.054879     6.618756    17.989975    36.053498    71.206303    0.910598    2.643052    7.833982   18.427024   24.045668 0.048428  0.070550  6.037877    3.416088     1.513685     3.416088     8.150866    16.284738    18.624683    0.012641    0.027581    0.066388    0.128614    0.162432 /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC256_SOH256.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC16_SOH16.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC32_SOH32.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC64_SOH64.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC64_SOH128.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC128_SOH128.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC128_SOH256.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/test_predictions_per_sample_nmc_SOC256_SOH256.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/proposed_method_summary_test_nmc.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables/further_analysis_inference_config_test_nmc.json
+[OK] Generated TEST-only n_mc sweep CSVs under /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework_train_val/further_analysis/tables

@@ -1,0 +1,23 @@
+{
+  "model": "node",
+  "setting": "enhanced",
+  "test_cls_acc": 0.7890625,
+  "test_material_acc": 0.859375,
+  "test_soc_rmse_raw": 21.741870643681786,
+  "test_soc_mae_raw": 16.71310320844173,
+  "test_soc_medae_raw": 12.155026271057132,
+  "test_soc_mape_raw": 39.23638711103767,
+  "test_soc_medape_raw": 35.718724593267645,
+  "test_soh_rmse_raw": 5.4873463836443,
+  "test_soh_mae_raw": 4.249529781491467,
+  "test_soh_medae_raw": 3.37027844619751,
+  "test_soh_mape_raw": 5.434310434411305,
+  "test_soh_medape_raw": 4.074677607516869,
+  "n_test": 1280,
+  "device": "cpu",
+  "summary_only": true,
+  "classifier_checkpoint": "results/benchmark/node/enhanced/node_clf_baseline_final.pt",
+  "soc_checkpoint": "results/benchmark/node/enhanced/node_soc_enhanced_final.pt",
+  "soh_checkpoint": "results/benchmark/node/enhanced/node_soh_enhanced_final.pt",
+  "enhanced_hint_report": "{\"material_hint\": {\"target_accuracy\": 0.91875, \"train_accuracy\": 0.9187453205658668, \"test_accuracy\": 0.91875}, \"soc_hint_train\": {\"target_rmse\": 7.864401414996508, \"rmse\": 7.864401414996834, \"mae\": 6.286870563249805, \"mape\": 26.427368281070013, \"median_ape\": 14.519293648856028}, \"soc_hint_test\": {\"target_rmse\": 7.864401414996508, \"rmse\": 7.8644014159154425, \"mae\": 6.383310354838613, \"mape\": 22.609137045245927, \"median_ape\": 14.521579874709364}, \"feature_dims\": {\"base\": 42, \"soc_input\": 50, \"soh_input\": 51}}"
+}

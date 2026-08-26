@@ -1,0 +1,18 @@
+{
+  "time": "2026-07-11 19:47:32",
+  "project_root": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction",
+  "data_root": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/data",
+  "out_dir": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/benchmark",
+  "models": [
+    "xgboost",
+    "tabnet",
+    "ft_transformer",
+    "node"
+  ],
+  "setting": "both",
+  "quick": true,
+  "use_cache": false,
+  "pulse_list": [
+    1000
+  ]
+}

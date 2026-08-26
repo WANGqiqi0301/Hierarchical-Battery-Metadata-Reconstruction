@@ -1,0 +1,94 @@
+[CONFIG] orders = ['M_SOC_SOH']
+[CACHE] Train tag: raw_train_c292c3d99a | hit=False
+[CACHE] Test  tag: raw_test_4fc0cd64ff | hit=False
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[DATA] TRAIN samples = 60625 | IDs = 410
+[DATA] VAL   samples = 1020 | IDs = 102 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] TEST  samples = 1280 | IDs = 128
+[DEVICE] cpu
+
+==========================================================================================
+[RUN] Hierarchy order: M_SOC_SOH
+[RUN] Meaning: Material -> SOC -> SOH, proposed physical order
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/ablation/hierarchy_order_ablation/M_SOC_SOH
+==========================================================================================
+[M_SOC_SOH] epoch 000 | VAL cls=0.5265 | SOC MedAPE=15.432% | SOH MedAPE=9.223% | val_score=0.187686
+[M_SOC_SOH] epoch 001 | VAL cls=0.6686 | SOC MedAPE=16.351% | SOH MedAPE=8.742% | val_score=0.330283
+[M_SOC_SOH] epoch 002 | VAL cls=0.7059 | SOC MedAPE=13.424% | SOH MedAPE=8.732% | val_score=0.397002
+[M_SOC_SOH] epoch 003 | VAL cls=0.7147 | SOC MedAPE=13.341% | SOH MedAPE=6.810% | val_score=0.445089
+[M_SOC_SOH] epoch 004 | VAL cls=0.7539 | SOC MedAPE=13.760% | SOH MedAPE=7.267% | val_score=0.470987
+[M_SOC_SOH] epoch 005 | VAL cls=0.7667 | SOC MedAPE=11.067% | SOH MedAPE=6.651% | val_score=0.522972
+[M_SOC_SOH] epoch 006 | VAL cls=0.7627 | SOC MedAPE=12.127% | SOH MedAPE=8.294% | val_score=0.475597
+[M_SOC_SOH] epoch 007 | VAL cls=0.8029 | SOC MedAPE=12.004% | SOH MedAPE=6.228% | val_score=0.558335
+[M_SOC_SOH] epoch 008 | VAL cls=0.8010 | SOC MedAPE=10.613% | SOH MedAPE=6.085% | val_score=0.573145
+[M_SOC_SOH] epoch 009 | VAL cls=0.7902 | SOC MedAPE=14.000% | SOH MedAPE=6.039% | val_score=0.529413
+[M_SOC_SOH] epoch 010 | VAL cls=0.8167 | SOC MedAPE=10.670% | SOH MedAPE=5.541% | val_score=0.599145
+[M_SOC_SOH] epoch 011 | VAL cls=0.7873 | SOC MedAPE=11.174% | SOH MedAPE=6.101% | val_score=0.553487
+[M_SOC_SOH] epoch 012 | VAL cls=0.8147 | SOC MedAPE=11.462% | SOH MedAPE=6.817% | val_score=0.563745
+[M_SOC_SOH] epoch 013 | VAL cls=0.7980 | SOC MedAPE=10.554% | SOH MedAPE=5.304% | val_score=0.586409
+[M_SOC_SOH] epoch 014 | VAL cls=0.7922 | SOC MedAPE=10.753% | SOH MedAPE=5.762% | val_score=0.569397
+[M_SOC_SOH] epoch 015 | VAL cls=0.8343 | SOC MedAPE=10.827% | SOH MedAPE=6.499% | val_score=0.596062
+[M_SOC_SOH] epoch 016 | VAL cls=0.8402 | SOC MedAPE=9.106% | SOH MedAPE=4.795% | val_score=0.653232
+[M_SOC_SOH] epoch 017 | VAL cls=0.8059 | SOC MedAPE=9.860% | SOH MedAPE=5.143% | val_score=0.604415
+[M_SOC_SOH] epoch 018 | VAL cls=0.8510 | SOC MedAPE=12.293% | SOH MedAPE=5.165% | val_score=0.624744
+[M_SOC_SOH] epoch 019 | VAL cls=0.8480 | SOC MedAPE=9.306% | SOH MedAPE=5.027% | val_score=0.654444
+[M_SOC_SOH] epoch 020 | VAL cls=0.8206 | SOC MedAPE=9.752% | SOH MedAPE=5.479% | val_score=0.613488
+[M_SOC_SOH] epoch 021 | VAL cls=0.8245 | SOC MedAPE=10.883% | SOH MedAPE=5.494% | val_score=0.605787
+[M_SOC_SOH] epoch 022 | VAL cls=0.8539 | SOC MedAPE=10.143% | SOH MedAPE=4.802% | val_score=0.656455
+[M_SOC_SOH] epoch 023 | VAL cls=0.8314 | SOC MedAPE=10.097% | SOH MedAPE=5.137% | val_score=0.627668
+[M_SOC_SOH] epoch 024 | VAL cls=0.8373 | SOC MedAPE=9.498% | SOH MedAPE=5.522% | val_score=0.631830
+[M_SOC_SOH] epoch 025 | VAL cls=0.8451 | SOC MedAPE=10.168% | SOH MedAPE=4.801% | val_score=0.647401
+Traceback (most recent call last):
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 1591, in <module>
+    main()
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 1551, in main
+    summary = run_hierarchy_order_ablation(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 1331, in run_hierarchy_order_ablation
+    tr = train_one_epoch_order(
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 566, in train_one_epoch_order
+    out = model(
+          ^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 353, in forward
+    soc_pred = sample_flow_mean(
+               ^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 129, in sample_flow_mean
+    samples = flow.sample(context, num_samples=int(n_mc))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/proposed_framework/models/conditional_flow.py", line 60, in sample
+    return self.flow.sample(num_samples=int(num_samples), context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/distributions/base.py", line 65, in sample
+    return self._sample(num_samples, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/flows/base.py", line 54, in _sample
+    samples, _ = self._transform.inverse(noise, context=embedded_context)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/base.py", line 60, in inverse
+    return self._cascade(inputs, funcs, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/base.py", line 50, in _cascade
+    outputs, logabsdet = func(outputs, context)
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 48, in inverse
+    outputs, logabsdet = self._elementwise_inverse(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 429, in _elementwise_inverse
+    return self._elementwise(inputs, autoregressive_params, inverse=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 411, in _elementwise
+    outputs, logabsdet = spline_fn(
+                         ^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/splines/rational_quadratic.py", line 46, in unconstrained_rational_quadratic_spline
+    ) = rational_quadratic_spline(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/splines/rational_quadratic.py", line 135, in rational_quadratic_spline
+    assert (discriminant >= 0).all()
+AssertionError

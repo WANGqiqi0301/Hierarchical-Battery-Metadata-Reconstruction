@@ -1,0 +1,21 @@
+{
+  "model": "tabnet",
+  "setting": "fair",
+  "test_cls_acc": 0.8265625,
+  "test_material_acc": 0.87421875,
+  "test_soc_rmse_raw": 11.642230349916208,
+  "test_soc_mae_raw": 7.619546109999419,
+  "test_soc_medae_raw": 4.309515802001954,
+  "test_soc_mape_raw": 20.62477445993226,
+  "test_soc_medape_raw": 12.662886053866382,
+  "test_soh_rmse_raw": 8.34072808345363,
+  "test_soh_mae_raw": 6.277444375635517,
+  "test_soh_medae_raw": 4.232294471385437,
+  "test_soh_mape_raw": 7.888909677637295,
+  "test_soh_medape_raw": 5.219575701046182,
+  "n_test": 1280,
+  "summary_only": true,
+  "classifier_checkpoint": "results/benchmark/tabnet/fair/model_classifier.zip",
+  "soc_checkpoint": "results/benchmark/tabnet/fair/model_soc.zip",
+  "soh_checkpoint": "results/benchmark/tabnet/fair/model_soh.zip"
+}

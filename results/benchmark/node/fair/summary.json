@@ -1,0 +1,35 @@
+{
+  "model": "node",
+  "setting": "fair",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.78984375,
+    "soc_rmse": 21.44954504692678,
+    "soc_mae": 16.553466449140906,
+    "soc_mape": 40.0777353290397,
+    "soc_median_ape": 35.50021591626259,
+    "soh_rmse": 0.08496361719283126,
+    "soh_mae": 0.06829438875134664,
+    "soh_mape": 8.674486807503321,
+    "soh_median_ape": 6.642622947669932,
+    "n_test": 1280
+  },
+  "n_train": 76131,
+  "n_test": 1280,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "summary_only": true,
+    "classifier_checkpoint": "results/benchmark/node/fair/node_clf_final.pt",
+    "soc_checkpoint": "results/benchmark/node/fair/node_soc_final.pt",
+    "soh_checkpoint": "results/benchmark/node/fair/node_soh_final.pt"
+  }
+}

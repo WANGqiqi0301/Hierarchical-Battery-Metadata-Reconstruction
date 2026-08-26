@@ -1,0 +1,447 @@
+nohup: ignoring input
+[CACHE] Train tag: raw_train_c292c3d99a | hit=False
+[CACHE] Test  tag: raw_test_4fc0cd64ff | hit=False
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[DATA] Final TRAIN samples = 75733 | unique IDs = 512
+[DATA] Final TEST  samples = 1280 | unique IDs = 128
+[NORM] U1-U41 train-only normalization is disabled for this baseline.
+Epoch 000 | TE cls=0.3141 | SOC MedAPE(raw)=29.998% | SOH MedAPE(raw)=9.488% | train_select_score=0.008872 | time=34.55s
+Epoch 001 | TE cls=0.3141 | SOC MedAPE(raw)=28.549% | SOH MedAPE(raw)=9.306% | train_select_score=0.263433 | time=34.67s
+Epoch 002 | TE cls=0.4391 | SOC MedAPE(raw)=28.128% | SOH MedAPE(raw)=7.992% | train_select_score=0.444085 | time=34.59s
+Epoch 003 | TE cls=0.5180 | SOC MedAPE(raw)=23.528% | SOH MedAPE(raw)=6.822% | train_select_score=0.508871 | time=34.50s
+Epoch 004 | TE cls=0.5117 | SOC MedAPE(raw)=22.727% | SOH MedAPE(raw)=6.756% | train_select_score=0.556130 | time=34.59s
+Epoch 005 | TE cls=0.5664 | SOC MedAPE(raw)=24.766% | SOH MedAPE(raw)=7.379% | train_select_score=0.586178 | time=34.64s
+Epoch 006 | TE cls=0.5781 | SOC MedAPE(raw)=24.167% | SOH MedAPE(raw)=6.719% | train_select_score=0.610194 | time=34.61s
+Epoch 007 | TE cls=0.6328 | SOC MedAPE(raw)=24.761% | SOH MedAPE(raw)=5.745% | train_select_score=0.631146 | time=34.54s
+Epoch 008 | TE cls=0.5492 | SOC MedAPE(raw)=24.319% | SOH MedAPE(raw)=6.782% | train_select_score=0.650655 | time=34.61s
+Epoch 009 | TE cls=0.7266 | SOC MedAPE(raw)=21.963% | SOH MedAPE(raw)=4.646% | train_select_score=0.667329 | time=35.01s
+Epoch 010 | TE cls=0.6836 | SOC MedAPE(raw)=28.370% | SOH MedAPE(raw)=5.175% | train_select_score=0.678690 | time=34.46s
+Epoch 011 | TE cls=0.6625 | SOC MedAPE(raw)=28.691% | SOH MedAPE(raw)=5.972% | train_select_score=0.686491 | time=34.55s
+Epoch 012 | TE cls=0.6727 | SOC MedAPE(raw)=24.738% | SOH MedAPE(raw)=5.843% | train_select_score=0.696169 | time=34.68s
+Epoch 013 | TE cls=0.6820 | SOC MedAPE(raw)=24.302% | SOH MedAPE(raw)=5.288% | train_select_score=0.703520 | time=34.58s
+Epoch 014 | TE cls=0.6141 | SOC MedAPE(raw)=24.219% | SOH MedAPE(raw)=6.807% | train_select_score=0.709805 | time=34.57s
+Epoch 015 | TE cls=0.6617 | SOC MedAPE(raw)=21.946% | SOH MedAPE(raw)=4.451% | train_select_score=0.723633 | time=34.86s
+Epoch 016 | TE cls=0.6281 | SOC MedAPE(raw)=23.698% | SOH MedAPE(raw)=6.258% | train_select_score=0.724639 | time=34.53s
+Epoch 017 | TE cls=0.6953 | SOC MedAPE(raw)=22.291% | SOH MedAPE(raw)=4.380% | train_select_score=0.729175 | time=34.96s
+Epoch 018 | TE cls=0.7055 | SOC MedAPE(raw)=23.312% | SOH MedAPE(raw)=4.973% | train_select_score=0.736462 | time=35.39s
+Epoch 019 | TE cls=0.7188 | SOC MedAPE(raw)=24.016% | SOH MedAPE(raw)=4.413% | train_select_score=0.742820 | time=35.04s
+Epoch 020 | TE cls=0.8078 | SOC MedAPE(raw)=20.353% | SOH MedAPE(raw)=4.350% | train_select_score=0.744076 | time=36.14s
+Epoch 021 | TE cls=0.7125 | SOC MedAPE(raw)=19.388% | SOH MedAPE(raw)=4.060% | train_select_score=0.749196 | time=35.05s
+Epoch 022 | TE cls=0.7188 | SOC MedAPE(raw)=20.687% | SOH MedAPE(raw)=4.174% | train_select_score=0.746863 | time=34.73s
+Epoch 023 | TE cls=0.7703 | SOC MedAPE(raw)=22.016% | SOH MedAPE(raw)=4.296% | train_select_score=0.753731 | time=34.60s
+Epoch 024 | TE cls=0.7141 | SOC MedAPE(raw)=25.939% | SOH MedAPE(raw)=4.661% | train_select_score=0.753460 | time=34.59s
+Epoch 025 | TE cls=0.7523 | SOC MedAPE(raw)=22.811% | SOH MedAPE(raw)=4.140% | train_select_score=0.763212 | time=34.47s
+Epoch 026 | TE cls=0.7734 | SOC MedAPE(raw)=19.775% | SOH MedAPE(raw)=4.681% | train_select_score=0.768202 | time=34.65s
+Epoch 027 | TE cls=0.8187 | SOC MedAPE(raw)=21.322% | SOH MedAPE(raw)=3.648% | train_select_score=0.769451 | time=34.67s
+Epoch 028 | TE cls=0.7602 | SOC MedAPE(raw)=23.732% | SOH MedAPE(raw)=3.857% | train_select_score=0.770607 | time=34.60s
+Epoch 029 | TE cls=0.7352 | SOC MedAPE(raw)=24.928% | SOH MedAPE(raw)=4.482% | train_select_score=0.773393 | time=34.79s
+Epoch 030 | TE cls=0.7867 | SOC MedAPE(raw)=19.687% | SOH MedAPE(raw)=3.631% | train_select_score=0.776466 | time=34.79s
+Epoch 031 | TE cls=0.7742 | SOC MedAPE(raw)=20.751% | SOH MedAPE(raw)=3.791% | train_select_score=0.780014 | time=34.74s
+Epoch 032 | TE cls=0.7664 | SOC MedAPE(raw)=19.704% | SOH MedAPE(raw)=3.863% | train_select_score=0.783165 | time=34.57s
+Epoch 033 | TE cls=0.7594 | SOC MedAPE(raw)=21.100% | SOH MedAPE(raw)=3.861% | train_select_score=0.788501 | time=35.30s
+Epoch 034 | TE cls=0.7063 | SOC MedAPE(raw)=23.600% | SOH MedAPE(raw)=4.148% | train_select_score=0.779937 | time=34.54s
+Epoch 035 | TE cls=0.7992 | SOC MedAPE(raw)=19.968% | SOH MedAPE(raw)=3.934% | train_select_score=0.792469 | time=39.67s
+Epoch 036 | TE cls=0.7586 | SOC MedAPE(raw)=24.294% | SOH MedAPE(raw)=4.224% | train_select_score=0.793563 | time=36.42s
+Epoch 037 | TE cls=0.8219 | SOC MedAPE(raw)=19.273% | SOH MedAPE(raw)=3.746% | train_select_score=0.786488 | time=34.60s
+Epoch 038 | TE cls=0.7242 | SOC MedAPE(raw)=19.613% | SOH MedAPE(raw)=4.462% | train_select_score=0.788179 | time=34.82s
+Epoch 039 | TE cls=0.7805 | SOC MedAPE(raw)=20.035% | SOH MedAPE(raw)=3.616% | train_select_score=0.795922 | time=35.02s
+Epoch 040 | TE cls=0.7188 | SOC MedAPE(raw)=23.558% | SOH MedAPE(raw)=3.666% | train_select_score=0.796106 | time=34.33s
+Epoch 041 | TE cls=0.8352 | SOC MedAPE(raw)=16.823% | SOH MedAPE(raw)=3.352% | train_select_score=0.803829 | time=34.38s
+Epoch 042 | TE cls=0.7500 | SOC MedAPE(raw)=21.241% | SOH MedAPE(raw)=3.975% | train_select_score=0.798648 | time=34.60s
+Epoch 043 | TE cls=0.7820 | SOC MedAPE(raw)=18.026% | SOH MedAPE(raw)=3.852% | train_select_score=0.801800 | time=34.30s
+Epoch 044 | TE cls=0.7852 | SOC MedAPE(raw)=19.231% | SOH MedAPE(raw)=3.684% | train_select_score=0.809373 | time=34.41s
+Epoch 045 | TE cls=0.7883 | SOC MedAPE(raw)=19.061% | SOH MedAPE(raw)=3.502% | train_select_score=0.806721 | time=34.47s
+Epoch 046 | TE cls=0.7906 | SOC MedAPE(raw)=21.379% | SOH MedAPE(raw)=3.814% | train_select_score=0.804654 | time=34.28s
+Epoch 047 | TE cls=0.8375 | SOC MedAPE(raw)=19.652% | SOH MedAPE(raw)=3.444% | train_select_score=0.807491 | time=34.13s
+Epoch 048 | TE cls=0.7750 | SOC MedAPE(raw)=19.011% | SOH MedAPE(raw)=4.049% | train_select_score=0.809545 | time=34.43s
+Epoch 049 | TE cls=0.8031 | SOC MedAPE(raw)=18.626% | SOH MedAPE(raw)=3.819% | train_select_score=0.812243 | time=34.61s
+Epoch 050 | TE cls=0.7937 | SOC MedAPE(raw)=17.961% | SOH MedAPE(raw)=3.939% | train_select_score=0.812963 | time=34.54s
+Epoch 051 | TE cls=0.7891 | SOC MedAPE(raw)=20.529% | SOH MedAPE(raw)=3.761% | train_select_score=0.812618 | time=34.26s
+Epoch 052 | TE cls=0.8063 | SOC MedAPE(raw)=18.127% | SOH MedAPE(raw)=3.873% | train_select_score=0.812506 | time=34.50s
+Epoch 053 | TE cls=0.7023 | SOC MedAPE(raw)=19.720% | SOH MedAPE(raw)=4.468% | train_select_score=0.818332 | time=34.33s
+Epoch 054 | TE cls=0.8164 | SOC MedAPE(raw)=18.178% | SOH MedAPE(raw)=3.386% | train_select_score=0.809697 | time=34.24s
+Epoch 055 | TE cls=0.8219 | SOC MedAPE(raw)=21.218% | SOH MedAPE(raw)=3.465% | train_select_score=0.812111 | time=34.32s
+Epoch 056 | TE cls=0.7289 | SOC MedAPE(raw)=21.584% | SOH MedAPE(raw)=3.846% | train_select_score=0.817875 | time=34.36s
+Epoch 057 | TE cls=0.7875 | SOC MedAPE(raw)=22.354% | SOH MedAPE(raw)=3.790% | train_select_score=0.820097 | time=34.39s
+Epoch 058 | TE cls=0.8305 | SOC MedAPE(raw)=20.515% | SOH MedAPE(raw)=3.245% | train_select_score=0.828592 | time=34.27s
+Epoch 059 | TE cls=0.8281 | SOC MedAPE(raw)=24.791% | SOH MedAPE(raw)=3.428% | train_select_score=0.820484 | time=34.43s
+Epoch 060 | TE cls=0.7750 | SOC MedAPE(raw)=20.770% | SOH MedAPE(raw)=3.399% | train_select_score=0.823795 | time=34.33s
+Epoch 061 | TE cls=0.8555 | SOC MedAPE(raw)=17.262% | SOH MedAPE(raw)=3.404% | train_select_score=0.824347 | time=33.24s
+Epoch 062 | TE cls=0.8313 | SOC MedAPE(raw)=18.770% | SOH MedAPE(raw)=3.845% | train_select_score=0.823213 | time=32.81s
+Epoch 063 | TE cls=0.7781 | SOC MedAPE(raw)=19.488% | SOH MedAPE(raw)=3.564% | train_select_score=0.825082 | time=33.01s
+Epoch 064 | TE cls=0.7219 | SOC MedAPE(raw)=22.618% | SOH MedAPE(raw)=4.470% | train_select_score=0.828670 | time=33.05s
+Epoch 065 | TE cls=0.7906 | SOC MedAPE(raw)=17.595% | SOH MedAPE(raw)=3.403% | train_select_score=0.831767 | time=32.82s
+Epoch 066 | TE cls=0.8406 | SOC MedAPE(raw)=22.377% | SOH MedAPE(raw)=3.696% | train_select_score=0.833307 | time=33.06s
+Epoch 067 | TE cls=0.8453 | SOC MedAPE(raw)=18.927% | SOH MedAPE(raw)=3.213% | train_select_score=0.835827 | time=32.99s
+Epoch 068 | TE cls=0.8070 | SOC MedAPE(raw)=19.086% | SOH MedAPE(raw)=3.871% | train_select_score=0.832238 | time=32.88s
+Epoch 069 | TE cls=0.8383 | SOC MedAPE(raw)=18.198% | SOH MedAPE(raw)=3.559% | train_select_score=0.836067 | time=32.80s
+Epoch 070 | TE cls=0.8187 | SOC MedAPE(raw)=19.550% | SOH MedAPE(raw)=3.680% | train_select_score=0.840324 | time=33.01s
+Epoch 071 | TE cls=0.7898 | SOC MedAPE(raw)=23.609% | SOH MedAPE(raw)=3.803% | train_select_score=0.839101 | time=33.02s
+Epoch 072 | TE cls=0.8500 | SOC MedAPE(raw)=17.976% | SOH MedAPE(raw)=3.337% | train_select_score=0.838187 | time=33.00s
+Epoch 073 | TE cls=0.8398 | SOC MedAPE(raw)=21.833% | SOH MedAPE(raw)=3.477% | train_select_score=0.837876 | time=32.86s
+Epoch 074 | TE cls=0.8109 | SOC MedAPE(raw)=16.400% | SOH MedAPE(raw)=3.690% | train_select_score=0.840109 | time=32.90s
+Epoch 075 | TE cls=0.7937 | SOC MedAPE(raw)=18.413% | SOH MedAPE(raw)=3.401% | train_select_score=0.840018 | time=33.03s
+Epoch 076 | TE cls=0.6977 | SOC MedAPE(raw)=22.053% | SOH MedAPE(raw)=4.080% | train_select_score=0.840334 | time=32.91s
+Epoch 077 | TE cls=0.8250 | SOC MedAPE(raw)=16.947% | SOH MedAPE(raw)=3.640% | train_select_score=0.843881 | time=33.06s
+Epoch 078 | TE cls=0.7289 | SOC MedAPE(raw)=26.360% | SOH MedAPE(raw)=3.905% | train_select_score=0.844524 | time=32.89s
+Epoch 079 | TE cls=0.8094 | SOC MedAPE(raw)=19.895% | SOH MedAPE(raw)=3.423% | train_select_score=0.841887 | time=32.94s
+Epoch 080 | TE cls=0.8367 | SOC MedAPE(raw)=17.268% | SOH MedAPE(raw)=3.374% | train_select_score=0.845583 | time=32.84s
+Epoch 081 | TE cls=0.8156 | SOC MedAPE(raw)=17.153% | SOH MedAPE(raw)=3.258% | train_select_score=0.849272 | time=33.01s
+Epoch 082 | TE cls=0.8258 | SOC MedAPE(raw)=17.406% | SOH MedAPE(raw)=3.208% | train_select_score=0.844956 | time=33.00s
+Epoch 083 | TE cls=0.7273 | SOC MedAPE(raw)=21.663% | SOH MedAPE(raw)=3.809% | train_select_score=0.849848 | time=33.13s
+Epoch 084 | TE cls=0.8063 | SOC MedAPE(raw)=19.621% | SOH MedAPE(raw)=3.327% | train_select_score=0.845914 | time=32.92s
+Epoch 085 | TE cls=0.8750 | SOC MedAPE(raw)=18.432% | SOH MedAPE(raw)=3.330% | train_select_score=0.849698 | time=33.02s
+Epoch 086 | TE cls=0.7539 | SOC MedAPE(raw)=21.729% | SOH MedAPE(raw)=3.951% | train_select_score=0.855376 | time=32.98s
+Epoch 087 | TE cls=0.8164 | SOC MedAPE(raw)=21.297% | SOH MedAPE(raw)=3.454% | train_select_score=0.847522 | time=32.81s
+Epoch 088 | TE cls=0.8391 | SOC MedAPE(raw)=16.890% | SOH MedAPE(raw)=3.525% | train_select_score=0.852140 | time=32.96s
+Epoch 089 | TE cls=0.8766 | SOC MedAPE(raw)=16.906% | SOH MedAPE(raw)=3.236% | train_select_score=0.849626 | time=33.00s
+Epoch 090 | TE cls=0.8508 | SOC MedAPE(raw)=16.814% | SOH MedAPE(raw)=3.693% | train_select_score=0.853404 | time=32.96s
+Epoch 091 | TE cls=0.8031 | SOC MedAPE(raw)=18.432% | SOH MedAPE(raw)=3.358% | train_select_score=0.851902 | time=32.90s
+Epoch 092 | TE cls=0.7781 | SOC MedAPE(raw)=22.220% | SOH MedAPE(raw)=3.880% | train_select_score=0.853663 | time=33.01s
+Epoch 093 | TE cls=0.8664 | SOC MedAPE(raw)=16.669% | SOH MedAPE(raw)=3.170% | train_select_score=0.850371 | time=33.00s
+Epoch 094 | TE cls=0.8398 | SOC MedAPE(raw)=17.417% | SOH MedAPE(raw)=3.456% | train_select_score=0.854425 | time=32.90s
+Epoch 095 | TE cls=0.8539 | SOC MedAPE(raw)=16.415% | SOH MedAPE(raw)=3.368% | train_select_score=0.856485 | time=33.04s
+Epoch 096 | TE cls=0.8750 | SOC MedAPE(raw)=19.222% | SOH MedAPE(raw)=2.939% | train_select_score=0.854396 | time=33.07s
+Epoch 097 | TE cls=0.8219 | SOC MedAPE(raw)=18.400% | SOH MedAPE(raw)=3.433% | train_select_score=0.859695 | time=33.07s
+Epoch 098 | TE cls=0.8180 | SOC MedAPE(raw)=17.363% | SOH MedAPE(raw)=3.414% | train_select_score=0.858243 | time=32.90s
+Epoch 099 | TE cls=0.8688 | SOC MedAPE(raw)=18.733% | SOH MedAPE(raw)=3.202% | train_select_score=0.856948 | time=32.97s
+Epoch 100 | TE cls=0.8625 | SOC MedAPE(raw)=20.346% | SOH MedAPE(raw)=3.623% | train_select_score=0.855658 | time=33.02s
+Epoch 101 | TE cls=0.8477 | SOC MedAPE(raw)=18.457% | SOH MedAPE(raw)=3.422% | train_select_score=0.858772 | time=32.96s
+Epoch 102 | TE cls=0.8648 | SOC MedAPE(raw)=17.047% | SOH MedAPE(raw)=3.215% | train_select_score=0.857618 | time=32.86s
+Epoch 103 | TE cls=0.8664 | SOC MedAPE(raw)=20.476% | SOH MedAPE(raw)=3.326% | train_select_score=0.859786 | time=33.03s
+Epoch 104 | TE cls=0.8688 | SOC MedAPE(raw)=15.865% | SOH MedAPE(raw)=3.214% | train_select_score=0.861198 | time=33.07s
+Epoch 105 | TE cls=0.8414 | SOC MedAPE(raw)=18.746% | SOH MedAPE(raw)=3.055% | train_select_score=0.863662 | time=32.84s
+Epoch 106 | TE cls=0.8336 | SOC MedAPE(raw)=17.451% | SOH MedAPE(raw)=3.328% | train_select_score=0.861229 | time=33.00s
+Epoch 107 | TE cls=0.9000 | SOC MedAPE(raw)=16.506% | SOH MedAPE(raw)=2.975% | train_select_score=0.864391 | time=33.87s
+Epoch 108 | TE cls=0.8836 | SOC MedAPE(raw)=18.746% | SOH MedAPE(raw)=2.956% | train_select_score=0.862139 | time=33.61s
+Epoch 109 | TE cls=0.8375 | SOC MedAPE(raw)=16.108% | SOH MedAPE(raw)=3.684% | train_select_score=0.864365 | time=33.34s
+Epoch 110 | TE cls=0.8797 | SOC MedAPE(raw)=14.473% | SOH MedAPE(raw)=2.936% | train_select_score=0.861202 | time=33.49s
+Epoch 111 | TE cls=0.8758 | SOC MedAPE(raw)=18.522% | SOH MedAPE(raw)=3.242% | train_select_score=0.861922 | time=33.53s
+Epoch 112 | TE cls=0.8781 | SOC MedAPE(raw)=17.364% | SOH MedAPE(raw)=3.114% | train_select_score=0.864103 | time=33.35s
+Epoch 113 | TE cls=0.8195 | SOC MedAPE(raw)=19.042% | SOH MedAPE(raw)=3.828% | train_select_score=0.866888 | time=33.34s
+Epoch 114 | TE cls=0.8602 | SOC MedAPE(raw)=17.880% | SOH MedAPE(raw)=3.181% | train_select_score=0.862043 | time=33.50s
+Epoch 115 | TE cls=0.8477 | SOC MedAPE(raw)=18.986% | SOH MedAPE(raw)=3.437% | train_select_score=0.864387 | time=36.05s
+Epoch 116 | TE cls=0.8352 | SOC MedAPE(raw)=19.440% | SOH MedAPE(raw)=3.662% | train_select_score=0.867726 | time=35.16s
+Epoch 117 | TE cls=0.8750 | SOC MedAPE(raw)=16.281% | SOH MedAPE(raw)=3.277% | train_select_score=0.863822 | time=33.17s
+Epoch 118 | TE cls=0.8258 | SOC MedAPE(raw)=18.247% | SOH MedAPE(raw)=3.624% | train_select_score=0.866922 | time=37.67s
+Epoch 119 | TE cls=0.8266 | SOC MedAPE(raw)=17.411% | SOH MedAPE(raw)=3.612% | train_select_score=0.869678 | time=32.92s
+Epoch 120 | TE cls=0.8836 | SOC MedAPE(raw)=15.681% | SOH MedAPE(raw)=3.232% | train_select_score=0.868803 | time=32.79s
+Epoch 121 | TE cls=0.8570 | SOC MedAPE(raw)=18.266% | SOH MedAPE(raw)=3.291% | train_select_score=0.868703 | time=35.51s
+Epoch 122 | TE cls=0.8719 | SOC MedAPE(raw)=19.749% | SOH MedAPE(raw)=3.254% | train_select_score=0.868064 | time=32.91s
+Epoch 123 | TE cls=0.8383 | SOC MedAPE(raw)=19.137% | SOH MedAPE(raw)=3.581% | train_select_score=0.868168 | time=33.54s
+Epoch 124 | TE cls=0.8914 | SOC MedAPE(raw)=16.755% | SOH MedAPE(raw)=3.317% | train_select_score=0.869475 | time=33.35s
+Epoch 125 | TE cls=0.8719 | SOC MedAPE(raw)=16.502% | SOH MedAPE(raw)=3.006% | train_select_score=0.873154 | time=33.54s
+Epoch 126 | TE cls=0.8641 | SOC MedAPE(raw)=22.280% | SOH MedAPE(raw)=3.489% | train_select_score=0.867966 | time=33.68s
+Epoch 127 | TE cls=0.8797 | SOC MedAPE(raw)=15.654% | SOH MedAPE(raw)=3.043% | train_select_score=0.871782 | time=33.15s
+Epoch 128 | TE cls=0.8930 | SOC MedAPE(raw)=16.790% | SOH MedAPE(raw)=2.907% | train_select_score=0.872010 | time=33.28s
+Epoch 129 | TE cls=0.8711 | SOC MedAPE(raw)=16.828% | SOH MedAPE(raw)=3.152% | train_select_score=0.872748 | time=33.57s
+Epoch 130 | TE cls=0.8695 | SOC MedAPE(raw)=19.863% | SOH MedAPE(raw)=3.197% | train_select_score=0.873985 | time=33.69s
+Epoch 131 | TE cls=0.8891 | SOC MedAPE(raw)=15.055% | SOH MedAPE(raw)=3.161% | train_select_score=0.871888 | time=33.56s
+Epoch 132 | TE cls=0.8445 | SOC MedAPE(raw)=16.713% | SOH MedAPE(raw)=3.222% | train_select_score=0.874861 | time=33.85s
+Epoch 133 | TE cls=0.8500 | SOC MedAPE(raw)=16.251% | SOH MedAPE(raw)=3.079% | train_select_score=0.873703 | time=37.63s
+Epoch 134 | TE cls=0.8703 | SOC MedAPE(raw)=17.749% | SOH MedAPE(raw)=3.271% | train_select_score=0.875251 | time=32.91s
+Epoch 135 | TE cls=0.8750 | SOC MedAPE(raw)=18.333% | SOH MedAPE(raw)=3.214% | train_select_score=0.874025 | time=32.91s
+Epoch 136 | TE cls=0.8945 | SOC MedAPE(raw)=15.331% | SOH MedAPE(raw)=3.352% | train_select_score=0.875336 | time=33.01s
+Epoch 137 | TE cls=0.8680 | SOC MedAPE(raw)=17.929% | SOH MedAPE(raw)=3.185% | train_select_score=0.875415 | time=32.93s
+Epoch 138 | TE cls=0.9055 | SOC MedAPE(raw)=15.547% | SOH MedAPE(raw)=2.918% | train_select_score=0.874219 | time=32.84s
+Epoch 139 | TE cls=0.8859 | SOC MedAPE(raw)=16.086% | SOH MedAPE(raw)=3.072% | train_select_score=0.877442 | time=33.48s
+Epoch 140 | TE cls=0.8719 | SOC MedAPE(raw)=17.561% | SOH MedAPE(raw)=3.193% | train_select_score=0.875438 | time=33.57s
+Epoch 141 | TE cls=0.8789 | SOC MedAPE(raw)=15.036% | SOH MedAPE(raw)=3.533% | train_select_score=0.876688 | time=33.57s
+Epoch 142 | TE cls=0.8719 | SOC MedAPE(raw)=16.991% | SOH MedAPE(raw)=3.103% | train_select_score=0.874981 | time=33.37s
+Epoch 143 | TE cls=0.8891 | SOC MedAPE(raw)=16.596% | SOH MedAPE(raw)=3.085% | train_select_score=0.876236 | time=33.37s
+Epoch 144 | TE cls=0.8547 | SOC MedAPE(raw)=20.158% | SOH MedAPE(raw)=3.259% | train_select_score=0.878916 | time=33.43s
+Epoch 145 | TE cls=0.8922 | SOC MedAPE(raw)=16.975% | SOH MedAPE(raw)=2.951% | train_select_score=0.875257 | time=33.63s
+Epoch 146 | TE cls=0.8914 | SOC MedAPE(raw)=16.473% | SOH MedAPE(raw)=3.232% | train_select_score=0.879783 | time=33.51s
+Epoch 147 | TE cls=0.8758 | SOC MedAPE(raw)=16.643% | SOH MedAPE(raw)=3.298% | train_select_score=0.877679 | time=33.52s
+Epoch 148 | TE cls=0.8961 | SOC MedAPE(raw)=15.025% | SOH MedAPE(raw)=3.084% | train_select_score=0.878590 | time=32.91s
+Epoch 149 | TE cls=0.8977 | SOC MedAPE(raw)=16.001% | SOH MedAPE(raw)=3.072% | train_select_score=0.879371 | time=34.72s
+Epoch 150 | TE cls=0.8766 | SOC MedAPE(raw)=15.560% | SOH MedAPE(raw)=3.350% | train_select_score=0.878661 | time=32.60s
+Epoch 151 | TE cls=0.8766 | SOC MedAPE(raw)=15.963% | SOH MedAPE(raw)=3.207% | train_select_score=0.880818 | time=32.81s
+Epoch 152 | TE cls=0.8930 | SOC MedAPE(raw)=18.670% | SOH MedAPE(raw)=3.170% | train_select_score=0.880772 | time=36.79s
+Epoch 153 | TE cls=0.8852 | SOC MedAPE(raw)=16.906% | SOH MedAPE(raw)=3.347% | train_select_score=0.883376 | time=34.18s
+Epoch 154 | TE cls=0.8648 | SOC MedAPE(raw)=19.196% | SOH MedAPE(raw)=3.403% | train_select_score=0.879780 | time=33.26s
+Epoch 155 | TE cls=0.8977 | SOC MedAPE(raw)=16.278% | SOH MedAPE(raw)=3.079% | train_select_score=0.881588 | time=33.16s
+Epoch 156 | TE cls=0.8461 | SOC MedAPE(raw)=18.616% | SOH MedAPE(raw)=3.412% | train_select_score=0.884459 | time=33.19s
+Epoch 157 | TE cls=0.8781 | SOC MedAPE(raw)=18.287% | SOH MedAPE(raw)=3.240% | train_select_score=0.882223 | time=32.92s
+Epoch 158 | TE cls=0.8430 | SOC MedAPE(raw)=17.672% | SOH MedAPE(raw)=3.358% | train_select_score=0.881541 | time=33.70s
+Epoch 159 | TE cls=0.8953 | SOC MedAPE(raw)=14.843% | SOH MedAPE(raw)=3.116% | train_select_score=0.884365 | time=33.63s
+Epoch 160 | TE cls=0.8680 | SOC MedAPE(raw)=17.221% | SOH MedAPE(raw)=2.813% | train_select_score=0.885506 | time=33.27s
+Epoch 161 | TE cls=0.9070 | SOC MedAPE(raw)=18.724% | SOH MedAPE(raw)=3.018% | train_select_score=0.883302 | time=37.20s
+Epoch 162 | TE cls=0.8812 | SOC MedAPE(raw)=18.729% | SOH MedAPE(raw)=3.420% | train_select_score=0.881797 | time=35.57s
+Epoch 163 | TE cls=0.8453 | SOC MedAPE(raw)=18.021% | SOH MedAPE(raw)=3.534% | train_select_score=0.884053 | time=35.13s
+Epoch 164 | TE cls=0.9102 | SOC MedAPE(raw)=14.023% | SOH MedAPE(raw)=2.967% | train_select_score=0.883860 | time=33.65s
+Epoch 165 | TE cls=0.8750 | SOC MedAPE(raw)=17.571% | SOH MedAPE(raw)=3.137% | train_select_score=0.881996 | time=34.87s
+Epoch 166 | TE cls=0.8102 | SOC MedAPE(raw)=19.484% | SOH MedAPE(raw)=3.569% | train_select_score=0.884285 | time=33.61s
+Epoch 167 | TE cls=0.9031 | SOC MedAPE(raw)=15.008% | SOH MedAPE(raw)=3.168% | train_select_score=0.885770 | time=33.60s
+Epoch 168 | TE cls=0.8828 | SOC MedAPE(raw)=20.383% | SOH MedAPE(raw)=3.329% | train_select_score=0.884720 | time=33.39s
+Epoch 169 | TE cls=0.9039 | SOC MedAPE(raw)=13.567% | SOH MedAPE(raw)=3.094% | train_select_score=0.886438 | time=33.78s
+Epoch 170 | TE cls=0.8852 | SOC MedAPE(raw)=15.176% | SOH MedAPE(raw)=3.307% | train_select_score=0.886273 | time=33.89s
+Epoch 171 | TE cls=0.9172 | SOC MedAPE(raw)=14.098% | SOH MedAPE(raw)=3.103% | train_select_score=0.889009 | time=32.94s
+Epoch 172 | TE cls=0.8852 | SOC MedAPE(raw)=16.582% | SOH MedAPE(raw)=3.111% | train_select_score=0.885485 | time=33.76s
+Epoch 173 | TE cls=0.9008 | SOC MedAPE(raw)=18.020% | SOH MedAPE(raw)=3.188% | train_select_score=0.885694 | time=36.29s
+Epoch 174 | TE cls=0.8922 | SOC MedAPE(raw)=15.439% | SOH MedAPE(raw)=2.994% | train_select_score=0.886935 | time=33.19s
+Epoch 175 | TE cls=0.8375 | SOC MedAPE(raw)=16.918% | SOH MedAPE(raw)=3.820% | train_select_score=0.888304 | time=33.76s
+Epoch 176 | TE cls=0.9008 | SOC MedAPE(raw)=15.416% | SOH MedAPE(raw)=3.091% | train_select_score=0.885407 | time=33.69s
+Epoch 177 | TE cls=0.9117 | SOC MedAPE(raw)=16.277% | SOH MedAPE(raw)=3.045% | train_select_score=0.886531 | time=33.62s
+Epoch 178 | TE cls=0.9148 | SOC MedAPE(raw)=15.381% | SOH MedAPE(raw)=2.918% | train_select_score=0.889688 | time=33.59s
+Epoch 179 | TE cls=0.8812 | SOC MedAPE(raw)=17.105% | SOH MedAPE(raw)=3.206% | train_select_score=0.888289 | time=33.36s
+Epoch 180 | TE cls=0.9148 | SOC MedAPE(raw)=14.298% | SOH MedAPE(raw)=2.823% | train_select_score=0.891069 | time=33.72s
+Epoch 181 | TE cls=0.8906 | SOC MedAPE(raw)=13.225% | SOH MedAPE(raw)=3.032% | train_select_score=0.891591 | time=37.51s
+Epoch 182 | TE cls=0.8516 | SOC MedAPE(raw)=19.526% | SOH MedAPE(raw)=3.773% | train_select_score=0.890580 | time=33.45s
+Epoch 183 | TE cls=0.8562 | SOC MedAPE(raw)=17.612% | SOH MedAPE(raw)=3.405% | train_select_score=0.888970 | time=33.56s
+Epoch 184 | TE cls=0.8703 | SOC MedAPE(raw)=14.466% | SOH MedAPE(raw)=3.004% | train_select_score=0.888148 | time=32.96s
+Epoch 185 | TE cls=0.8477 | SOC MedAPE(raw)=16.243% | SOH MedAPE(raw)=3.120% | train_select_score=0.889556 | time=33.10s
+Epoch 186 | TE cls=0.8883 | SOC MedAPE(raw)=14.440% | SOH MedAPE(raw)=3.003% | train_select_score=0.890661 | time=33.09s
+Epoch 187 | TE cls=0.8875 | SOC MedAPE(raw)=19.265% | SOH MedAPE(raw)=3.218% | train_select_score=0.890705 | time=33.14s
+Epoch 188 | TE cls=0.8914 | SOC MedAPE(raw)=17.740% | SOH MedAPE(raw)=2.865% | train_select_score=0.891023 | time=33.10s
+Epoch 189 | TE cls=0.8984 | SOC MedAPE(raw)=16.164% | SOH MedAPE(raw)=3.127% | train_select_score=0.892733 | time=33.52s
+Epoch 190 | TE cls=0.9164 | SOC MedAPE(raw)=15.143% | SOH MedAPE(raw)=2.889% | train_select_score=0.892628 | time=33.25s
+Epoch 191 | TE cls=0.8547 | SOC MedAPE(raw)=16.399% | SOH MedAPE(raw)=2.848% | train_select_score=0.889102 | time=33.40s
+Epoch 192 | TE cls=0.8969 | SOC MedAPE(raw)=16.648% | SOH MedAPE(raw)=3.102% | train_select_score=0.890295 | time=33.37s
+Epoch 193 | TE cls=0.8820 | SOC MedAPE(raw)=14.619% | SOH MedAPE(raw)=3.409% | train_select_score=0.891041 | time=33.12s
+Epoch 194 | TE cls=0.8938 | SOC MedAPE(raw)=13.053% | SOH MedAPE(raw)=2.966% | train_select_score=0.891626 | time=33.55s
+Epoch 195 | TE cls=0.8547 | SOC MedAPE(raw)=15.703% | SOH MedAPE(raw)=3.448% | train_select_score=0.892459 | time=33.59s
+Epoch 196 | TE cls=0.8992 | SOC MedAPE(raw)=16.417% | SOH MedAPE(raw)=3.173% | train_select_score=0.893347 | time=33.24s
+Epoch 197 | TE cls=0.8969 | SOC MedAPE(raw)=14.679% | SOH MedAPE(raw)=2.811% | train_select_score=0.892060 | time=32.85s
+Epoch 198 | TE cls=0.8859 | SOC MedAPE(raw)=15.262% | SOH MedAPE(raw)=3.041% | train_select_score=0.891543 | time=33.36s
+Epoch 199 | TE cls=0.8852 | SOC MedAPE(raw)=18.211% | SOH MedAPE(raw)=3.109% | train_select_score=0.894952 | time=33.14s
+Epoch 200 | TE cls=0.8422 | SOC MedAPE(raw)=20.179% | SOH MedAPE(raw)=3.501% | train_select_score=0.894285 | time=33.47s
+Epoch 201 | TE cls=0.8977 | SOC MedAPE(raw)=15.551% | SOH MedAPE(raw)=3.270% | train_select_score=0.893779 | time=33.92s
+Epoch 202 | TE cls=0.8445 | SOC MedAPE(raw)=16.114% | SOH MedAPE(raw)=3.145% | train_select_score=0.894072 | time=34.51s
+Epoch 203 | TE cls=0.9039 | SOC MedAPE(raw)=16.752% | SOH MedAPE(raw)=2.745% | train_select_score=0.891685 | time=35.16s
+Epoch 204 | TE cls=0.9000 | SOC MedAPE(raw)=14.689% | SOH MedAPE(raw)=3.000% | train_select_score=0.894077 | time=33.35s
+Epoch 205 | TE cls=0.9000 | SOC MedAPE(raw)=15.706% | SOH MedAPE(raw)=3.131% | train_select_score=0.894368 | time=33.56s
+Epoch 206 | TE cls=0.8820 | SOC MedAPE(raw)=17.354% | SOH MedAPE(raw)=3.226% | train_select_score=0.895565 | time=33.35s
+Epoch 207 | TE cls=0.8867 | SOC MedAPE(raw)=18.909% | SOH MedAPE(raw)=3.339% | train_select_score=0.894826 | time=33.60s
+Epoch 208 | TE cls=0.8828 | SOC MedAPE(raw)=14.460% | SOH MedAPE(raw)=3.199% | train_select_score=0.893042 | time=33.41s
+Epoch 209 | TE cls=0.8492 | SOC MedAPE(raw)=16.190% | SOH MedAPE(raw)=3.427% | train_select_score=0.893819 | time=35.65s
+Epoch 210 | TE cls=0.8953 | SOC MedAPE(raw)=16.356% | SOH MedAPE(raw)=2.915% | train_select_score=0.897349 | time=38.20s
+Epoch 211 | TE cls=0.9023 | SOC MedAPE(raw)=14.878% | SOH MedAPE(raw)=3.153% | train_select_score=0.898201 | time=33.11s
+Epoch 212 | TE cls=0.9078 | SOC MedAPE(raw)=14.896% | SOH MedAPE(raw)=2.971% | train_select_score=0.895268 | time=33.92s
+Epoch 213 | TE cls=0.8969 | SOC MedAPE(raw)=16.562% | SOH MedAPE(raw)=3.163% | train_select_score=0.895531 | time=35.55s
+Epoch 214 | TE cls=0.8828 | SOC MedAPE(raw)=17.637% | SOH MedAPE(raw)=3.225% | train_select_score=0.895733 | time=33.97s
+Epoch 215 | TE cls=0.9086 | SOC MedAPE(raw)=14.341% | SOH MedAPE(raw)=3.049% | train_select_score=0.896217 | time=33.41s
+Epoch 216 | TE cls=0.9055 | SOC MedAPE(raw)=14.730% | SOH MedAPE(raw)=2.744% | train_select_score=0.896928 | time=33.62s
+Epoch 217 | TE cls=0.8922 | SOC MedAPE(raw)=14.763% | SOH MedAPE(raw)=2.877% | train_select_score=0.897060 | time=33.38s
+Epoch 218 | TE cls=0.8758 | SOC MedAPE(raw)=14.083% | SOH MedAPE(raw)=3.372% | train_select_score=0.895272 | time=33.69s
+Epoch 219 | TE cls=0.9133 | SOC MedAPE(raw)=12.889% | SOH MedAPE(raw)=3.242% | train_select_score=0.897345 | time=33.25s
+Epoch 220 | TE cls=0.9125 | SOC MedAPE(raw)=14.346% | SOH MedAPE(raw)=3.023% | train_select_score=0.897282 | time=33.30s
+Epoch 221 | TE cls=0.9070 | SOC MedAPE(raw)=14.472% | SOH MedAPE(raw)=2.810% | train_select_score=0.897009 | time=33.17s
+Epoch 222 | TE cls=0.8664 | SOC MedAPE(raw)=17.598% | SOH MedAPE(raw)=3.090% | train_select_score=0.896036 | time=33.40s
+Epoch 223 | TE cls=0.9094 | SOC MedAPE(raw)=14.978% | SOH MedAPE(raw)=2.932% | train_select_score=0.898181 | time=33.54s
+Epoch 224 | TE cls=0.8961 | SOC MedAPE(raw)=15.991% | SOH MedAPE(raw)=3.067% | train_select_score=0.897170 | time=36.52s
+Epoch 225 | TE cls=0.8977 | SOC MedAPE(raw)=13.930% | SOH MedAPE(raw)=2.865% | train_select_score=0.898521 | time=33.63s
+Epoch 226 | TE cls=0.8766 | SOC MedAPE(raw)=15.062% | SOH MedAPE(raw)=3.326% | train_select_score=0.897374 | time=33.38s
+Epoch 227 | TE cls=0.9102 | SOC MedAPE(raw)=13.008% | SOH MedAPE(raw)=3.040% | train_select_score=0.898178 | time=33.52s
+Epoch 228 | TE cls=0.8695 | SOC MedAPE(raw)=14.350% | SOH MedAPE(raw)=2.792% | train_select_score=0.900134 | time=33.22s
+Epoch 229 | TE cls=0.9000 | SOC MedAPE(raw)=13.555% | SOH MedAPE(raw)=3.059% | train_select_score=0.899929 | time=34.54s
+Epoch 230 | TE cls=0.8969 | SOC MedAPE(raw)=14.119% | SOH MedAPE(raw)=3.119% | train_select_score=0.898159 | time=36.07s
+Epoch 231 | TE cls=0.8297 | SOC MedAPE(raw)=17.657% | SOH MedAPE(raw)=3.585% | train_select_score=0.899600 | time=33.37s
+Epoch 232 | TE cls=0.9008 | SOC MedAPE(raw)=13.104% | SOH MedAPE(raw)=3.012% | train_select_score=0.899613 | time=33.16s
+Epoch 233 | TE cls=0.9023 | SOC MedAPE(raw)=13.395% | SOH MedAPE(raw)=2.876% | train_select_score=0.900056 | time=33.38s
+Epoch 234 | TE cls=0.9102 | SOC MedAPE(raw)=16.120% | SOH MedAPE(raw)=2.937% | train_select_score=0.898735 | time=33.07s
+Epoch 235 | TE cls=0.8992 | SOC MedAPE(raw)=14.574% | SOH MedAPE(raw)=2.887% | train_select_score=0.899217 | time=33.10s
+Epoch 236 | TE cls=0.9102 | SOC MedAPE(raw)=15.880% | SOH MedAPE(raw)=3.025% | train_select_score=0.900936 | time=33.38s
+Epoch 237 | TE cls=0.9148 | SOC MedAPE(raw)=15.902% | SOH MedAPE(raw)=2.914% | train_select_score=0.899627 | time=33.05s
+Epoch 238 | TE cls=0.8680 | SOC MedAPE(raw)=14.079% | SOH MedAPE(raw)=2.855% | train_select_score=0.900199 | time=33.28s
+Epoch 239 | TE cls=0.9070 | SOC MedAPE(raw)=14.066% | SOH MedAPE(raw)=3.243% | train_select_score=0.897608 | time=33.10s
+Epoch 240 | TE cls=0.8820 | SOC MedAPE(raw)=14.368% | SOH MedAPE(raw)=3.117% | train_select_score=0.900799 | time=33.39s
+Epoch 241 | TE cls=0.8930 | SOC MedAPE(raw)=14.892% | SOH MedAPE(raw)=3.132% | train_select_score=0.900378 | time=33.00s
+Epoch 242 | TE cls=0.8938 | SOC MedAPE(raw)=14.558% | SOH MedAPE(raw)=3.062% | train_select_score=0.901584 | time=33.25s
+Epoch 243 | TE cls=0.9031 | SOC MedAPE(raw)=16.772% | SOH MedAPE(raw)=3.031% | train_select_score=0.901024 | time=33.38s
+Epoch 244 | TE cls=0.8984 | SOC MedAPE(raw)=13.858% | SOH MedAPE(raw)=3.221% | train_select_score=0.900214 | time=33.06s
+Epoch 245 | TE cls=0.9187 | SOC MedAPE(raw)=13.518% | SOH MedAPE(raw)=2.795% | train_select_score=0.903011 | time=32.99s
+Epoch 246 | TE cls=0.8812 | SOC MedAPE(raw)=14.821% | SOH MedAPE(raw)=3.382% | train_select_score=0.900201 | time=33.14s
+Epoch 247 | TE cls=0.9180 | SOC MedAPE(raw)=16.612% | SOH MedAPE(raw)=3.063% | train_select_score=0.901220 | time=33.31s
+Epoch 248 | TE cls=0.9211 | SOC MedAPE(raw)=13.421% | SOH MedAPE(raw)=2.657% | train_select_score=0.900049 | time=33.05s
+Epoch 249 | TE cls=0.9094 | SOC MedAPE(raw)=13.731% | SOH MedAPE(raw)=2.903% | train_select_score=0.900000 | time=33.10s
+Epoch 250 | TE cls=0.9086 | SOC MedAPE(raw)=15.134% | SOH MedAPE(raw)=2.933% | train_select_score=0.902310 | time=33.07s
+Epoch 251 | TE cls=0.8742 | SOC MedAPE(raw)=17.438% | SOH MedAPE(raw)=3.104% | train_select_score=0.901923 | time=33.25s
+Epoch 252 | TE cls=0.8641 | SOC MedAPE(raw)=13.713% | SOH MedAPE(raw)=3.265% | train_select_score=0.902642 | time=33.04s
+Epoch 253 | TE cls=0.9211 | SOC MedAPE(raw)=13.410% | SOH MedAPE(raw)=2.838% | train_select_score=0.901713 | time=33.14s
+Epoch 254 | TE cls=0.9078 | SOC MedAPE(raw)=12.251% | SOH MedAPE(raw)=2.769% | train_select_score=0.901358 | time=33.18s
+Epoch 255 | TE cls=0.8656 | SOC MedAPE(raw)=16.771% | SOH MedAPE(raw)=3.198% | train_select_score=0.903624 | time=33.59s
+Epoch 256 | TE cls=0.8914 | SOC MedAPE(raw)=13.310% | SOH MedAPE(raw)=2.885% | train_select_score=0.902728 | time=33.17s
+Epoch 257 | TE cls=0.9008 | SOC MedAPE(raw)=13.373% | SOH MedAPE(raw)=3.173% | train_select_score=0.903046 | time=33.09s
+Epoch 258 | TE cls=0.9062 | SOC MedAPE(raw)=15.714% | SOH MedAPE(raw)=2.884% | train_select_score=0.902529 | time=33.11s
+Epoch 259 | TE cls=0.8680 | SOC MedAPE(raw)=16.037% | SOH MedAPE(raw)=2.950% | train_select_score=0.902719 | time=33.06s
+Epoch 260 | TE cls=0.8656 | SOC MedAPE(raw)=14.681% | SOH MedAPE(raw)=3.197% | train_select_score=0.902693 | time=33.12s
+Epoch 261 | TE cls=0.9062 | SOC MedAPE(raw)=15.262% | SOH MedAPE(raw)=2.896% | train_select_score=0.903615 | time=33.05s
+Epoch 262 | TE cls=0.8906 | SOC MedAPE(raw)=12.797% | SOH MedAPE(raw)=3.075% | train_select_score=0.904048 | time=33.04s
+Epoch 263 | TE cls=0.8805 | SOC MedAPE(raw)=17.659% | SOH MedAPE(raw)=2.984% | train_select_score=0.904167 | time=33.04s
+Epoch 264 | TE cls=0.8977 | SOC MedAPE(raw)=13.572% | SOH MedAPE(raw)=2.870% | train_select_score=0.904887 | time=32.98s
+Epoch 265 | TE cls=0.8906 | SOC MedAPE(raw)=13.728% | SOH MedAPE(raw)=3.035% | train_select_score=0.905828 | time=37.53s
+Epoch 266 | TE cls=0.9062 | SOC MedAPE(raw)=13.984% | SOH MedAPE(raw)=2.966% | train_select_score=0.903242 | time=34.42s
+Epoch 267 | TE cls=0.8922 | SOC MedAPE(raw)=14.422% | SOH MedAPE(raw)=3.395% | train_select_score=0.904866 | time=33.04s
+Epoch 268 | TE cls=0.8805 | SOC MedAPE(raw)=15.371% | SOH MedAPE(raw)=3.051% | train_select_score=0.905404 | time=33.25s
+Epoch 269 | TE cls=0.8891 | SOC MedAPE(raw)=14.609% | SOH MedAPE(raw)=3.227% | train_select_score=0.903425 | time=33.18s
+Epoch 270 | TE cls=0.8891 | SOC MedAPE(raw)=15.631% | SOH MedAPE(raw)=3.084% | train_select_score=0.905030 | time=33.17s
+Epoch 271 | TE cls=0.8898 | SOC MedAPE(raw)=13.277% | SOH MedAPE(raw)=3.132% | train_select_score=0.904409 | time=33.16s
+Epoch 272 | TE cls=0.9125 | SOC MedAPE(raw)=14.800% | SOH MedAPE(raw)=3.054% | train_select_score=0.903866 | time=33.03s
+Epoch 273 | TE cls=0.8930 | SOC MedAPE(raw)=12.860% | SOH MedAPE(raw)=3.319% | train_select_score=0.904555 | time=33.03s
+Epoch 274 | TE cls=0.9031 | SOC MedAPE(raw)=17.571% | SOH MedAPE(raw)=3.040% | train_select_score=0.905936 | time=32.86s
+Epoch 275 | TE cls=0.9031 | SOC MedAPE(raw)=16.146% | SOH MedAPE(raw)=2.964% | train_select_score=0.904062 | time=33.02s
+Epoch 276 | TE cls=0.9281 | SOC MedAPE(raw)=15.355% | SOH MedAPE(raw)=2.885% | train_select_score=0.906039 | time=32.99s
+Epoch 277 | TE cls=0.9172 | SOC MedAPE(raw)=15.326% | SOH MedAPE(raw)=3.096% | train_select_score=0.903382 | time=33.05s
+Epoch 278 | TE cls=0.9094 | SOC MedAPE(raw)=14.092% | SOH MedAPE(raw)=3.025% | train_select_score=0.906903 | time=32.96s
+Epoch 279 | TE cls=0.9219 | SOC MedAPE(raw)=13.390% | SOH MedAPE(raw)=2.872% | train_select_score=0.905819 | time=33.07s
+Epoch 280 | TE cls=0.9328 | SOC MedAPE(raw)=15.121% | SOH MedAPE(raw)=2.834% | train_select_score=0.905581 | time=33.27s
+Epoch 281 | TE cls=0.8930 | SOC MedAPE(raw)=16.280% | SOH MedAPE(raw)=2.778% | train_select_score=0.903765 | time=33.00s
+Epoch 282 | TE cls=0.8953 | SOC MedAPE(raw)=14.582% | SOH MedAPE(raw)=3.065% | train_select_score=0.905186 | time=33.10s
+Epoch 283 | TE cls=0.8836 | SOC MedAPE(raw)=15.962% | SOH MedAPE(raw)=3.284% | train_select_score=0.906592 | time=33.22s
+Epoch 284 | TE cls=0.8945 | SOC MedAPE(raw)=14.018% | SOH MedAPE(raw)=3.027% | train_select_score=0.905235 | time=33.13s
+Epoch 285 | TE cls=0.9117 | SOC MedAPE(raw)=11.901% | SOH MedAPE(raw)=2.795% | train_select_score=0.905881 | time=33.22s
+Epoch 286 | TE cls=0.8922 | SOC MedAPE(raw)=15.993% | SOH MedAPE(raw)=2.898% | train_select_score=0.905961 | time=33.15s
+Epoch 287 | TE cls=0.8875 | SOC MedAPE(raw)=14.810% | SOH MedAPE(raw)=3.226% | train_select_score=0.906574 | time=33.17s
+Epoch 288 | TE cls=0.8828 | SOC MedAPE(raw)=17.879% | SOH MedAPE(raw)=2.967% | train_select_score=0.907256 | time=33.46s
+Epoch 289 | TE cls=0.9031 | SOC MedAPE(raw)=15.077% | SOH MedAPE(raw)=2.750% | train_select_score=0.906471 | time=33.12s
+Epoch 290 | TE cls=0.9125 | SOC MedAPE(raw)=12.328% | SOH MedAPE(raw)=2.778% | train_select_score=0.907714 | time=33.18s
+Epoch 291 | TE cls=0.9031 | SOC MedAPE(raw)=13.167% | SOH MedAPE(raw)=2.877% | train_select_score=0.907639 | time=33.21s
+Epoch 292 | TE cls=0.9016 | SOC MedAPE(raw)=13.373% | SOH MedAPE(raw)=3.049% | train_select_score=0.907356 | time=33.08s
+Epoch 293 | TE cls=0.9117 | SOC MedAPE(raw)=14.747% | SOH MedAPE(raw)=2.794% | train_select_score=0.907808 | time=33.14s
+Epoch 294 | TE cls=0.8875 | SOC MedAPE(raw)=16.315% | SOH MedAPE(raw)=3.142% | train_select_score=0.906958 | time=33.23s
+Epoch 295 | TE cls=0.8805 | SOC MedAPE(raw)=12.728% | SOH MedAPE(raw)=2.933% | train_select_score=0.906601 | time=33.20s
+Epoch 296 | TE cls=0.8922 | SOC MedAPE(raw)=15.724% | SOH MedAPE(raw)=3.280% | train_select_score=0.906243 | time=33.01s
+Epoch 297 | TE cls=0.9031 | SOC MedAPE(raw)=16.399% | SOH MedAPE(raw)=2.991% | train_select_score=0.909524 | time=33.41s
+Epoch 298 | TE cls=0.9078 | SOC MedAPE(raw)=13.484% | SOH MedAPE(raw)=2.750% | train_select_score=0.907952 | time=33.22s
+Epoch 299 | TE cls=0.9125 | SOC MedAPE(raw)=14.276% | SOH MedAPE(raw)=2.956% | train_select_score=0.909051 | time=33.16s
+Epoch 300 | TE cls=0.9203 | SOC MedAPE(raw)=14.582% | SOH MedAPE(raw)=2.819% | train_select_score=0.907398 | time=33.08s
+Epoch 301 | TE cls=0.9078 | SOC MedAPE(raw)=15.725% | SOH MedAPE(raw)=3.094% | train_select_score=0.907832 | time=33.23s
+Epoch 302 | TE cls=0.8828 | SOC MedAPE(raw)=16.352% | SOH MedAPE(raw)=3.135% | train_select_score=0.908606 | time=33.53s
+Epoch 303 | TE cls=0.8891 | SOC MedAPE(raw)=13.368% | SOH MedAPE(raw)=3.077% | train_select_score=0.908175 | time=33.27s
+Epoch 304 | TE cls=0.9258 | SOC MedAPE(raw)=15.244% | SOH MedAPE(raw)=2.833% | train_select_score=0.909310 | time=33.31s
+Epoch 305 | TE cls=0.9203 | SOC MedAPE(raw)=15.604% | SOH MedAPE(raw)=2.869% | train_select_score=0.907089 | time=33.27s
+Epoch 306 | TE cls=0.9125 | SOC MedAPE(raw)=14.342% | SOH MedAPE(raw)=2.918% | train_select_score=0.909543 | time=33.38s
+Epoch 307 | TE cls=0.9156 | SOC MedAPE(raw)=12.833% | SOH MedAPE(raw)=2.853% | train_select_score=0.909437 | time=33.45s
+Epoch 308 | TE cls=0.9117 | SOC MedAPE(raw)=12.609% | SOH MedAPE(raw)=2.885% | train_select_score=0.910178 | time=33.60s
+Epoch 309 | TE cls=0.9211 | SOC MedAPE(raw)=13.910% | SOH MedAPE(raw)=2.889% | train_select_score=0.909320 | time=33.81s
+Epoch 310 | TE cls=0.9172 | SOC MedAPE(raw)=12.943% | SOH MedAPE(raw)=2.722% | train_select_score=0.911227 | time=33.31s
+Epoch 311 | TE cls=0.9297 | SOC MedAPE(raw)=12.063% | SOH MedAPE(raw)=3.082% | train_select_score=0.909101 | time=33.70s
+Epoch 312 | TE cls=0.8969 | SOC MedAPE(raw)=15.260% | SOH MedAPE(raw)=2.888% | train_select_score=0.908802 | time=45.25s
+Epoch 313 | TE cls=0.9094 | SOC MedAPE(raw)=14.768% | SOH MedAPE(raw)=2.950% | train_select_score=0.909747 | time=34.78s
+Epoch 314 | TE cls=0.9148 | SOC MedAPE(raw)=16.700% | SOH MedAPE(raw)=3.064% | train_select_score=0.910233 | time=37.14s
+Epoch 315 | TE cls=0.9141 | SOC MedAPE(raw)=14.669% | SOH MedAPE(raw)=2.798% | train_select_score=0.911337 | time=35.17s
+Epoch 316 | TE cls=0.8922 | SOC MedAPE(raw)=14.729% | SOH MedAPE(raw)=3.099% | train_select_score=0.909860 | time=33.44s
+Epoch 317 | TE cls=0.9070 | SOC MedAPE(raw)=16.004% | SOH MedAPE(raw)=2.851% | train_select_score=0.909570 | time=33.74s
+Epoch 318 | TE cls=0.8797 | SOC MedAPE(raw)=13.905% | SOH MedAPE(raw)=3.116% | train_select_score=0.909829 | time=33.48s
+Epoch 319 | TE cls=0.8891 | SOC MedAPE(raw)=14.427% | SOH MedAPE(raw)=3.026% | train_select_score=0.911026 | time=33.69s
+Epoch 320 | TE cls=0.9039 | SOC MedAPE(raw)=14.135% | SOH MedAPE(raw)=2.949% | train_select_score=0.912051 | time=33.42s
+Epoch 321 | TE cls=0.9086 | SOC MedAPE(raw)=13.519% | SOH MedAPE(raw)=3.074% | train_select_score=0.911127 | time=33.49s
+Epoch 322 | TE cls=0.9227 | SOC MedAPE(raw)=17.024% | SOH MedAPE(raw)=2.859% | train_select_score=0.907861 | time=33.67s
+Epoch 323 | TE cls=0.9234 | SOC MedAPE(raw)=18.138% | SOH MedAPE(raw)=2.934% | train_select_score=0.909376 | time=33.40s
+Epoch 324 | TE cls=0.9195 | SOC MedAPE(raw)=15.273% | SOH MedAPE(raw)=2.830% | train_select_score=0.910830 | time=33.09s
+Epoch 325 | TE cls=0.9078 | SOC MedAPE(raw)=15.515% | SOH MedAPE(raw)=3.064% | train_select_score=0.911429 | time=35.48s
+Epoch 326 | TE cls=0.9219 | SOC MedAPE(raw)=13.442% | SOH MedAPE(raw)=2.903% | train_select_score=0.909658 | time=35.72s
+Epoch 327 | TE cls=0.9031 | SOC MedAPE(raw)=13.197% | SOH MedAPE(raw)=3.101% | train_select_score=0.911741 | time=33.99s
+Epoch 328 | TE cls=0.9094 | SOC MedAPE(raw)=13.306% | SOH MedAPE(raw)=3.003% | train_select_score=0.910815 | time=33.49s
+Epoch 329 | TE cls=0.8852 | SOC MedAPE(raw)=14.950% | SOH MedAPE(raw)=3.149% | train_select_score=0.911070 | time=33.35s
+Epoch 330 | TE cls=0.9320 | SOC MedAPE(raw)=15.039% | SOH MedAPE(raw)=2.715% | train_select_score=0.911459 | time=33.68s
+Epoch 331 | TE cls=0.9180 | SOC MedAPE(raw)=14.252% | SOH MedAPE(raw)=3.059% | train_select_score=0.911000 | time=33.82s
+Epoch 332 | TE cls=0.9211 | SOC MedAPE(raw)=13.881% | SOH MedAPE(raw)=2.874% | train_select_score=0.911721 | time=33.39s
+Epoch 333 | TE cls=0.9102 | SOC MedAPE(raw)=13.904% | SOH MedAPE(raw)=2.911% | train_select_score=0.911157 | time=33.40s
+Epoch 334 | TE cls=0.9297 | SOC MedAPE(raw)=16.079% | SOH MedAPE(raw)=2.867% | train_select_score=0.912562 | time=35.30s
+Epoch 335 | TE cls=0.9133 | SOC MedAPE(raw)=14.449% | SOH MedAPE(raw)=2.874% | train_select_score=0.911915 | time=33.32s
+Epoch 336 | TE cls=0.8859 | SOC MedAPE(raw)=13.103% | SOH MedAPE(raw)=3.158% | train_select_score=0.912196 | time=32.91s
+Epoch 337 | TE cls=0.9211 | SOC MedAPE(raw)=14.100% | SOH MedAPE(raw)=2.724% | train_select_score=0.909597 | time=33.20s
+Epoch 338 | TE cls=0.9211 | SOC MedAPE(raw)=12.412% | SOH MedAPE(raw)=2.887% | train_select_score=0.911010 | time=33.13s
+Epoch 339 | TE cls=0.8961 | SOC MedAPE(raw)=16.578% | SOH MedAPE(raw)=3.043% | train_select_score=0.911513 | time=33.25s
+Epoch 340 | TE cls=0.9102 | SOC MedAPE(raw)=17.261% | SOH MedAPE(raw)=3.127% | train_select_score=0.912981 | time=33.00s
+Epoch 341 | TE cls=0.9094 | SOC MedAPE(raw)=13.098% | SOH MedAPE(raw)=3.022% | train_select_score=0.912503 | time=36.20s
+Epoch 342 | TE cls=0.8672 | SOC MedAPE(raw)=14.446% | SOH MedAPE(raw)=3.395% | train_select_score=0.913036 | time=33.10s
+Epoch 343 | TE cls=0.9148 | SOC MedAPE(raw)=14.360% | SOH MedAPE(raw)=2.887% | train_select_score=0.911505 | time=33.03s
+Epoch 344 | TE cls=0.9094 | SOC MedAPE(raw)=16.276% | SOH MedAPE(raw)=3.184% | train_select_score=0.911210 | time=33.44s
+Epoch 345 | TE cls=0.9203 | SOC MedAPE(raw)=16.910% | SOH MedAPE(raw)=2.925% | train_select_score=0.913997 | time=33.10s
+Epoch 346 | TE cls=0.8797 | SOC MedAPE(raw)=14.292% | SOH MedAPE(raw)=3.235% | train_select_score=0.913579 | time=33.14s
+Epoch 347 | TE cls=0.8742 | SOC MedAPE(raw)=15.007% | SOH MedAPE(raw)=3.027% | train_select_score=0.914583 | time=32.99s
+Epoch 348 | TE cls=0.9156 | SOC MedAPE(raw)=14.115% | SOH MedAPE(raw)=2.822% | train_select_score=0.912109 | time=33.14s
+Epoch 349 | TE cls=0.9055 | SOC MedAPE(raw)=15.512% | SOH MedAPE(raw)=3.053% | train_select_score=0.914581 | time=33.12s
+Epoch 350 | TE cls=0.9125 | SOC MedAPE(raw)=12.548% | SOH MedAPE(raw)=3.011% | train_select_score=0.914259 | time=33.24s
+Epoch 351 | TE cls=0.9031 | SOC MedAPE(raw)=13.788% | SOH MedAPE(raw)=3.106% | train_select_score=0.913294 | time=33.00s
+Epoch 352 | TE cls=0.9172 | SOC MedAPE(raw)=13.687% | SOH MedAPE(raw)=2.911% | train_select_score=0.914202 | time=33.10s
+Epoch 353 | TE cls=0.9031 | SOC MedAPE(raw)=14.246% | SOH MedAPE(raw)=3.145% | train_select_score=0.913782 | time=33.18s
+Epoch 354 | TE cls=0.9008 | SOC MedAPE(raw)=15.211% | SOH MedAPE(raw)=3.023% | train_select_score=0.913609 | time=33.05s
+Epoch 355 | TE cls=0.9000 | SOC MedAPE(raw)=14.748% | SOH MedAPE(raw)=3.262% | train_select_score=0.913013 | time=33.22s
+Epoch 356 | TE cls=0.9102 | SOC MedAPE(raw)=16.137% | SOH MedAPE(raw)=2.960% | train_select_score=0.912948 | time=33.20s
+Epoch 357 | TE cls=0.9320 | SOC MedAPE(raw)=14.216% | SOH MedAPE(raw)=2.846% | train_select_score=0.912539 | time=33.09s
+Epoch 358 | TE cls=0.8844 | SOC MedAPE(raw)=12.948% | SOH MedAPE(raw)=3.298% | train_select_score=0.915347 | time=32.89s
+Epoch 359 | TE cls=0.9125 | SOC MedAPE(raw)=14.526% | SOH MedAPE(raw)=3.072% | train_select_score=0.913423 | time=33.12s
+Epoch 360 | TE cls=0.9039 | SOC MedAPE(raw)=15.090% | SOH MedAPE(raw)=2.726% | train_select_score=0.915852 | time=33.16s
+Epoch 361 | TE cls=0.9094 | SOC MedAPE(raw)=13.904% | SOH MedAPE(raw)=2.743% | train_select_score=0.915686 | time=33.09s
+Epoch 362 | TE cls=0.9086 | SOC MedAPE(raw)=13.207% | SOH MedAPE(raw)=2.917% | train_select_score=0.914377 | time=32.97s
+Epoch 363 | TE cls=0.9000 | SOC MedAPE(raw)=17.955% | SOH MedAPE(raw)=3.311% | train_select_score=0.914930 | time=33.13s
+Epoch 364 | TE cls=0.8547 | SOC MedAPE(raw)=14.985% | SOH MedAPE(raw)=3.349% | train_select_score=0.913173 | time=33.17s
+Epoch 365 | TE cls=0.9266 | SOC MedAPE(raw)=13.141% | SOH MedAPE(raw)=2.634% | train_select_score=0.914658 | time=33.17s
+Epoch 366 | TE cls=0.9094 | SOC MedAPE(raw)=13.871% | SOH MedAPE(raw)=2.963% | train_select_score=0.915345 | time=32.91s
+Epoch 367 | TE cls=0.9156 | SOC MedAPE(raw)=15.042% | SOH MedAPE(raw)=2.686% | train_select_score=0.914168 | time=33.00s
+Epoch 368 | TE cls=0.9227 | SOC MedAPE(raw)=13.520% | SOH MedAPE(raw)=3.062% | train_select_score=0.913628 | time=33.05s
+Epoch 369 | TE cls=0.9195 | SOC MedAPE(raw)=12.864% | SOH MedAPE(raw)=2.854% | train_select_score=0.913967 | time=33.11s
+Epoch 370 | TE cls=0.9266 | SOC MedAPE(raw)=11.671% | SOH MedAPE(raw)=3.028% | train_select_score=0.914506 | time=33.04s
+Epoch 371 | TE cls=0.9062 | SOC MedAPE(raw)=12.015% | SOH MedAPE(raw)=2.988% | train_select_score=0.916104 | time=33.05s
+Epoch 372 | TE cls=0.9187 | SOC MedAPE(raw)=13.160% | SOH MedAPE(raw)=3.149% | train_select_score=0.916178 | time=33.10s
+Epoch 373 | TE cls=0.9289 | SOC MedAPE(raw)=13.746% | SOH MedAPE(raw)=2.745% | train_select_score=0.914663 | time=33.01s
+Epoch 374 | TE cls=0.9195 | SOC MedAPE(raw)=17.656% | SOH MedAPE(raw)=2.772% | train_select_score=0.915619 | time=33.17s
+Epoch 375 | TE cls=0.9266 | SOC MedAPE(raw)=13.350% | SOH MedAPE(raw)=2.760% | train_select_score=0.914739 | time=33.08s
+Epoch 376 | TE cls=0.8977 | SOC MedAPE(raw)=17.010% | SOH MedAPE(raw)=3.337% | train_select_score=0.915480 | time=33.06s
+Epoch 377 | TE cls=0.9180 | SOC MedAPE(raw)=14.145% | SOH MedAPE(raw)=3.125% | train_select_score=0.915096 | time=33.15s
+Epoch 378 | TE cls=0.9266 | SOC MedAPE(raw)=14.253% | SOH MedAPE(raw)=2.929% | train_select_score=0.915094 | time=33.20s
+Epoch 379 | TE cls=0.9148 | SOC MedAPE(raw)=14.057% | SOH MedAPE(raw)=3.027% | train_select_score=0.915929 | time=33.72s
+Epoch 380 | TE cls=0.9242 | SOC MedAPE(raw)=13.018% | SOH MedAPE(raw)=2.725% | train_select_score=0.915961 | time=33.90s
+Epoch 381 | TE cls=0.9109 | SOC MedAPE(raw)=12.415% | SOH MedAPE(raw)=2.835% | train_select_score=0.915849 | time=33.11s
+Epoch 382 | TE cls=0.9156 | SOC MedAPE(raw)=14.777% | SOH MedAPE(raw)=3.100% | train_select_score=0.913180 | time=33.11s
+Epoch 383 | TE cls=0.9016 | SOC MedAPE(raw)=13.099% | SOH MedAPE(raw)=2.944% | train_select_score=0.917129 | time=33.11s
+Epoch 384 | TE cls=0.9156 | SOC MedAPE(raw)=13.348% | SOH MedAPE(raw)=2.981% | train_select_score=0.916751 | time=32.95s
+Epoch 385 | TE cls=0.9234 | SOC MedAPE(raw)=13.074% | SOH MedAPE(raw)=2.740% | train_select_score=0.914676 | time=33.13s
+Epoch 386 | TE cls=0.9227 | SOC MedAPE(raw)=14.895% | SOH MedAPE(raw)=2.804% | train_select_score=0.916612 | time=33.14s
+Epoch 387 | TE cls=0.9266 | SOC MedAPE(raw)=13.493% | SOH MedAPE(raw)=2.792% | train_select_score=0.916044 | time=33.53s
+Epoch 388 | TE cls=0.8938 | SOC MedAPE(raw)=12.976% | SOH MedAPE(raw)=3.101% | train_select_score=0.916588 | time=35.49s
+Epoch 389 | TE cls=0.9203 | SOC MedAPE(raw)=12.185% | SOH MedAPE(raw)=3.005% | train_select_score=0.916447 | time=33.08s
+Epoch 390 | TE cls=0.8984 | SOC MedAPE(raw)=14.228% | SOH MedAPE(raw)=3.105% | train_select_score=0.916202 | time=33.16s
+Epoch 391 | TE cls=0.9297 | SOC MedAPE(raw)=14.108% | SOH MedAPE(raw)=2.952% | train_select_score=0.916785 | time=32.97s
+Epoch 392 | TE cls=0.9117 | SOC MedAPE(raw)=13.453% | SOH MedAPE(raw)=2.800% | train_select_score=0.915678 | time=33.10s
+Epoch 393 | TE cls=0.9219 | SOC MedAPE(raw)=13.692% | SOH MedAPE(raw)=2.702% | train_select_score=0.916173 | time=33.07s
+Epoch 394 | TE cls=0.9117 | SOC MedAPE(raw)=12.320% | SOH MedAPE(raw)=3.022% | train_select_score=0.916840 | time=33.11s
+Epoch 395 | TE cls=0.9305 | SOC MedAPE(raw)=13.991% | SOH MedAPE(raw)=3.089% | train_select_score=0.917644 | time=33.06s
+Epoch 396 | TE cls=0.9164 | SOC MedAPE(raw)=13.419% | SOH MedAPE(raw)=2.691% | train_select_score=0.917327 | time=33.16s
+Epoch 397 | TE cls=0.9180 | SOC MedAPE(raw)=12.390% | SOH MedAPE(raw)=2.996% | train_select_score=0.916105 | time=33.18s
+Epoch 398 | TE cls=0.9172 | SOC MedAPE(raw)=11.801% | SOH MedAPE(raw)=2.907% | train_select_score=0.919202 | time=33.02s
+Epoch 399 | TE cls=0.9055 | SOC MedAPE(raw)=17.652% | SOH MedAPE(raw)=2.887% | train_select_score=0.918625 | time=33.21s
+[BEST] Loaded best checkpoint from epoch=398 | score=0.9192016571976838
+[CALIBRATION] Gaussian baseline SOC | Best T=1.826 | Mean 10-90=10.513% | Max 10-90=19.338% | Mean all=8.841% | Max all=19.338%
+[CALIBRATION] Gaussian baseline SOH | Best T=2.314 | Mean 10-90=10.423% | Max 10-90=21.151% | Mean all=8.951% | Max all=21.151%
+
+[GAUSSIAN CALIBRATION METRICS]
+            model target  best_calibration_temperature_T  mean_calibration_deviation_10_90_pct  max_calibration_deviation_10_90_pct  mean_calibration_deviation_all_pct  max_calibration_deviation_all_pct
+Gaussian baseline    SOC                        1.826087                             10.513346                            19.337910                            8.840972                          19.337910
+Gaussian baseline    SOH                        2.313712                             10.423335                            21.151357                            8.951168                          21.151357
+
+[FINAL METRICS]
+best_epoch: 398
+best_score: 0.9192016571976838
+test_cls_acc: 0.9171875
+test_soc_rmse: 0.5650623141721584
+test_soc_mae: 0.3769310434345243
+test_soc_mape: 218.21725418227697
+test_soc_medape: 38.66476403744927
+test_soh_rmse: 0.5988628074275534
+test_soh_mae: 0.39388702127071157
+test_soh_mape: 881.9270992661366
+test_soh_medape: 38.82396229555881
+test_soc_rmse_raw: 12.573660014266933
+test_soc_mae_raw: 8.38739846933878
+test_soc_mape_raw: 26.070400470191498
+test_soc_medape_raw: 11.801447643881621
+test_soh_rmse_raw: 0.06379355926832843
+test_soh_mae_raw: 0.04195861677300478
+test_soh_mape_raw: 5.2364266701193305
+test_soh_medape_raw: 2.90741917325642
+n_train: 75733
+n_test: 1280
+num_classes: 8
+device: cpu
+elapsed_sec: 13623.81037735939
+gaussian_soc_best_T: 1.8260869565217392
+gaussian_soc_mean_calibration_deviation_10_90_pct: 10.51334635416666
+gaussian_soh_best_T: 2.31371237458194
+gaussian_soh_mean_calibration_deviation_10_90_pct: 10.423334911616159
+
+[OK] Saved outputs under: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/calibration_baseline

@@ -1,0 +1,21 @@
+{
+  "model": "xgboost",
+  "setting": "fair",
+  "test_cls_acc": 0.60546875,
+  "test_material_acc": 0.72890625,
+  "test_soc_rmse_raw": 12.867769111309753,
+  "test_soc_mae_raw": 8.673031015722156,
+  "test_soc_medae_raw": 5.700207756042481,
+  "test_soc_mape_raw": 23.749279151635463,
+  "test_soc_medape_raw": 17.727641474337574,
+  "test_soh_rmse_raw": 9.498058596488683,
+  "test_soh_mae_raw": 7.388733166635381,
+  "test_soh_medae_raw": 5.4506457826390005,
+  "test_soh_mape_raw": 9.340895088860217,
+  "test_soh_medape_raw": 6.695347577291227,
+  "n_test": 1280,
+  "summary_only": true,
+  "classifier_checkpoint": "results/benchmark/xgboost/fair/model_classifier.pkl",
+  "soc_checkpoint": "results/benchmark/xgboost/fair/model_soc.pkl",
+  "soh_checkpoint": "results/benchmark/xgboost/fair/model_soh.pkl"
+}

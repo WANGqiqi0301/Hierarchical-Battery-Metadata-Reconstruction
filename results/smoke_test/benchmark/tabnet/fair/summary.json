@@ -1,0 +1,48 @@
+{
+  "model": "tabnet",
+  "setting": "fair",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.46875,
+    "soc_rmse": 19.13558639445712,
+    "soc_mae": 13.598681728357075,
+    "soc_mape": 40.089219754768806,
+    "soc_median_ape": 24.325449682983148,
+    "soh_rmse": 0.10764699379357756,
+    "soh_mae": 0.09017054385958656,
+    "soh_mape": 11.37873566496423,
+    "soh_median_ape": 10.357938903779488,
+    "n_test": 128
+  },
+  "n_train": 7613,
+  "n_test": 128,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "tabnet_params": {
+      "n_d": 16,
+      "n_a": 16,
+      "n_steps": 4,
+      "gamma": 1.3,
+      "seed": 42,
+      "verbose": 1
+    },
+    "save_format": "tabnet_zip",
+    "tabnet_internal_val_split": {
+      "val_id_frac": 0.2,
+      "val_seed": 1042,
+      "n_tabnet_train": 6085,
+      "n_tabnet_val": 1528,
+      "n_tabnet_train_ids": 410,
+      "n_tabnet_val_ids": 102
+    }
+  }
+}

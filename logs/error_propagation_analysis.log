@@ -1,0 +1,32 @@
+nohup: ignoring input
+[DEVICE] cpu
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[NORM] Loaded train-only U(41) stats: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/u41_norm_train_only.npz
+[DATA] Test samples: 1280
+[DATA] Test unique IDs: 128
+[DATA] Num classes: 8
+[DEBUG] exp_dir = /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework
+[DEBUG] exists = True
+[MODEL] Loaded checkpoint: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/checkpoints/finetune/best.pt
+[E3] Loaded proposed-method predictions from: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/test_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/analysis/error_propagation/counterfactual_runs.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/analysis/error_propagation/counterfactual_summary.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/analysis/error_propagation/attribution_summary.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/analysis/error_propagation/error_propagation_config.json
+
+===== Attribution summary =====
+                          metric      mean  std    median
+      direct_mat_to_soh_rmse_gap  0.006980  0.0  0.006980
+             soc_to_soh_rmse_gap  0.017199  0.0  0.017199
+          total_end2end_rmse_gap  0.022958  0.0  0.022958
+residual_or_interaction_rmse_gap -0.001221  0.0 -0.001221
+
+===== E0-E3 SOH RMSE raw =====
+experiment       metric     mean  std   median
+        E0 soh_rmse_raw 0.037722  0.0 0.037722
+        E1 soh_rmse_raw 0.044702  0.0 0.044702
+        E2 soh_rmse_raw 0.054921  0.0 0.054921
+        E3 soh_rmse_raw 0.060680  0.0 0.060680
+
+[DONE] Error-propagation analysis finished.
+[OUT] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/analysis/error_propagation

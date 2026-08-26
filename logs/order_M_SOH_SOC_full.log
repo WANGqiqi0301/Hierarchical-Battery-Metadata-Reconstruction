@@ -1,0 +1,65 @@
+[CONFIG] orders = ['M_SOH_SOC']
+[CACHE] Train tag: raw_train_c292c3d99a | hit=False
+[CACHE] Test  tag: raw_test_4fc0cd64ff | hit=False
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[DATA] TRAIN samples = 60625 | IDs = 410
+[DATA] VAL   samples = 1020 | IDs = 102 (from TEST_RANDOM, IDs drawn from training IDs)
+[DATA] TEST  samples = 1280 | IDs = 128
+[DEVICE] cpu
+
+==========================================================================================
+[RUN] Hierarchy order: M_SOH_SOC
+[RUN] Meaning: Material -> SOH -> SOC
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/ablation/hierarchy_order_ablation/M_SOH_SOC
+==========================================================================================
+[M_SOH_SOC] epoch 000 | VAL cls=0.5206 | SOC MedAPE=19.377% | SOH MedAPE=9.117% | val_score=0.144472
+[M_SOH_SOC] epoch 001 | VAL cls=0.6265 | SOC MedAPE=14.785% | SOH MedAPE=8.736% | val_score=0.303901
+[M_SOH_SOC] epoch 002 | VAL cls=0.6784 | SOC MedAPE=18.106% | SOH MedAPE=9.332% | val_score=0.310729
+[M_SOH_SOC] epoch 003 | VAL cls=0.7480 | SOC MedAPE=12.624% | SOH MedAPE=6.543% | val_score=0.490947
+[M_SOH_SOC] epoch 004 | VAL cls=0.7461 | SOC MedAPE=16.838% | SOH MedAPE=6.969% | val_score=0.438327
+[M_SOH_SOC] epoch 005 | VAL cls=0.7824 | SOC MedAPE=12.274% | SOH MedAPE=6.838% | val_score=0.522847
+[M_SOH_SOC] epoch 006 | VAL cls=0.7824 | SOC MedAPE=15.270% | SOH MedAPE=6.803% | val_score=0.493604
+[M_SOH_SOC] epoch 007 | VAL cls=0.7824 | SOC MedAPE=12.264% | SOH MedAPE=5.932% | val_score=0.541067
+[M_SOH_SOC] epoch 008 | VAL cls=0.7951 | SOC MedAPE=10.827% | SOH MedAPE=6.757% | val_score=0.551690
+[M_SOH_SOC] epoch 009 | VAL cls=0.7853 | SOC MedAPE=10.734% | SOH MedAPE=6.683% | val_score=0.544293
+[M_SOH_SOC] epoch 010 | VAL cls=0.8020 | SOC MedAPE=10.437% | SOH MedAPE=6.151% | val_score=0.574573
+[M_SOH_SOC] epoch 011 | VAL cls=0.7392 | SOC MedAPE=15.004% | SOH MedAPE=7.671% | val_score=0.435761
+[M_SOH_SOC] epoch 012 | VAL cls=0.7873 | SOC MedAPE=10.405% | SOH MedAPE=7.019% | val_score=0.542814
+[M_SOH_SOC] epoch 013 | VAL cls=0.7520 | SOC MedAPE=11.131% | SOH MedAPE=7.632% | val_score=0.488012
+[M_SOH_SOC] epoch 014 | VAL cls=0.7990 | SOC MedAPE=9.857% | SOH MedAPE=5.538% | val_score=0.589677
+[M_SOH_SOC] epoch 015 | VAL cls=0.8304 | SOC MedAPE=9.569% | SOH MedAPE=5.756% | val_score=0.619595
+[M_SOH_SOC] epoch 016 | VAL cls=0.8529 | SOC MedAPE=11.471% | SOH MedAPE=5.789% | val_score=0.622456
+[M_SOH_SOC] epoch 017 | VAL cls=0.7990 | SOC MedAPE=10.801% | SOH MedAPE=5.652% | val_score=0.577968
+[M_SOH_SOC] epoch 018 | VAL cls=0.8314 | SOC MedAPE=9.253% | SOH MedAPE=5.506% | val_score=0.628734
+[M_SOH_SOC] epoch 019 | VAL cls=0.8284 | SOC MedAPE=9.866% | SOH MedAPE=7.132% | val_score=0.587140
+[M_SOH_SOC] epoch 020 | VAL cls=0.8569 | SOC MedAPE=8.404% | SOH MedAPE=4.851% | val_score=0.675803
+[M_SOH_SOC] epoch 021 | VAL cls=0.8559 | SOC MedAPE=8.562% | SOH MedAPE=5.119% | val_score=0.667887
+[M_SOH_SOC] epoch 022 | VAL cls=0.8569 | SOC MedAPE=8.465% | SOH MedAPE=5.760% | val_score=0.657020
+[M_SOH_SOC] epoch 023 | VAL cls=0.8137 | SOC MedAPE=9.602% | SOH MedAPE=6.042% | val_score=0.596869
+[M_SOH_SOC] epoch 024 | VAL cls=0.8500 | SOC MedAPE=7.846% | SOH MedAPE=4.598% | val_score=0.679582
+[M_SOH_SOC] epoch 025 | VAL cls=0.8333 | SOC MedAPE=8.262% | SOH MedAPE=5.071% | val_score=0.649305
+[M_SOH_SOC] epoch 026 | VAL cls=0.8569 | SOC MedAPE=12.177% | SOH MedAPE=5.163% | val_score=0.631824
+[M_SOH_SOC] epoch 027 | VAL cls=0.8608 | SOC MedAPE=8.615% | SOH MedAPE=4.960% | val_score=0.675433
+[M_SOH_SOC] epoch 028 | VAL cls=0.8608 | SOC MedAPE=8.030% | SOH MedAPE=4.587% | val_score=0.688739
+[M_SOH_SOC] epoch 029 | VAL cls=0.8441 | SOC MedAPE=7.878% | SOH MedAPE=4.279% | val_score=0.679751
+Traceback (most recent call last):
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 1591, in <module>
+    main()
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 1551, in main
+    summary = run_hierarchy_order_ablation(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/ablation/hierarchy_order_ablation.py", line 1383, in run_hierarchy_order_ablation
+    pd.DataFrame([row_epoch]).to_csv(
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/ablation/hierarchy_order_ablation/M_SOH_SOC/logs'

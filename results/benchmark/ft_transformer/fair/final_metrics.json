@@ -1,0 +1,22 @@
+{
+  "model": "ft_transformer",
+  "setting": "fair",
+  "test_cls_acc": 0.74296875,
+  "test_material_acc": 0.85,
+  "test_soc_rmse_raw": 12.163315085720214,
+  "test_soc_mae_raw": 7.862048468195795,
+  "test_soc_medae_raw": 5.1432405899047815,
+  "test_soc_mape_raw": 20.823042879695837,
+  "test_soc_medape_raw": 14.292974642913842,
+  "test_soh_rmse_raw": 7.896381511206027,
+  "test_soh_mae_raw": 5.868547631187392,
+  "test_soh_medae_raw": 4.252544855387072,
+  "test_soh_mape_raw": 7.588756796078858,
+  "test_soh_medape_raw": 5.136313251629708,
+  "n_test": 1280,
+  "device": "cpu",
+  "summary_only": true,
+  "classifier_checkpoint": "results/benchmark/ft_transformer/fair/ft_clf_final.pt",
+  "soc_checkpoint": "results/benchmark/ft_transformer/fair/ft_soc_final.pt",
+  "soh_checkpoint": "results/benchmark/ft_transformer/fair/ft_soh_final.pt"
+}

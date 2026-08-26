@@ -1,0 +1,7 @@
+﻿name,status,rows,expected_file,error_type,error_message
+channel_ablation,OK,2,/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/channel_ablation/channel_ablation_summary.csv,,
+hierarchy_ablation,OK,3,/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_ablation/hierarchy_ablation_summary.csv,,
+hierarchy_order_ablation,OK,2,/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/hierarchy_order_ablation/hierarchy_order_ablation_summary.csv,,
+input_representation_ablation,OK,1,/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/input_representation_ablation/input_representation_ablation_summary.csv,,
+transfer_ablation,OK,1,/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/transfer_ablation/transfer_ablation_summary.csv,,
+material_conditioning_ablation,OK,1,/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/ablation/material_conditioning_ablation/material_conditioning_ablation_summary.csv,,

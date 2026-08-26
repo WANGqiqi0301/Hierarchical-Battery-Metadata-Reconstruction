@@ -1,0 +1,3 @@
+﻿drop_count,cls_acc_mean,cls_acc_std,soc_medape_raw_mean,soc_medape_raw_std,soh_medape_raw_mean,soh_medape_raw_std,n_test
+0,0.28125,0.0,22.00797407746252,0.0,8.437805020713832,0.0,128
+1,0.28125,0.0,21.967970916415837,0.0,8.531317764639029,0.0,128

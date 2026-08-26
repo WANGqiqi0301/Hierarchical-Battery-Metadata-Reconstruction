@@ -1,0 +1,32 @@
+[
+  {
+    "config": "hard",
+    "pulse_widths_ms": "5000",
+    "num_pulse_widths": 1,
+    "material_condition_mode": "hard",
+    "description": "Use argmax material prediction converted to one-hot downstream context.",
+    "final_stage": "single",
+    "test_cls_acc": 0.3125,
+    "test_soc_rmse": 0.7215590476989746,
+    "test_soc_mae": 0.5953478813171387,
+    "test_soc_mape": 346.3935735145075,
+    "test_soc_medape": 83.18902300455233,
+    "test_soh_rmse": 0.869051992893219,
+    "test_soh_mae": 0.69123774766922,
+    "test_soh_mape": 183.13774797102099,
+    "test_soh_medape": 97.28304182341483,
+    "test_soc_rmse_raw": 16.04129851494254,
+    "test_soc_mae_raw": 13.235442344935564,
+    "test_soc_mape_raw": 49.808483907923815,
+    "test_soc_medape_raw": 26.35468318677906,
+    "test_soh_rmse_raw": 0.09126252995059549,
+    "test_soh_mae_raw": 0.0725895674521595,
+    "test_soh_mape_raw": 9.261785869661662,
+    "test_soh_medape_raw": 8.189763140167575,
+    "n_train": 6817,
+    "n_test": 128,
+    "num_classes": 8,
+    "device": "cpu",
+    "elapsed_sec": 52.32016944885254
+  }
+]

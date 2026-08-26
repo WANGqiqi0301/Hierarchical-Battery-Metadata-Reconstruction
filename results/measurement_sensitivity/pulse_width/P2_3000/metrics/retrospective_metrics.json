@@ -1,0 +1,23 @@
+{
+  "config": "P2_3000",
+  "pulse_widths": "3000",
+  "num_pulse_widths": 1,
+  "pulse_width_sum_ms": 3000,
+  "n_test": 128,
+  "test_cls_acc": 0.875,
+  "test_material_acc": 0.9296875,
+  "test_soc_mae_raw": 5.040239121343748,
+  "test_soc_medae_raw": 3.8092310782722016,
+  "test_soc_rmse_raw": 7.915924577997305,
+  "test_soc_mape_raw": 16.021685296317735,
+  "test_soc_medape_raw": 8.6163384843082,
+  "test_soh_mae_raw": 4.208050900015952,
+  "test_soh_medae_raw": 3.170067684403101,
+  "test_soh_rmse_raw": 5.671212239125795,
+  "test_soh_mape_raw": 5.242233922943286,
+  "test_soh_medape_raw": 3.70670461393878,
+  "n_mc_soc": 500,
+  "n_mc_soh": 500,
+  "checkpoint_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/pulse_width/P2_3000/checkpoints/finetune/best.pt",
+  "predictions_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/pulse_width/P2_3000/metrics/retrospective_test_predictions.csv"
+}

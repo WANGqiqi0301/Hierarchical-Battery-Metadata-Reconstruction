@@ -1,0 +1,20 @@
+{
+  "order": "PARALLEL",
+  "description": "Material, SOC and SOH predicted in parallel",
+  "best_epoch": 0,
+  "best_score": -0.2222704681903257,
+  "cls_acc": 0.2734375,
+  "soc_rmse_raw": 15.955625267795533,
+  "soc_mae_raw": 12.474465209410408,
+  "soc_mape_raw": 39.6455977953773,
+  "soc_medape_raw": 22.06080811905384,
+  "soh_rmse_raw": 0.09153835517523108,
+  "soh_mae_raw": 0.0731226021738141,
+  "soh_mape_raw": 9.278666799425487,
+  "soh_medape_raw": 7.385205210314025,
+  "n_train": 6817,
+  "n_test": 128,
+  "num_classes": 8,
+  "device": "cpu",
+  "elapsed_sec": 4.470189571380615
+}

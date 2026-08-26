@@ -1,0 +1,20 @@
+[DEVICE] cpu
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[NORM] Loaded train-only U(41) stats: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/u41_norm_train_only.npz
+[DATA] Train samples: 68163
+[DATA] Val samples: 510
+[DATA] Test samples: 1280
+[DATA] Num classes: 8
+[MODEL] Loaded checkpoint: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/checkpoints/finetune/best.pt
+
+[SUMMARY]
+split     n  cls_acc  soc_mae  soc_rmse  soc_mape  soc_medape  soc_ape_p25  soc_ape_p50  soc_ape_p75  soc_ape_p90  soc_ape_p95  soc_ae_p25  soc_ae_p50  soc_ae_p75  soc_ae_p90  soc_ae_p95  soh_mae  soh_rmse  soh_mape  soh_medape  soh_ape_p25  soh_ape_p50  soh_ape_p75  soh_ape_p90  soh_ape_p95  soh_ae_p25  soh_ae_p50  soh_ae_p75  soh_ae_p90  soh_ae_p95
+train 68163 0.994807 1.403505  2.393971  4.283841    1.922696     0.733962     1.922696     4.721191    10.185107    16.150770    0.197044    0.680463    1.864699    3.643206    5.012619 0.020412  0.033045  2.604656    1.281039     0.528486     1.281039     3.131545     6.704940     9.654561    0.004558    0.010926    0.025614    0.052869    0.073476
+  val   510 0.984314 3.693051  5.749749  9.215793    5.510551     2.578056     5.510551    12.029379    22.244922    30.269370    1.076724    2.255670    4.658074    8.442663   12.270360 0.037803  0.055863  5.066619    3.150374     1.023697     3.150374     6.252834    12.245220    19.051060    0.008983    0.024975    0.049345    0.094223    0.132997
+ test  1280 0.918750 3.844217  7.864401  9.179884    4.502518     1.598286     4.502518    11.469960    21.955897    30.348451    0.684360    1.784919    4.837766    9.076368   12.074945 0.040208  0.060680  5.033713    2.615236     1.228705     2.615236     6.629112    14.220165    18.067008    0.010167    0.021991    0.056819    0.110773    0.136762
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/test_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/val_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/train_predictions_for_scatter.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/proposed_method_summary.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables/further_analysis_inference_config.json
+[OK] Generated CSVs under /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/proposed_framework/further_analysis/tables

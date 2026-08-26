@@ -1,0 +1,32 @@
+{
+  "model": "ft_transformer",
+  "setting": "fair",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.4765625,
+    "soc_rmse": 40.31512618608917,
+    "soc_mae": 35.79844000324607,
+    "soc_mape": 81.92637467857827,
+    "soc_median_ape": 87.7125188973285,
+    "soh_rmse": 0.11347791726665077,
+    "soh_mae": 0.08956062933931588,
+    "soh_mape": 12.011364225408228,
+    "soh_median_ape": 9.177764372770897,
+    "n_test": 128
+  },
+  "n_train": 7613,
+  "n_test": 128,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "num_epochs": 3
+  }
+}

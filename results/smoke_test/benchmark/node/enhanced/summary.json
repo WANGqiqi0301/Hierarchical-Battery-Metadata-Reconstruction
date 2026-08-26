@@ -1,0 +1,58 @@
+{
+  "model": "node",
+  "setting": "enhanced",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.34375,
+    "soc_rmse": 44.23818274651231,
+    "soc_mae": 40.19686040649191,
+    "soc_mape": 97.82677609219644,
+    "soc_median_ape": 98.44137245677416,
+    "soh_rmse": 0.22691646836345325,
+    "soh_mae": 0.1833545025273481,
+    "soh_mape": 21.24137597213036,
+    "soh_median_ape": 19.91348145553724,
+    "n_test": 128
+  },
+  "n_train": 7613,
+  "n_test": 128,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "num_epochs": 3,
+    "enhanced_hint_report": {
+      "material_hint": {
+        "target_accuracy": 0.91875,
+        "train_accuracy": 0.9186917115460397,
+        "test_accuracy": 0.921875
+      },
+      "soc_hint_train": {
+        "target_rmse": 7.864401414996508,
+        "rmse": 7.864401414727962,
+        "mae": 6.2966394641046515,
+        "mape": 26.440123594965502,
+        "median_ape": 14.582433700561523
+      },
+      "soc_hint_test": {
+        "target_rmse": 7.864401414996508,
+        "rmse": 7.8644013997850015,
+        "mae": 6.485848369076848,
+        "mape": 22.933162355109886,
+        "median_ape": 13.784335153649591
+      },
+      "feature_dims": {
+        "base": 42,
+        "soc_input": 50,
+        "soh_input": 51
+      }
+    }
+  }
+}

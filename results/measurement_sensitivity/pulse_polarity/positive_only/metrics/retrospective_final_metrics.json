@@ -1,0 +1,23 @@
+{
+  "polarity": "positive",
+  "checkpoint_stage": "finetune",
+  "checkpoint_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/pulse_polarity/positive_only/checkpoints/finetune/best.pt",
+  "test_cls_acc": 0.846875,
+  "test_material_acc": 0.93046875,
+  "test_soc_medae_raw": 2.759003533079607,
+  "test_soc_mae_raw": 5.340786568823336,
+  "test_soc_rmse_raw": 9.30650965644975,
+  "test_soc_medape_raw": 6.982805401344301,
+  "test_soc_mape_raw": 13.274343646315819,
+  "test_soh_medae_raw": 2.8659076321084527,
+  "test_soh_mae_raw": 4.784270519517963,
+  "test_soh_rmse_raw": 7.129045834307479,
+  "test_soh_medape_raw": 3.4603890962933983,
+  "test_soh_mape_raw": 5.936363740002295,
+  "n_test": 1280,
+  "num_classes": 8,
+  "n_mc": 500,
+  "device": "cpu",
+  "elapsed_sec": 18.88162636756897,
+  "predictions_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/pulse_polarity/positive_only/metrics/retrospective_test_predictions.csv"
+}

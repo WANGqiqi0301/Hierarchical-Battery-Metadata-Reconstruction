@@ -1,0 +1,119 @@
+
+==========================================================================================
+[RUN] C-rate configuration: C5_1p5_2p0C
+[RUN] C-rate combo: [3, 4] -> 1.5C,2.0C
+[RUN] Output directory: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/measurement_sensitivity/c_rate/C5_1p5_2p0C
+==========================================================================================
+[INFO] Device: cpu
+[CACHE] Train tag: raw_train_c292c3d99a | hit=True
+[CACHE] Test  tag: raw_test_4fc0cd64ff | hit=True
+[WARN] Dropping 13 invalid rows from RAW_TRAIN.
+[DATA] Final TRAIN samples = 68163 | unique IDs = 461
+[DATA] Final VAL   samples = 510 | unique IDs = 51 (from TEST_RANDOM, IDs drawn from original TRAIN IDs)
+[DATA] Final TEST  samples = 1280 | unique IDs = 128 (same TEST IDs as the original split)
+[NORM] Applied U1-U41 z-score using TRAIN statistics only.
+[LABEL] Number of material-capacity classes: 8
+[LABEL] Classes: ['LFP_35Ah', 'LFP_68Ah', 'LMO_10Ah', 'LMO_24Ah', 'LMO_25Ah', 'LMO_26Ah', 'NMC_15Ah', 'NMC_21Ah']
+[RESUME-stage1_soc] start_epoch=200, best_score=0.897737, best_epoch=134
+[stage1_soc] Loaded BEST checkpoint from epoch=134 | score=0.8977370325970224
+[RESUME-stage2_soh] start_epoch=7, best_score=-0.575209, best_epoch=4
+[stage2_soh] epoch 007 | VAL cls=0.9843, SOC MedAPE(raw)=6.409%, SOH MedAPE(raw)=3.463% | TEST cls=0.8945, SOC MedAPE(raw)=6.150%, SOH MedAPE(raw)=2.993% | val_score=-0.619601
+[stage2_soh] epoch 008 | VAL cls=0.9843, SOC MedAPE(raw)=6.823%, SOH MedAPE(raw)=3.181% | TEST cls=0.8945, SOC MedAPE(raw)=6.186%, SOH MedAPE(raw)=2.581% | val_score=-0.588108
+[stage2_soh] epoch 009 | VAL cls=0.9843, SOC MedAPE(raw)=6.816%, SOH MedAPE(raw)=3.396% | TEST cls=0.8945, SOC MedAPE(raw)=6.125%, SOH MedAPE(raw)=2.814% | val_score=-0.580093
+[stage2_soh] epoch 010 | VAL cls=0.9843, SOC MedAPE(raw)=7.116%, SOH MedAPE(raw)=3.345% | TEST cls=0.8945, SOC MedAPE(raw)=6.336%, SOH MedAPE(raw)=2.879% | val_score=-0.608763
+[stage2_soh] epoch 011 | VAL cls=0.9843, SOC MedAPE(raw)=6.692%, SOH MedAPE(raw)=3.186% | TEST cls=0.8945, SOC MedAPE(raw)=6.146%, SOH MedAPE(raw)=2.807% | val_score=-0.594586
+[stage2_soh] epoch 012 | VAL cls=0.9843, SOC MedAPE(raw)=6.972%, SOH MedAPE(raw)=3.268% | TEST cls=0.8945, SOC MedAPE(raw)=6.085%, SOH MedAPE(raw)=2.427% | val_score=-0.576223
+[stage2_soh] epoch 013 | VAL cls=0.9843, SOC MedAPE(raw)=6.836%, SOH MedAPE(raw)=3.807% | TEST cls=0.8945, SOC MedAPE(raw)=5.891%, SOH MedAPE(raw)=2.997% | val_score=-0.633409
+[stage2_soh] epoch 014 | VAL cls=0.9843, SOC MedAPE(raw)=6.659%, SOH MedAPE(raw)=3.590% | TEST cls=0.8945, SOC MedAPE(raw)=6.119%, SOH MedAPE(raw)=2.695% | val_score=-0.601000
+[stage2_soh] epoch 015 | VAL cls=0.9843, SOC MedAPE(raw)=6.741%, SOH MedAPE(raw)=2.906% | TEST cls=0.8945, SOC MedAPE(raw)=5.929%, SOH MedAPE(raw)=2.672% | val_score=-0.613450
+[stage2_soh] epoch 016 | VAL cls=0.9843, SOC MedAPE(raw)=6.495%, SOH MedAPE(raw)=3.578% | TEST cls=0.8945, SOC MedAPE(raw)=5.970%, SOH MedAPE(raw)=3.046% | val_score=-0.653016
+[stage2_soh] epoch 017 | VAL cls=0.9843, SOC MedAPE(raw)=6.888%, SOH MedAPE(raw)=3.145% | TEST cls=0.8945, SOC MedAPE(raw)=5.824%, SOH MedAPE(raw)=2.614% | val_score=-0.586045
+[stage2_soh] epoch 018 | VAL cls=0.9843, SOC MedAPE(raw)=6.661%, SOH MedAPE(raw)=4.114% | TEST cls=0.8945, SOC MedAPE(raw)=5.939%, SOH MedAPE(raw)=3.063% | val_score=-0.652123
+[stage2_soh] epoch 019 | VAL cls=0.9843, SOC MedAPE(raw)=6.934%, SOH MedAPE(raw)=3.589% | TEST cls=0.8945, SOC MedAPE(raw)=6.085%, SOH MedAPE(raw)=2.725% | val_score=-0.636052
+[stage2_soh] epoch 020 | VAL cls=0.9843, SOC MedAPE(raw)=7.448%, SOH MedAPE(raw)=3.654% | TEST cls=0.8945, SOC MedAPE(raw)=6.149%, SOH MedAPE(raw)=2.919% | val_score=-0.644889
+[stage2_soh] epoch 021 | VAL cls=0.9843, SOC MedAPE(raw)=7.389%, SOH MedAPE(raw)=3.775% | TEST cls=0.8945, SOC MedAPE(raw)=6.164%, SOH MedAPE(raw)=2.848% | val_score=-0.625317
+[stage2_soh] epoch 022 | VAL cls=0.9843, SOC MedAPE(raw)=6.947%, SOH MedAPE(raw)=3.076% | TEST cls=0.8945, SOC MedAPE(raw)=5.956%, SOH MedAPE(raw)=2.660% | val_score=-0.564384
+[stage2_soh] epoch 023 | VAL cls=0.9843, SOC MedAPE(raw)=6.832%, SOH MedAPE(raw)=3.492% | TEST cls=0.8945, SOC MedAPE(raw)=5.835%, SOH MedAPE(raw)=2.790% | val_score=-0.615157
+[stage2_soh] epoch 024 | VAL cls=0.9843, SOC MedAPE(raw)=6.930%, SOH MedAPE(raw)=3.253% | TEST cls=0.8945, SOC MedAPE(raw)=6.274%, SOH MedAPE(raw)=2.679% | val_score=-0.565631
+[stage2_soh] epoch 025 | VAL cls=0.9843, SOC MedAPE(raw)=7.077%, SOH MedAPE(raw)=3.494% | TEST cls=0.8945, SOC MedAPE(raw)=5.928%, SOH MedAPE(raw)=2.750% | val_score=-0.643540
+[stage2_soh] epoch 026 | VAL cls=0.9843, SOC MedAPE(raw)=7.069%, SOH MedAPE(raw)=3.422% | TEST cls=0.8945, SOC MedAPE(raw)=6.049%, SOH MedAPE(raw)=2.808% | val_score=-0.577463
+[stage2_soh] epoch 027 | VAL cls=0.9843, SOC MedAPE(raw)=7.307%, SOH MedAPE(raw)=3.275% | TEST cls=0.8945, SOC MedAPE(raw)=6.223%, SOH MedAPE(raw)=2.798% | val_score=-0.613813
+[stage2_soh] epoch 028 | VAL cls=0.9843, SOC MedAPE(raw)=6.882%, SOH MedAPE(raw)=3.276% | TEST cls=0.8945, SOC MedAPE(raw)=6.145%, SOH MedAPE(raw)=2.786% | val_score=-0.607728
+[stage2_soh] epoch 029 | VAL cls=0.9843, SOC MedAPE(raw)=6.858%, SOH MedAPE(raw)=3.449% | TEST cls=0.8945, SOC MedAPE(raw)=6.006%, SOH MedAPE(raw)=2.938% | val_score=-0.649411
+[stage2_soh] epoch 030 | VAL cls=0.9843, SOC MedAPE(raw)=7.018%, SOH MedAPE(raw)=3.500% | TEST cls=0.8945, SOC MedAPE(raw)=6.155%, SOH MedAPE(raw)=2.745% | val_score=-0.573328
+[stage2_soh] epoch 031 | VAL cls=0.9843, SOC MedAPE(raw)=6.644%, SOH MedAPE(raw)=3.830% | TEST cls=0.8945, SOC MedAPE(raw)=6.145%, SOH MedAPE(raw)=2.867% | val_score=-0.629651
+[stage2_soh] epoch 032 | VAL cls=0.9843, SOC MedAPE(raw)=6.708%, SOH MedAPE(raw)=3.105% | TEST cls=0.8945, SOC MedAPE(raw)=6.089%, SOH MedAPE(raw)=2.641% | val_score=-0.582909
+[stage2_soh] epoch 033 | VAL cls=0.9843, SOC MedAPE(raw)=6.409%, SOH MedAPE(raw)=3.583% | TEST cls=0.8945, SOC MedAPE(raw)=6.036%, SOH MedAPE(raw)=3.183% | val_score=-0.623013
+[stage2_soh] epoch 034 | VAL cls=0.9843, SOC MedAPE(raw)=6.797%, SOH MedAPE(raw)=3.346% | TEST cls=0.8945, SOC MedAPE(raw)=6.077%, SOH MedAPE(raw)=2.607% | val_score=-0.597330
+[stage2_soh] epoch 035 | VAL cls=0.9843, SOC MedAPE(raw)=7.412%, SOH MedAPE(raw)=3.415% | TEST cls=0.8945, SOC MedAPE(raw)=6.164%, SOH MedAPE(raw)=3.070% | val_score=-0.588857
+[stage2_soh] epoch 036 | VAL cls=0.9843, SOC MedAPE(raw)=6.827%, SOH MedAPE(raw)=3.371% | TEST cls=0.8945, SOC MedAPE(raw)=5.918%, SOH MedAPE(raw)=2.936% | val_score=-0.597328
+[stage2_soh] epoch 037 | VAL cls=0.9843, SOC MedAPE(raw)=6.812%, SOH MedAPE(raw)=3.424% | TEST cls=0.8945, SOC MedAPE(raw)=6.004%, SOH MedAPE(raw)=2.953% | val_score=-0.615163
+[stage2_soh] epoch 038 | VAL cls=0.9843, SOC MedAPE(raw)=6.945%, SOH MedAPE(raw)=3.432% | TEST cls=0.8945, SOC MedAPE(raw)=5.971%, SOH MedAPE(raw)=2.749% | val_score=-0.585060
+[stage2_soh] epoch 039 | VAL cls=0.9843, SOC MedAPE(raw)=6.967%, SOH MedAPE(raw)=3.621% | TEST cls=0.8945, SOC MedAPE(raw)=6.152%, SOH MedAPE(raw)=2.876% | val_score=-0.642678
+[stage2_soh] epoch 040 | VAL cls=0.9843, SOC MedAPE(raw)=6.802%, SOH MedAPE(raw)=3.302% | TEST cls=0.8945, SOC MedAPE(raw)=6.327%, SOH MedAPE(raw)=2.793% | val_score=-0.578648
+[stage2_soh] epoch 041 | VAL cls=0.9843, SOC MedAPE(raw)=6.565%, SOH MedAPE(raw)=3.520% | TEST cls=0.8945, SOC MedAPE(raw)=6.047%, SOH MedAPE(raw)=2.944% | val_score=-0.628920
+[stage2_soh] epoch 042 | VAL cls=0.9843, SOC MedAPE(raw)=6.810%, SOH MedAPE(raw)=3.617% | TEST cls=0.8945, SOC MedAPE(raw)=5.989%, SOH MedAPE(raw)=2.809% | val_score=-0.605690
+[stage2_soh] epoch 043 | VAL cls=0.9843, SOC MedAPE(raw)=7.224%, SOH MedAPE(raw)=3.765% | TEST cls=0.8945, SOC MedAPE(raw)=5.994%, SOH MedAPE(raw)=2.961% | val_score=-0.612594
+[stage2_soh] epoch 044 | VAL cls=0.9843, SOC MedAPE(raw)=6.626%, SOH MedAPE(raw)=3.618% | TEST cls=0.8945, SOC MedAPE(raw)=6.188%, SOH MedAPE(raw)=2.863% | val_score=-0.618648
+[stage2_soh] epoch 045 | VAL cls=0.9843, SOC MedAPE(raw)=6.912%, SOH MedAPE(raw)=3.691% | TEST cls=0.8945, SOC MedAPE(raw)=6.094%, SOH MedAPE(raw)=2.738% | val_score=-0.609945
+[stage2_soh] epoch 046 | VAL cls=0.9843, SOC MedAPE(raw)=6.939%, SOH MedAPE(raw)=3.428% | TEST cls=0.8945, SOC MedAPE(raw)=6.003%, SOH MedAPE(raw)=2.775% | val_score=-0.588586
+[stage2_soh] epoch 047 | VAL cls=0.9843, SOC MedAPE(raw)=6.882%, SOH MedAPE(raw)=3.713% | TEST cls=0.8945, SOC MedAPE(raw)=6.035%, SOH MedAPE(raw)=3.004% | val_score=-0.638224
+[stage2_soh] epoch 048 | VAL cls=0.9843, SOC MedAPE(raw)=6.882%, SOH MedAPE(raw)=3.564% | TEST cls=0.8945, SOC MedAPE(raw)=6.136%, SOH MedAPE(raw)=2.764% | val_score=-0.624339
+[stage2_soh] epoch 049 | VAL cls=0.9843, SOC MedAPE(raw)=6.576%, SOH MedAPE(raw)=3.945% | TEST cls=0.8945, SOC MedAPE(raw)=5.834%, SOH MedAPE(raw)=3.139% | val_score=-0.670951
+Traceback (most recent call last):
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/measurement_sensitivity/c_rate_sensitivity.py", line 1082, in <module>
+    main()
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/measurement_sensitivity/c_rate_sensitivity.py", line 1049, in main
+    summary = run_c_rate_sensitivity(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/measurement_sensitivity/c_rate_sensitivity.py", line 884, in run_c_rate_sensitivity
+    out = run_experiment(
+          ^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/proposed_framework/run_proposed_framework.py", line 1162, in run_experiment
+    stage_best_paths["stage2_soh"] = run_stage(
+                                     ^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/proposed_framework/run_proposed_framework.py", line 936, in run_stage
+    tr = train_one_epoch(
+         ^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/proposed_framework/training/trainer.py", line 99, in train_one_epoch
+    logits_mat, soc_pred, soc_logp, cond_soc, soh_pred, cond_soh = model(
+                                                                   ^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/proposed_framework/models/hierarchical_model.py", line 125, in forward
+    soc_samples = self.soc_flow.sample(cond_soc, num_samples=int(n_mc))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/proposed_framework/models/conditional_flow.py", line 60, in sample
+    return self.flow.sample(num_samples=int(num_samples), context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/distributions/base.py", line 65, in sample
+    return self._sample(num_samples, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/flows/base.py", line 54, in _sample
+    samples, _ = self._transform.inverse(noise, context=embedded_context)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/base.py", line 60, in inverse
+    return self._cascade(inputs, funcs, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/base.py", line 50, in _cascade
+    outputs, logabsdet = func(outputs, context)
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 48, in inverse
+    outputs, logabsdet = self._elementwise_inverse(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 429, in _elementwise_inverse
+    return self._elementwise(inputs, autoregressive_params, inverse=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/autoregressive.py", line 411, in _elementwise
+    outputs, logabsdet = spline_fn(
+                         ^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/splines/rational_quadratic.py", line 46, in unconstrained_rational_quadratic_spline
+    ) = rational_quadratic_spline(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/virtual_envs/0704/lib/python3.11/site-packages/nflows/transforms/splines/rational_quadratic.py", line 135, in rational_quadratic_spline
+    assert (discriminant >= 0).all()
+AssertionError

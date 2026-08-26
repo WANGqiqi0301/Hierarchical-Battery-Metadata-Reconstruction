@@ -1,0 +1,33 @@
+[
+  {
+    "order": "SOH_M_SOC",
+    "description": "SOH -> Material -> SOC",
+    "evaluation_mode": "summary_only",
+    "checkpoint_path": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/ablation/hierarchy_order_ablation/SOH_M_SOC/checkpoints/best.pt",
+    "best_epoch": 73,
+    "best_score": 0.8203020249446077,
+    "test_cls_acc": 0.90390625,
+    "test_material_acc": 0.9625,
+    "test_soc_rmse_raw": 8.247964538895074,
+    "test_soc_mae_raw": 4.380729288946192,
+    "test_soc_medae_raw": 2.37482028886161,
+    "test_soc_mape_raw": 9.943657443334462,
+    "test_soc_medape_raw": 5.355799398674263,
+    "test_soh_rmse_raw": 6.1808162109554665,
+    "test_soh_mae_raw": 4.217510346185508,
+    "test_soh_medae_raw": 2.4406485292786115,
+    "test_soh_mape_raw": 5.256685267465288,
+    "test_soh_medape_raw": 2.910199591422293,
+    "n_train": 68162,
+    "n_test": 1280,
+    "num_classes": 8,
+    "device": "cpu",
+    "elapsed_sec": 16.21223497390747,
+    "material_acc_pct": 96.25,
+    "cls_acc_pct": 90.390625,
+    "soc_medae_pct": 2.37482028886161,
+    "soh_medae_pct": 2.4406485292786115,
+    "soc_medape_pct": 5.355799398674263,
+    "soh_medape_pct": 2.910199591422293
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "model": "ft_transformer",
+  "setting": "enhanced",
+  "input_feature_dim": 42,
+  "metrics": {
+    "material_acc": 0.75078125,
+    "soc_rmse": 9.79297718434497,
+    "soc_mae": 5.631993036805987,
+    "soc_mape": 14.629887733889529,
+    "soc_median_ape": 7.8360031103980265,
+    "soh_rmse": 0.05997431123484314,
+    "soh_mae": 0.04502755588768472,
+    "soh_mape": 5.774177069202472,
+    "soh_median_ape": 4.017937253588702,
+    "n_test": 1280
+  },
+  "n_train": 76131,
+  "n_test": 1280,
+  "classes": [
+    "LFP_35Ah",
+    "LFP_68Ah",
+    "LMO_10Ah",
+    "LMO_24Ah",
+    "LMO_25Ah",
+    "LMO_26Ah",
+    "NMC_15Ah",
+    "NMC_21Ah"
+  ],
+  "extra": {
+    "summary_only": true,
+    "classifier_checkpoint": "results/benchmark/ft_transformer/enhanced/ft_clf_baseline_final.pt",
+    "soc_checkpoint": "results/benchmark/ft_transformer/enhanced/ft_soc_enhanced_final.pt",
+    "soh_checkpoint": "results/benchmark/ft_transformer/enhanced/ft_soh_enhanced_final.pt",
+    "enhanced_hint_report": {
+      "material_hint": {
+        "target_accuracy": 0.91875,
+        "train_accuracy": 0.9187453205658668,
+        "test_accuracy": 0.91875
+      },
+      "soc_hint_train": {
+        "target_rmse": 7.864401414996508,
+        "rmse": 7.864401414996834,
+        "mae": 6.286870563249805,
+        "mape": 26.427368281070013,
+        "median_ape": 14.519293648856028
+      },
+      "soc_hint_test": {
+        "target_rmse": 7.864401414996508,
+        "rmse": 7.8644014159154425,
+        "mae": 6.383310354838613,
+        "mape": 22.609137045245927,
+        "median_ape": 14.521579874709364
+      },
+      "feature_dims": {
+        "base": 42,
+        "soc_input": 50,
+        "soh_input": 51
+      }
+    }
+  }
+}

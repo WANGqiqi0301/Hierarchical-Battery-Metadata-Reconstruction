@@ -1,0 +1,170 @@
+================================================================================
+[ANALYSIS SMOKE TEST LOG]
+================================================================================
+PROJECT_ROOT: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction
+data_root: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/data
+proposed_exp_dir: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic
+source_ckpt: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/checkpoints/single/best.pt
+run_config: {
+  "data_root": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/data",
+  "pulse_list": [
+    1000
+  ],
+  "u_start": 1,
+  "u_end": 41,
+  "drop_first_class": true,
+  "soc_col": "SOC",
+  "soh_col": "SOH",
+  "use_pt_as_feature": true,
+  "batch_size": 32,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "grad_clip": 5.0,
+  "max_epochs": 1,
+  "early_stopping": false,
+  "patience": 1,
+  "resume": false,
+  "num_workers": 0,
+  "seed": 2026,
+  "width": 8,
+  "blocks": 1,
+  "drop2d": 0.0,
+  "head_dropout": 0.1,
+  "w_cls": 1.0,
+  "w_soc": 1.0,
+  "w_soh": 1.0,
+  "test_id_frac": 0.1,
+  "test_id_count": 0,
+  "val_id_frac": 0.1,
+  "val_id_count": 0,
+  "val_seed_offset": 1000,
+  "normalize_soc": true,
+  "zscore_normalize": true,
+  "two_stage": false,
+  "stage1_epochs": 1,
+  "stage2_epochs": 1,
+  "finetune_epochs": 0,
+  "freeze_encoder_stage2": true,
+  "freeze_mat_soc_stage2": true,
+  "use_soc_prior_weighting": false,
+  "use_soh_prior_weighting": false,
+  "soc_prior_bins": 10,
+  "soh_prior_bins": 10,
+  "soc_prior_low": 0.5,
+  "soc_prior_mid": 1.0,
+  "soc_prior_high": 0.8,
+  "soh_prior_low": 0.8,
+  "soh_prior_mid": 1.0,
+  "soh_prior_high": 0.9,
+  "alpha_score": 0.1,
+  "final_best_stage": "single",
+  "exp_dir": "/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic"
+}
+
+
+================================================================================
+[1/3] run_further_analysis_proposed.py
+================================================================================
+[DEVICE] cpu
+[WARN] Dropping 1 invalid rows from RAW_TRAIN.
+[NORM] Loaded train-only U(41) stats: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/u41_norm_train_only.npz
+[DATA] Train samples: 7689
+[DATA] Val samples: 58
+[DATA] Test samples: 64
+[DATA] Num classes: 8
+[MODEL] Loaded checkpoint: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/checkpoints/single/best.pt
+
+[SUMMARY]
+split    n  cls_acc   soc_mae  soc_rmse  soc_mape  soc_medape  soc_ape_p25  soc_ape_p50  soc_ape_p75  soc_ape_p90  soc_ape_p95  soc_ae_p25  soc_ae_p50  soc_ae_p75  soc_ae_p90  soc_ae_p95  soh_mae  soh_rmse  soh_mape  soh_medape  soh_ape_p25  soh_ape_p50  soh_ape_p75  soh_ape_p90  soh_ape_p95  soh_ae_p25  soh_ae_p50  soh_ae_p75  soh_ae_p90  soh_ae_p95
+train 7689 0.099103 13.724284 18.656347 46.293158   29.027667    15.267021    29.027667    57.659223    77.414495   213.112122    4.781286   10.290085   18.305830   31.327239   42.806816 0.079478  0.101310  9.821444    7.582553     3.790705     7.582553    13.826469    19.157345    26.332702    0.031775    0.061610    0.121102    0.163592    0.186807
+  val   58 0.068966 14.727425 19.614999 39.387394   27.943773    15.131550    27.943773    52.090630    78.059346    87.109150    5.867064   10.453496   19.419157   31.979699   45.009312 0.091996  0.114351 11.413004    8.864118     5.046327     8.864118    15.927036    21.698978    28.442927    0.043893    0.074034    0.141007    0.174682    0.220999
+ test   64 0.109375 10.610482 14.239572 32.366781   23.988197     9.191876    23.988197    49.295484    76.617733    96.041417    4.132862    7.100354   14.371789   23.210652   29.451508 0.087096  0.113347 11.368268    8.418701     4.795388     8.418701    13.494989    22.114308    35.598773    0.039097    0.071439    0.110001    0.175947    0.232007
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/test_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/val_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/train_predictions_for_scatter.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/proposed_method_summary.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables/further_analysis_inference_config.json
+[OK] Generated CSVs under /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/further_analysis/tables
+
+
+================================================================================
+[2/3] error_propagation_analysis.py
+================================================================================
+[DEVICE] cpu
+[WARN] Dropping 1 invalid rows from RAW_TRAIN.
+[NORM] Loaded train-only U(41) stats: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/u41_norm_train_only.npz
+[DATA] Train samples: 7689
+[DATA] Val samples: 58
+[DATA] Test samples: 64
+[DATA] Num classes: 8
+[SMOKE ERROR LOAD MODEL] width=8, blocks=1, checkpoint=/scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/proposed_framework/basic/checkpoints/single/best.pt
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/analysis/error_propagation/e0_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/analysis/error_propagation/e1_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/analysis/error_propagation/e2_predictions_per_sample.csv
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/analysis/error_propagation/e3_predictions_per_sample.csv
+
+===== E0-E3 counterfactual summary =====
+experiment  n  cls_acc  soc_rmse   soc_mae  soc_mape  soc_medape  soh_rmse  soh_mae  soh_mape  soh_medape
+        E0 64 1.000000 20.062345 16.431109 52.626724   33.488360  0.111974 0.090808 11.766219    8.815104
+        E1 64 0.109375 20.308429 16.191777 57.941981   34.322568  0.112510 0.090799 11.701817    8.950079
+        E2 64 1.000000 20.062345 16.431109 52.626724   33.488360  0.114520 0.091503 11.786751    9.344230
+        E3 64 0.109375 20.308429 16.191777 57.941981   34.322568  0.133354 0.100059 13.107285    8.215517
+
+===== SOC consistency =====
+E0 SOC MedAPE == E2 SOC MedAPE: 33.4883602411191 == 33.4883602411191
+E1 SOC MedAPE == E3 SOC MedAPE: 34.32256824605744 == 34.32256824605744
+
+[SAVED] /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/analysis/error_propagation/counterfactual_summary.csv
+[DONE] Exact E0-E3 error-propagation analysis finished.
+
+
+================================================================================
+[3/3] train_calibration_baseline.py
+================================================================================
+[CACHE] Train tag: raw_train_05b13afe84 | hit=False
+[CACHE] Test  tag: raw_test_277faed5e2 | hit=False
+[WARN] Dropping 1 invalid rows from RAW_TRAIN.
+[DATA] Final TRAIN samples = 8555 | unique IDs = 576
+[DATA] Final TEST  samples = 64 | unique IDs = 64
+[NORM] U1-U41 train-only normalization is disabled for this baseline.
+Epoch 000 | TE cls=0.2188 | SOC MedAPE(raw)=24.378% | SOH MedAPE(raw)=8.584% | train_select_score=-0.064882 | time=1.42s
+[BEST] Loaded best checkpoint from epoch=0 | score=-0.06488159077042868
+[CALIBRATION] Gaussian baseline SOC | Best T=0.761 | Mean 10-90=3.194% | Max 10-90=11.253% | Mean all=3.098% | Max all=11.253%
+[CALIBRATION] Gaussian baseline SOH | Best T=0.977 | Mean 10-90=5.962% | Max 10-90=12.263% | Mean all=5.253% | Max all=12.263%
+
+[GAUSSIAN CALIBRATION METRICS]
+            model target  best_calibration_temperature_T  mean_calibration_deviation_10_90_pct  max_calibration_deviation_10_90_pct  mean_calibration_deviation_all_pct  max_calibration_deviation_all_pct
+Gaussian baseline    SOC                        0.760535                              3.194444                            11.253157                            3.097696                          11.253157
+Gaussian baseline    SOH                        0.977258                              5.961766                            12.263258                            5.252525                          12.263258
+
+[FINAL METRICS]
+best_epoch: 0
+best_score: -0.06488159077042868
+test_cls_acc: 0.21875
+test_soc_rmse: 0.7991859983163843
+test_soc_mae: 0.6328438989294227
+test_soc_mape: 100.63760508353855
+test_soc_medape: 98.94239184180977
+test_soh_rmse: 1.1055098775513426
+test_soh_mae: 0.8554414530517533
+test_soh_mape: 100.25990188424302
+test_soh_medape: 100.35707558092264
+test_soc_rmse_raw: 17.80347860851481
+test_soc_mae_raw: 14.097873136984989
+test_soc_mape_raw: 67.38869118546577
+test_soc_medape_raw: 24.378479222799637
+test_soh_rmse_raw: 0.11349527373170976
+test_soh_mae_raw: 0.08782242822706146
+test_soh_mape_raw: 11.518457155115929
+test_soh_medape_raw: 8.58350299129912
+n_train: 8555
+n_test: 64
+num_classes: 8
+device: cpu
+elapsed_sec: 15.343181133270264
+gaussian_soc_best_T: 0.7605351170568562
+gaussian_soc_mean_calibration_deviation_10_90_pct: 3.194444444444445
+gaussian_soh_best_T: 0.977257525083612
+gaussian_soh_mean_calibration_deviation_10_90_pct: 5.961766098484846
+
+[OK] Saved outputs under: /scratch/lt28/qq002/Hierachical_battery_metadata_reconstruction/results/smoke_test/analysis/calibration_baseline

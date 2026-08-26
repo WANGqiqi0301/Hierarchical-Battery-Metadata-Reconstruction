@@ -1,0 +1,31 @@
+[
+  {
+    "config": "raw_1d",
+    "input_representation": "raw_1d",
+    "pulse_widths_ms": "5000",
+    "num_pulse_widths": 1,
+    "final_stage": "single",
+    "test_cls_acc": 0.3046875,
+    "test_soc_rmse": 0.5782387111572136,
+    "test_soc_mae": 0.44398390164860757,
+    "test_soc_mape": 309.977802542693,
+    "test_soc_medape": 57.91247260989751,
+    "test_soh_rmse": 0.7992122548568391,
+    "test_soh_mae": 0.6361479477604917,
+    "test_soh_mape": 250.57799901110994,
+    "test_soh_medape": 88.7617932608018,
+    "test_soc_rmse_raw": 12.85508019704857,
+    "test_soc_mae_raw": 9.870402226217632,
+    "test_soc_mape_raw": 31.518536624263895,
+    "test_soc_medape_raw": 18.842372634854975,
+    "test_soh_rmse_raw": 0.08392838691331653,
+    "test_soh_mae_raw": 0.06680436988959658,
+    "test_soh_mape_raw": 8.212800648738499,
+    "test_soh_medape_raw": 6.5494331261526675,
+    "n_train": 6817,
+    "n_test": 128,
+    "num_classes": 8,
+    "device": "cpu",
+    "elapsed_sec": 32.23517990112305
+  }
+]

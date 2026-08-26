@@ -1,0 +1,2 @@
+﻿order,description,best_epoch,best_score,cls_acc,soc_rmse_raw,soc_mae_raw,soc_mape_raw,soc_medape_raw,soh_rmse_raw,soh_mae_raw,soh_mape_raw,soh_medape_raw,n_train,n_test,num_classes,device,elapsed_sec
+PARALLEL,"Material, SOC and SOH predicted in parallel",0,-0.2222704681903257,0.2734375,15.955625267795533,12.474465209410408,39.6455977953773,22.06080811905384,0.09153835517523108,0.0731226021738141,9.278666799425487,7.385205210314025,6817,128,8,cpu,4.470189571380615
