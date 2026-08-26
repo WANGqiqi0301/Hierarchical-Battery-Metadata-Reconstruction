@@ -569,9 +569,10 @@ The repository includes code for:
 If you use this code or dataset, please cite:
 
 ```text
-WANG Qiqi, TAO Shengyu, XIE Min, MO Huadong*.
-Hierarchical battery metadata reconstruction from short-pulse responses for retired lithium-ion batteries.
-Manuscript prepared for submission to Nature Communications.
+Qiqi Wang, Shengyu Tao*, Chen Liang, Fusen Guo, Ajith Kumar Parlikad, 
+Guangmin Zhou*, Min Xie*, Huadong Mo*.
+Hierarchical retired battery metadata reconstruction from short-pulse-enabled electrochemical fingerprints
+
 ```
 
 `*` Corresponding author.
