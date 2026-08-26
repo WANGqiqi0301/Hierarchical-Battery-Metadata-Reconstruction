@@ -19,7 +19,6 @@ The purpose of these ablation studies is to understand how different architectur
 | `hierarchy_order_ablation.py` | Evaluates different hierarchical prediction orders (e.g., Material → SOC → SOH and alternative permutations). |
 | `input_representation_ablation.py` | Compares raw input representations and structured feature representations. |
 | `material_conditioning_ablation.py` | Compares soft material conditioning and hard material conditioning for downstream SOC and SOH estimation. |
-| `transfer_ablation.py` | Evaluates different transfer strategies and conditioning mechanisms used across hierarchical stages. |
 
 ---
 
@@ -33,4 +32,3 @@ python ablation/hierarchy_ablation.py
 python ablation/hierarchy_order_ablation.py
 python ablation/input_representation_ablation.py
 python ablation/material_conditioning_ablation.py
-python ablation/transfer_ablation.py
