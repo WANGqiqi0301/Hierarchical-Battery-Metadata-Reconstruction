@@ -569,8 +569,7 @@ The repository includes code for:
 If you use this code or dataset, please cite:
 
 ```text
-Qiqi Wang, Shengyu Tao*, Chen Liang, Fusen Guo, Ajith Kumar Parlikad, 
-Guangmin Zhou*, Min Xie*, Huadong Mo*.
+
 Hierarchical retired battery metadata reconstruction from short-pulse-enabled electrochemical fingerprints
 
 ```
