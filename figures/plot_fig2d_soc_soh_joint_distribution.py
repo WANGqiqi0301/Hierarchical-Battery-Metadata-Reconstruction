@@ -50,7 +50,7 @@ import proposed_framework.run_proposed_framework as M
 # =============================================================================
 # Default configuration
 # =============================================================================
-DEFAULT_DATA_ROOT = getattr(M, "DATA_ROOT", str(PROJECT_ROOT.parent / "data"))
+DEFAULT_DATA_ROOT = getattr(M, "DATA_ROOT", str(PROJECT_ROOT / "data"))
 DEFAULT_OUTPUT_DIR = r"results/figures/main/fig2d"
 DEFAULT_CACHE_FILE = "fig2d_soc_soh_data_cache.csv"
 
