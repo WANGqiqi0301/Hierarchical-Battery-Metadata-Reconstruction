@@ -34,7 +34,7 @@ import proposed_framework.run_proposed_framework as M
 # =============================================================================
 # Configuration
 # =============================================================================
-DATA_ROOT = str(PROJECT_ROOT.parent / "data")
+DATA_ROOT = str(PROJECT_ROOT / "data")
 SAVE_DIR = r"results/figures/main/fig2f"
 
 TARGET_MATERIAL = "LMO_24Ah"
